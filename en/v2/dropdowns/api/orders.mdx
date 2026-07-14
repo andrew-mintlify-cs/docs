@@ -4,3 +4,26 @@ description: "Navigation demo page."
 ---
 
 **Group:** Resources.
+
+{/* capybara-embed-demo */}
+
+## Image embed demo
+
+Light/dark mode image swap. **Each mode uses a unique photo not reused on other gallery pages.**
+
+- Light: `/images/capybaras/unique-06.jpg`
+- Dark: `/images/capybaras/unique-31.jpg`
+
+Toggle appearance to compare.
+
+<img
+  className="block dark:hidden rounded-xl"
+  src="/images/capybaras/unique-06.jpg"
+  alt="Unique capybara photo (unique-06.jpg) — assigned exclusively to this gallery page — light-mode only via className block dark:hidden"
+/>
+
+<img
+  className="hidden dark:block rounded-xl"
+  src="/images/capybaras/unique-31.jpg"
+  alt="Unique dark-mode capybara photo (unique-31.jpg) assigned exclusively to this page — className hidden dark:block"
+/>
