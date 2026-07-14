@@ -1,0 +1,62 @@
+---
+title: "水豚图片与嵌入画廊"
+description: "展示 Mintlify 图片和嵌入功能的页面索引，每页均使用独特的水豚照片。"
+---
+
+此分支在 **30** 个英文页面上测试 Mintlify 的[图片与嵌入](https://www.mintlify.com/docs/create/image-embeds)。
+
+**下方列出的每个页面都使用不同的水豚照片**（本地文件位于 `/images/capybaras/unique-*.jpg`，每个小于 2MB）。明暗切换页面使用两张不同的独特照片。
+
+## 使用的技巧
+
+| 样式 # | 技巧 |
+| --- | --- |
+| 0 | Markdown + 本地 `/images` 路径 |
+| 1 | `<Frame>` + Markdown + 本地 `/images` 路径 |
+| 2 | HTML `<img>` + 内联 `style` 宽度 |
+| 3 | HTML `<img>` + `noZoom` |
+| 4 | 带链接的图片（`<a>` + `<img noZoom>`） |
+| 5 | 明暗模式图片对（两张独特照片） |
+| 6 | `<Frame>` + HTML `<img className="rounded-xl">` |
+| 7 | Markdown + 独特的本地资源 |
+| 8 | `<Frame>` 中的 YouTube `<iframe>` + 独特封面图 |
+| 9 | 纯 Markdown + 本地 `/images` 路径 |
+
+## 带嵌入的页面
+
+- [`/en/v1/migration`](/en/v1/migration) — 样式 **#0** · `unique-01.jpg`
+- [`/en/v1/overview`](/en/v1/overview) — 样式 **#1** · `unique-02.jpg`
+- [`/en/v2/compare/products-menus-dropdowns`](/en/v2/compare/products-menus-dropdowns) — 样式 **#2** · `unique-03.jpg`
+- [`/en/v2/dropdowns/api/auth`](/en/v2/dropdowns/api/auth) — 样式 **#3** · `unique-04.jpg`
+- [`/en/v2/dropdowns/api/errors`](/en/v2/dropdowns/api/errors) — 样式 **#4** · `unique-05.jpg`
+- [`/en/v2/dropdowns/api/orders`](/en/v2/dropdowns/api/orders) — 样式 **#5** · `unique-06.jpg` + 暗色 `unique-31.jpg`
+- [`/en/v2/dropdowns/api/overview`](/en/v2/dropdowns/api/overview) — 样式 **#6** · `unique-07.jpg`
+- [`/en/v2/dropdowns/api/payments`](/en/v2/dropdowns/api/payments) — 样式 **#7** · `unique-08.jpg`
+- [`/en/v2/dropdowns/compare`](/en/v2/dropdowns/compare) — 样式 **#8** · `unique-09.jpg`
+- [`/en/v2/dropdowns/docs/architecture`](/en/v2/dropdowns/docs/architecture) — 样式 **#9** · `unique-10.jpg`
+- [`/en/v2/dropdowns/docs/concepts`](/en/v2/dropdowns/docs/concepts) — 样式 **#0** · `unique-11.jpg`
+- [`/en/v2/dropdowns/docs/guides-migrate`](/en/v2/dropdowns/docs/guides-migrate) — 样式 **#1** · `unique-12.jpg`
+- [`/en/v2/dropdowns/docs/guides-onboarding`](/en/v2/dropdowns/docs/guides-onboarding) — 样式 **#2** · `unique-13.jpg`
+- [`/en/v2/dropdowns/docs/start`](/en/v2/dropdowns/docs/start) — 样式 **#3** · `unique-14.jpg`
+- [`/en/v2/dropdowns/partners/build`](/en/v2/dropdowns/partners/build) — 样式 **#4** · `unique-15.jpg`
+- [`/en/v2/dropdowns/partners/directory`](/en/v2/dropdowns/partners/directory) — 样式 **#5** · `unique-16.jpg` + 暗色 `unique-32.jpg`
+- [`/en/v2/dropdowns/partners/overview`](/en/v2/dropdowns/partners/overview) — 样式 **#6** · `unique-17.jpg`
+- [`/en/v2/dropdowns/partners/submit`](/en/v2/dropdowns/partners/submit) — 样式 **#7** · `unique-18.jpg`
+- [`/en/v2/menu-analytics/api/overview`](/en/v2/menu-analytics/api/overview) — 样式 **#8** · `unique-19.jpg`
+- [`/en/v2/menu-analytics/api/queries`](/en/v2/menu-analytics/api/queries) — 样式 **#9** · `unique-20.jpg`
+- [`/en/v2/menu-analytics/dashboards/overview`](/en/v2/menu-analytics/dashboards/overview) — 样式 **#0** · `unique-21.jpg`
+- [`/en/v2/menu-analytics/dashboards/share`](/en/v2/menu-analytics/dashboards/share) — 样式 **#1** · `unique-22.jpg`
+- [`/en/v2/menu-analytics/guides/events`](/en/v2/menu-analytics/guides/events) — 样式 **#2** · `unique-23.jpg`
+- [`/en/v2/menu-analytics/guides/intro`](/en/v2/menu-analytics/guides/intro) — 样式 **#3** · `unique-24.jpg`
+- [`/en/v2/menu-core/api/orders`](/en/v2/menu-core/api/orders) — 样式 **#4** · `unique-25.jpg`
+- [`/en/v2/menu-core/api/overview`](/en/v2/menu-core/api/overview) — 样式 **#5** · `unique-26.jpg` + 暗色 `unique-33.jpg`
+- [`/en/v2/menu-core/api/users`](/en/v2/menu-core/api/users) — 样式 **#6** · `unique-27.jpg`
+- [`/en/v2/menu-core/guides/auth`](/en/v2/menu-core/guides/auth) — 样式 **#7** · `unique-28.jpg`
+- [`/en/v2/menu-core/guides/intro`](/en/v2/menu-core/guides/intro) — 样式 **#8** · `unique-29.jpg`
+- [`/en/v2/menu-core/guides/webhooks`](/en/v2/menu-core/guides/webhooks) — 样式 **#9** · `unique-30.jpg`
+
+## 本地资源示例（仅画廊）
+
+此示例使用 `/images/capybaras/unique-34.jpg`，该图**不会**在上方链接的页面中重复使用。
+
+![unique-34.jpg 仅为此画廊索引页保留](/images/capybaras/unique-34.jpg)

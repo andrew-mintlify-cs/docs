@@ -519,7 +519,8 @@
                     "pages": [
                       "es/v2/compare/products-menus-dropdowns",
                       "es/v2/tabs/compare",
-                      "es/v2/tabs/when-to-use-tabs"
+                      "es/v2/tabs/when-to-use-tabs",
+                      "es/v2/capybara-embeds"
                     ]
                   },
                   {
@@ -963,7 +964,8 @@
                     "pages": [
                       "fr/v2/compare/products-menus-dropdowns",
                       "fr/v2/tabs/compare",
-                      "fr/v2/tabs/when-to-use-tabs"
+                      "fr/v2/tabs/when-to-use-tabs",
+                      "fr/v2/capybara-embeds"
                     ]
                   },
                   {
@@ -1407,7 +1409,8 @@
                     "pages": [
                       "cn/v2/compare/products-menus-dropdowns",
                       "cn/v2/tabs/compare",
-                      "cn/v2/tabs/when-to-use-tabs"
+                      "cn/v2/tabs/when-to-use-tabs",
+                      "cn/v2/capybara-embeds"
                     ]
                   },
                   {
@@ -1824,6 +1827,894 @@
                     "pages": [
                       "cn/v3/beta-features",
                       "cn/v3/breaking-changes"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "uk",
+        "versions": [
+          {
+            "version": "v2.0",
+            "tag": "Latest",
+            "products": [
+              {
+                "product": "Продукт Tabs",
+                "description": "Патерн бокового випадаючого меню — це НЕ перемикач продуктів",
+                "icon": "browser",
+                "tabs": [
+                  {
+                    "tab": "Порівняти Tabs",
+                    "icon": "table-columns",
+                    "pages": [
+                      "uk/v2/compare/products-menus-dropdowns",
+                      "uk/v2/tabs/compare",
+                      "uk/v2/tabs/when-to-use-tabs",
+                      "uk/v2/capybara-embeds"
+                    ]
+                  },
+                  {
+                    "tab": "Посібник з встановлення",
+                    "icon": "download",
+                    "anchors": [
+                      {
+                        "anchor": "Налаштування",
+                        "icon": "wrench",
+                        "groups": [
+                          {
+                            "group": "Огляд",
+                            "icon": "circle-info",
+                            "pages": [
+                              "uk/v2/tabs/install/overview",
+                              "uk/v2/tabs/install/requirements"
+                            ]
+                          },
+                          {
+                            "group": "Кроки встановлення",
+                            "icon": "list-ol",
+                            "pages": [
+                              "uk/v2/tabs/install/cli",
+                              "uk/v2/tabs/install/first-preview"
+                            ]
+                          },
+                          {
+                            "group": "Допомога",
+                            "icon": "life-ring",
+                            "expanded": false,
+                            "pages": [
+                              "uk/v2/tabs/install/troubleshooting"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "anchor": "Розгортання",
+                        "icon": "rocket",
+                        "groups": [
+                          {
+                            "group": "Середовища",
+                            "icon": "server",
+                            "pages": [
+                              "uk/v2/tabs/deploy/github-app",
+                              "uk/v2/tabs/deploy/environments"
+                            ]
+                          },
+                          {
+                            "group": "Запуск",
+                            "icon": "flag-checkered",
+                            "pages": [
+                              "uk/v2/tabs/deploy/checklists"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "API Reference",
+                    "icon": "square-terminal",
+                    "groups": [
+                      {
+                        "group": "Огляд",
+                        "icon": "book",
+                        "pages": [
+                          "uk/v2/tabs/api/intro"
+                        ]
+                      },
+                      {
+                        "group": "Основні концепції",
+                        "icon": "key",
+                        "pages": [
+                          "uk/v2/tabs/api/auth",
+                          "uk/v2/tabs/api/rate-limits"
+                        ]
+                      },
+                      {
+                        "group": "Endpoints користувачів",
+                        "icon": "users",
+                        "pages": [
+                          "uk/v2/tabs/api/users-list",
+                          "uk/v2/tabs/api/users-create"
+                        ]
+                      },
+                      {
+                        "group": "Події",
+                        "icon": "bolt",
+                        "pages": [
+                          "uk/v2/tabs/api/webhooks"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "Cookbook",
+                    "icon": "utensils",
+                    "groups": [
+                      {
+                        "group": "Рецепти",
+                        "icon": "flask",
+                        "pages": [
+                          "uk/v2/tabs/cookbook/hello",
+                          {
+                            "group": "Auth",
+                            "expanded": true,
+                            "pages": [
+                              "uk/v2/tabs/cookbook/auth-recipe"
+                            ]
+                          },
+                          {
+                            "group": "Webhooks",
+                            "expanded": false,
+                            "pages": [
+                              "uk/v2/tabs/cookbook/webhook-recipe"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Патерни",
+                        "icon": "diagram-project",
+                        "pages": [
+                          "uk/v2/tabs/cookbook/patterns"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "Зовнішня вкладка",
+                    "icon": "arrow-up-right",
+                    "href": "https://www.mintlify.com/docs/organize/navigation"
+                  }
+                ]
+              },
+              {
+                "product": "Продукт Dropdowns",
+                "description": "Патерн бокового випадаючого меню — це НЕ перемикач продуктів",
+                "icon": "caret-down",
+                "dropdowns": [
+                  {
+                    "dropdown": "Випадаюче меню Product Docs",
+                    "icon": "book",
+                    "groups": [
+                      {
+                        "group": "Огляд",
+                        "icon": "compass",
+                        "pages": [
+                          "uk/v2/dropdowns/compare",
+                          "uk/v2/dropdowns/docs/start"
+                        ]
+                      },
+                      {
+                        "group": "Основи",
+                        "icon": "cubes",
+                        "pages": [
+                          "uk/v2/dropdowns/docs/concepts",
+                          "uk/v2/dropdowns/docs/architecture"
+                        ]
+                      },
+                      {
+                        "group": "Практичні посібники",
+                        "icon": "list-check",
+                        "pages": [
+                          "uk/v2/dropdowns/docs/guides-onboarding",
+                          "uk/v2/dropdowns/docs/guides-migrate"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "dropdown": "Випадаюче меню API Spec",
+                    "icon": "code",
+                    "groups": [
+                      {
+                        "group": "Огляд",
+                        "icon": "book-open",
+                        "pages": [
+                          "uk/v2/dropdowns/api/overview"
+                        ]
+                      },
+                      {
+                        "group": "Основи специфікації",
+                        "icon": "screwdriver-wrench",
+                        "pages": [
+                          "uk/v2/dropdowns/api/auth",
+                          "uk/v2/dropdowns/api/errors"
+                        ]
+                      },
+                      {
+                        "group": "Ресурси",
+                        "icon": "database",
+                        "pages": [
+                          "uk/v2/dropdowns/api/orders",
+                          "uk/v2/dropdowns/api/payments"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "dropdown": "Випадаюче меню Partner Hub",
+                    "icon": "handshake",
+                    "groups": [
+                      {
+                        "group": "Огляд",
+                        "icon": "house",
+                        "pages": [
+                          "uk/v2/dropdowns/partners/overview"
+                        ]
+                      },
+                      {
+                        "group": "Партнери",
+                        "icon": "address-book",
+                        "pages": [
+                          "uk/v2/dropdowns/partners/directory"
+                        ]
+                      },
+                      {
+                        "group": "Build",
+                        "icon": "hammer",
+                        "pages": [
+                          "uk/v2/dropdowns/partners/build",
+                          "uk/v2/dropdowns/partners/submit"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Простий продукт (без меню)",
+                "description": "Перемикач продуктів переходить прямо до документації — без меню продукту",
+                "icon": "box",
+                "groups": [
+                  {
+                    "group": "Перші кроки",
+                    "icon": "play",
+                    "pages": [
+                      "uk/v2/plain/overview",
+                      "uk/v2/plain/getting-started"
+                    ]
+                  },
+                  {
+                    "group": "Допомога",
+                    "icon": "circle-question",
+                    "pages": [
+                      "uk/v2/plain/faq"
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Product + Menu: Core API",
+                "description": "Перемикач продуктів розгортається в багатоколонкове меню продукту",
+                "icon": "api",
+                "menu": [
+                  {
+                    "item": "Menu: Guides FOR MEN",
+                    "icon": "book-open",
+                    "description": "Колонка меню продукту — Guides",
+                    "groups": [
+                      {
+                        "group": "Перші кроки",
+                        "icon": "flag",
+                        "pages": [
+                          "uk/v2/menu-core/guides/intro",
+                          "uk/v2/menu-core/guides/auth",
+                          "uk/v2/menu-core/guides/webhooks"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "item": "Menu: API reference FOR ALL",
+                    "icon": "square-terminal",
+                    "description": "Колонка меню продукту — API reference",
+                    "groups": [
+                      {
+                        "group": "Endpoints",
+                        "icon": "code",
+                        "pages": [
+                          "uk/v2/menu-core/api/overview",
+                          "uk/v2/menu-core/api/users",
+                          "uk/v2/menu-core/api/orders"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "item": "Menu: SDKs",
+                    "icon": "code",
+                    "description": "Колонка меню продукту — SDKs",
+                    "pages": [
+                      "uk/v2/menu-core/sdks/node",
+                      "uk/v2/menu-core/sdks/python"
+                    ]
+                  },
+                  {
+                    "item": "Menu: Changelog (external)",
+                    "icon": "list",
+                    "href": "https://mintlify.com/blog"
+                  }
+                ]
+              },
+              {
+                "product": "Product + Menu: Analytics",
+                "description": "Другий приклад меню продукту — відкрийте перемикач, щоб розгорнути",
+                "icon": "chart-line",
+                "menu": [
+                  {
+                    "item": "Menu: Guides",
+                    "icon": "book",
+                    "pages": [
+                      "uk/v2/menu-analytics/guides/intro",
+                      "uk/v2/menu-analytics/guides/events"
+                    ]
+                  },
+                  {
+                    "item": "Menu: Query API",
+                    "icon": "database",
+                    "pages": [
+                      "uk/v2/menu-analytics/api/overview",
+                      "uk/v2/menu-analytics/api/queries"
+                    ]
+                  },
+                  {
+                    "item": "Menu: Dashboards",
+                    "icon": "chart-bar",
+                    "pages": [
+                      "uk/v2/menu-analytics/dashboards/overview",
+                      "uk/v2/menu-analytics/dashboards/share"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v1.0",
+            "tag": "Legacy",
+            "products": [
+              {
+                "product": "Продукт Tabs",
+                "description": "Горизонтальні верхні вкладки — порівняйте з Dropdowns Product",
+                "icon": "browser",
+                "groups": [
+                  {
+                    "group": "Legacy",
+                    "icon": "clock-rotate-left",
+                    "pages": [
+                      "uk/v1/overview",
+                      "uk/v1/migration"
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Продукт Dropdowns",
+                "description": "Перемикач у боковому меню — порівняйте з Tabs Product",
+                "icon": "caret-down",
+                "pages": [
+                  "uk/v1/overview"
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v3.0",
+            "tag": "Future",
+            "products": [
+              {
+                "product": "Продукт Tabs",
+                "description": "Горизонтальні верхні вкладки — порівняйте з Dropdowns Product",
+                "icon": "browser",
+                "groups": [
+                  {
+                    "group": "Прев'ю Future",
+                    "icon": "telescope",
+                    "pages": [
+                      "uk/v3/overview",
+                      "uk/v3/roadmap",
+                      "uk/v3/beta-features",
+                      "uk/v3/breaking-changes"
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Продукт Dropdowns",
+                "description": "Перемикач у боковому меню — порівняйте з Tabs Product",
+                "icon": "caret-down",
+                "pages": [
+                  "uk/v3/overview",
+                  "uk/v3/roadmap"
+                ]
+              },
+              {
+                "product": "Product + Menu: Core API",
+                "description": "Перемикач продуктів розгортається в багатоколонкове меню продукту",
+                "icon": "api",
+                "menu": [
+                  {
+                    "item": "Menu: Guides",
+                    "icon": "book-open",
+                    "pages": [
+                      "uk/v3/overview",
+                      "uk/v3/roadmap"
+                    ]
+                  },
+                  {
+                    "item": "Menu: API reference",
+                    "icon": "square-terminal",
+                    "pages": [
+                      "uk/v3/beta-features",
+                      "uk/v3/breaking-changes"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "language": "vi",
+        "versions": [
+          {
+            "version": "v2.0",
+            "tag": "Latest",
+            "products": [
+              {
+                "product": "Sản phẩm Tabs",
+                "description": "Mẫu dropdown thanh bên — KHÔNG phải trình chuyển sản phẩm",
+                "icon": "browser",
+                "tabs": [
+                  {
+                    "tab": "So sánh Tabs",
+                    "icon": "table-columns",
+                    "pages": [
+                      "vi/v2/compare/products-menus-dropdowns",
+                      "vi/v2/tabs/compare",
+                      "vi/v2/tabs/when-to-use-tabs",
+                      "vi/v2/capybara-embeds"
+                    ]
+                  },
+                  {
+                    "tab": "Hướng dẫn cài đặt",
+                    "icon": "download",
+                    "anchors": [
+                      {
+                        "anchor": "Thiết lập",
+                        "icon": "wrench",
+                        "groups": [
+                          {
+                            "group": "Tổng quan",
+                            "icon": "circle-info",
+                            "pages": [
+                              "vi/v2/tabs/install/overview",
+                              "vi/v2/tabs/install/requirements"
+                            ]
+                          },
+                          {
+                            "group": "Các bước cài đặt",
+                            "icon": "list-ol",
+                            "pages": [
+                              "vi/v2/tabs/install/cli",
+                              "vi/v2/tabs/install/first-preview"
+                            ]
+                          },
+                          {
+                            "group": "Trợ giúp",
+                            "icon": "life-ring",
+                            "expanded": false,
+                            "pages": [
+                              "vi/v2/tabs/install/troubleshooting"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "anchor": "Triển khai",
+                        "icon": "rocket",
+                        "groups": [
+                          {
+                            "group": "Môi trường",
+                            "icon": "server",
+                            "pages": [
+                              "vi/v2/tabs/deploy/github-app",
+                              "vi/v2/tabs/deploy/environments"
+                            ]
+                          },
+                          {
+                            "group": "Khởi chạy",
+                            "icon": "flag-checkered",
+                            "pages": [
+                              "vi/v2/tabs/deploy/checklists"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "API Reference",
+                    "icon": "square-terminal",
+                    "groups": [
+                      {
+                        "group": "Tổng quan",
+                        "icon": "book",
+                        "pages": [
+                          "vi/v2/tabs/api/intro"
+                        ]
+                      },
+                      {
+                        "group": "Khái niệm cốt lõi",
+                        "icon": "key",
+                        "pages": [
+                          "vi/v2/tabs/api/auth",
+                          "vi/v2/tabs/api/rate-limits"
+                        ]
+                      },
+                      {
+                        "group": "Endpoint người dùng",
+                        "icon": "users",
+                        "pages": [
+                          "vi/v2/tabs/api/users-list",
+                          "vi/v2/tabs/api/users-create"
+                        ]
+                      },
+                      {
+                        "group": "Sự kiện",
+                        "icon": "bolt",
+                        "pages": [
+                          "vi/v2/tabs/api/webhooks"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "Cookbook",
+                    "icon": "utensils",
+                    "groups": [
+                      {
+                        "group": "Công thức",
+                        "icon": "flask",
+                        "pages": [
+                          "vi/v2/tabs/cookbook/hello",
+                          {
+                            "group": "Auth",
+                            "expanded": true,
+                            "pages": [
+                              "vi/v2/tabs/cookbook/auth-recipe"
+                            ]
+                          },
+                          {
+                            "group": "Webhooks",
+                            "expanded": false,
+                            "pages": [
+                              "vi/v2/tabs/cookbook/webhook-recipe"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Mẫu thiết kế",
+                        "icon": "diagram-project",
+                        "pages": [
+                          "vi/v2/tabs/cookbook/patterns"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "Tab bên ngoài",
+                    "icon": "arrow-up-right",
+                    "href": "https://www.mintlify.com/docs/organize/navigation"
+                  }
+                ]
+              },
+              {
+                "product": "Sản phẩm Dropdowns",
+                "description": "Mẫu dropdown thanh bên — KHÔNG phải trình chuyển sản phẩm",
+                "icon": "caret-down",
+                "dropdowns": [
+                  {
+                    "dropdown": "Dropdown Product Docs",
+                    "icon": "book",
+                    "groups": [
+                      {
+                        "group": "Tổng quan",
+                        "icon": "compass",
+                        "pages": [
+                          "vi/v2/dropdowns/compare",
+                          "vi/v2/dropdowns/docs/start"
+                        ]
+                      },
+                      {
+                        "group": "Nền tảng",
+                        "icon": "cubes",
+                        "pages": [
+                          "vi/v2/dropdowns/docs/concepts",
+                          "vi/v2/dropdowns/docs/architecture"
+                        ]
+                      },
+                      {
+                        "group": "Hướng dẫn thực hành",
+                        "icon": "list-check",
+                        "pages": [
+                          "vi/v2/dropdowns/docs/guides-onboarding",
+                          "vi/v2/dropdowns/docs/guides-migrate"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "dropdown": "Dropdown API Spec",
+                    "icon": "code",
+                    "groups": [
+                      {
+                        "group": "Tổng quan",
+                        "icon": "book-open",
+                        "pages": [
+                          "vi/v2/dropdowns/api/overview"
+                        ]
+                      },
+                      {
+                        "group": "Kiến thức cơ bản về spec",
+                        "icon": "screwdriver-wrench",
+                        "pages": [
+                          "vi/v2/dropdowns/api/auth",
+                          "vi/v2/dropdowns/api/errors"
+                        ]
+                      },
+                      {
+                        "group": "Tài nguyên",
+                        "icon": "database",
+                        "pages": [
+                          "vi/v2/dropdowns/api/orders",
+                          "vi/v2/dropdowns/api/payments"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "dropdown": "Dropdown Partner Hub",
+                    "icon": "handshake",
+                    "groups": [
+                      {
+                        "group": "Tổng quan",
+                        "icon": "house",
+                        "pages": [
+                          "vi/v2/dropdowns/partners/overview"
+                        ]
+                      },
+                      {
+                        "group": "Đối tác",
+                        "icon": "address-book",
+                        "pages": [
+                          "vi/v2/dropdowns/partners/directory"
+                        ]
+                      },
+                      {
+                        "group": "Build",
+                        "icon": "hammer",
+                        "pages": [
+                          "vi/v2/dropdowns/partners/build",
+                          "vi/v2/dropdowns/partners/submit"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Sản phẩm đơn giản (không menu)",
+                "description": "Trình chuyển sản phẩm đi thẳng vào tài liệu — không có menu sản phẩm",
+                "icon": "box",
+                "groups": [
+                  {
+                    "group": "Bắt đầu",
+                    "icon": "play",
+                    "pages": [
+                      "vi/v2/plain/overview",
+                      "vi/v2/plain/getting-started"
+                    ]
+                  },
+                  {
+                    "group": "Trợ giúp",
+                    "icon": "circle-question",
+                    "pages": [
+                      "vi/v2/plain/faq"
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Product + Menu: Core API",
+                "description": "Trình chuyển sản phẩm mở rộng thành menu sản phẩm nhiều cột",
+                "icon": "api",
+                "menu": [
+                  {
+                    "item": "Menu: Guides FOR MEN",
+                    "icon": "book-open",
+                    "description": "Cột menu sản phẩm — Guides",
+                    "groups": [
+                      {
+                        "group": "Bắt đầu",
+                        "icon": "flag",
+                        "pages": [
+                          "vi/v2/menu-core/guides/intro",
+                          "vi/v2/menu-core/guides/auth",
+                          "vi/v2/menu-core/guides/webhooks"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "item": "Menu: API reference FOR ALL",
+                    "icon": "square-terminal",
+                    "description": "Cột menu sản phẩm — API reference",
+                    "groups": [
+                      {
+                        "group": "Endpoints",
+                        "icon": "code",
+                        "pages": [
+                          "vi/v2/menu-core/api/overview",
+                          "vi/v2/menu-core/api/users",
+                          "vi/v2/menu-core/api/orders"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "item": "Menu: SDKs",
+                    "icon": "code",
+                    "description": "Cột menu sản phẩm — SDKs",
+                    "pages": [
+                      "vi/v2/menu-core/sdks/node",
+                      "vi/v2/menu-core/sdks/python"
+                    ]
+                  },
+                  {
+                    "item": "Menu: Changelog (external)",
+                    "icon": "list",
+                    "href": "https://mintlify.com/blog"
+                  }
+                ]
+              },
+              {
+                "product": "Product + Menu: Analytics",
+                "description": "Ví dụ menu sản phẩm thứ hai — mở trình chuyển để mở rộng",
+                "icon": "chart-line",
+                "menu": [
+                  {
+                    "item": "Menu: Guides",
+                    "icon": "book",
+                    "pages": [
+                      "vi/v2/menu-analytics/guides/intro",
+                      "vi/v2/menu-analytics/guides/events"
+                    ]
+                  },
+                  {
+                    "item": "Menu: Query API",
+                    "icon": "database",
+                    "pages": [
+                      "vi/v2/menu-analytics/api/overview",
+                      "vi/v2/menu-analytics/api/queries"
+                    ]
+                  },
+                  {
+                    "item": "Menu: Dashboards",
+                    "icon": "chart-bar",
+                    "pages": [
+                      "vi/v2/menu-analytics/dashboards/overview",
+                      "vi/v2/menu-analytics/dashboards/share"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v1.0",
+            "tag": "Legacy",
+            "products": [
+              {
+                "product": "Sản phẩm Tabs",
+                "description": "Tabs ngang phía trên — so sánh với Dropdowns Product",
+                "icon": "browser",
+                "groups": [
+                  {
+                    "group": "Legacy",
+                    "icon": "clock-rotate-left",
+                    "pages": [
+                      "vi/v1/overview",
+                      "vi/v1/migration"
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Sản phẩm Dropdowns",
+                "description": "Trình chuyển dropdown thanh bên — so sánh với Tabs Product",
+                "icon": "caret-down",
+                "pages": [
+                  "vi/v1/overview"
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v3.0",
+            "tag": "Future",
+            "products": [
+              {
+                "product": "Sản phẩm Tabs",
+                "description": "Tabs ngang phía trên — so sánh với Dropdowns Product",
+                "icon": "browser",
+                "groups": [
+                  {
+                    "group": "Xem trước Future",
+                    "icon": "telescope",
+                    "pages": [
+                      "vi/v3/overview",
+                      "vi/v3/roadmap",
+                      "vi/v3/beta-features",
+                      "vi/v3/breaking-changes"
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Sản phẩm Dropdowns",
+                "description": "Trình chuyển dropdown thanh bên — so sánh với Tabs Product",
+                "icon": "caret-down",
+                "pages": [
+                  "vi/v3/overview",
+                  "vi/v3/roadmap"
+                ]
+              },
+              {
+                "product": "Product + Menu: Core API",
+                "description": "Trình chuyển sản phẩm mở rộng thành menu sản phẩm nhiều cột",
+                "icon": "api",
+                "menu": [
+                  {
+                    "item": "Menu: Guides",
+                    "icon": "book-open",
+                    "pages": [
+                      "vi/v3/overview",
+                      "vi/v3/roadmap"
+                    ]
+                  },
+                  {
+                    "item": "Menu: API reference",
+                    "icon": "square-terminal",
+                    "pages": [
+                      "vi/v3/beta-features",
+                      "vi/v3/breaking-changes"
                     ]
                   }
                 ]
