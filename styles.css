@@ -1,0 +1,108 @@
+/* Earth-tone surfaces — scoped so light/dark stay readable */
+
+/* ---------- Light mode ---------- */
+html:not(.dark) #background-color,
+html:not(.dark) body {
+  background-color: #e8eddf !important;
+}
+
+html:not(.dark) #navbar {
+  background: #dfe6d4 !important;
+  border-bottom: 1px solid #b7c4a8 !important;
+}
+
+html:not(.dark) #sidebar,
+html:not(.dark) #sidebar-content,
+html:not(.dark) #mobile-nav,
+html:not(.dark) #mobile-nav-content {
+  background: #d5deca !important;
+}
+
+html:not(.dark) #footer,
+html:not(.dark) footer {
+  background: #dfe6d4 !important;
+  border-top: 1px solid #b7c4a8 !important;
+}
+
+html:not(.dark) #page-title,
+html:not(.dark) h1,
+html:not(.dark) h2,
+html:not(.dark) h3 {
+  color: #1e3a2f !important;
+}
+
+html:not(.dark) #content,
+html:not(.dark) #content p,
+html:not(.dark) #content li {
+  color: #2f3b2f !important;
+}
+
+html:not(.dark) #content a {
+  color: #2c5a34 !important;
+}
+
+html:not(.dark) #topbar-cta-button {
+  background: #355e3b !important;
+  color: #f3f6ec !important;
+}
+
+/* ---------- Dark mode ---------- */
+html.dark #background-color,
+html.dark body {
+  background-color: #0e1712 !important;
+}
+
+html.dark #navbar {
+  background: #121f18 !important;
+  border-bottom: 1px solid #2a3d31 !important;
+}
+
+html.dark #sidebar,
+html.dark #sidebar-content,
+html.dark #mobile-nav,
+html.dark #mobile-nav-content {
+  background: #101c16 !important;
+}
+
+html.dark #content-area,
+html.dark #content,
+html.dark #body-content,
+html.dark #table-of-contents,
+html.dark #table-of-contents-content {
+  background-color: transparent !important;
+}
+
+html.dark #footer,
+html.dark footer {
+  background: #121f18 !important;
+  border-top: 1px solid #2a3d31 !important;
+}
+
+html.dark #page-title,
+html.dark h1,
+html.dark h2,
+html.dark h3 {
+  color: #eef5e8 !important;
+}
+
+html.dark #content,
+html.dark #content p,
+html.dark #content li {
+  color: #c9d6c0 !important;
+}
+
+/* Links / next-page accents need high contrast on dark green */
+html.dark #content a,
+html.dark #pagination a {
+  color: #c4e09a !important;
+}
+
+html.dark #content a:hover,
+html.dark #pagination a:hover {
+  color: #dff0c0 !important;
+}
+
+html.dark #topbar-cta-button {
+  background: #4f7d58 !important;
+  color: #f5faf0 !important;
+}

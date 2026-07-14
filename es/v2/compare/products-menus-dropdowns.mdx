@@ -1,0 +1,42 @@
+---
+title: "Products vs Product menus vs Dropdowns"
+description: "Navigation demo page."
+---
+
+> Idioma activo: **Español**.
+
+These three features can all feel like "dropdowns," but they live in **different places** in the UI.
+
+## 1. Products (product switcher)
+
+- **Where:** product switcher (usually near the top / logo area)
+- **What it switches:** entire product documentation sites under one Mintlify deployment
+- **Mental model:** Payments vs Identity vs Analytics — separate products, separate docs trees
+
+On this demo, open the **product switcher** and look for names like **Tabs Product**, **Dropdowns Product**, **Plain Product**, and the **Product + Menu** entries.
+
+## 2. Product menus (`menu` on a product)
+
+- **Where:** still the **product switcher**
+- **What changes:** instead of jumping straight into one product, that product entry opens a **multi-column menu** (Guides / API / Changelog / …)
+- **Mental model:** one product, several front doors surfaced from the switcher
+
+Try **Product + Menu: Core API** or **Product + Menu: Analytics** in the product switcher — those entries expand into labeled menu items.
+
+## 3. Dropdowns (sidebar navigation pattern)
+
+- **Where:** **top of the left sidebar**, inside a product
+- **What it switches:** sections *within* the current product (Docs / API Spec / Partners)
+- **Mental model:** like Tabs, but compact — peers hide inside a sidebar menu instead of a horizontal tab bar
+
+Open **Dropdowns Product**, then use the sidebar dropdown. That control is **not** the product switcher.
+
+## Quick contrast
+
+| Feature | UI location | Switches between | Config key |
+| --- | --- | --- | --- |
+| **Products** | Product switcher | Whole products | `products[]` |
+| **Product menus** | Product switcher (expanded entry) | Front-doors *inside* one product | `products[].menu[]` |
+| **Dropdowns** | Top of sidebar | Sections within current product | `dropdowns[]` |
+
+If two controls look similar, check **where** the menu appeared: product switcher vs sidebar.
