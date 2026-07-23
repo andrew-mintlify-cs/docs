@@ -15,11 +15,118 @@ Use this product for calls, transcripts, and realtime audio sessions.
 
 Start an outbound session and stream audio to your application.
 
+#### Outbound dialing
+
+Provide a destination number and start the session from your backend.
+
+##### Destination formats
+
+Use E.164 numbers for outbound destinations.
+
+###### Example format
+
+`+14155552671` is a valid E.164 example shape.
+
+##### Caller ID
+
+Choose a provisioned number your project owns.
+
+###### Number checks
+
+Confirm the number is enabled for outbound Voice before dialing.
+
+#### Realtime audio stream
+
+Connect your client to the session stream to send and receive audio.
+
+##### Stream transport
+
+Follow the Voice SDK transport for your platform.
+
+###### Connection tip
+
+Open the stream after the session reports ready.
+
+##### Audio codecs
+
+Prefer the codec recommended for your region and client.
+
+###### Fallback codec
+
+Keep a secondary codec for constrained networks.
+
 ### Capture transcripts
 
 Store transcripts from completed sessions for search and review.
 
+#### Automatic transcription
+
+Enable transcription so completed calls produce text you can store.
+
+##### Language settings
+
+Set the expected spoken language for better accuracy.
+
+###### Default language
+
+Use your primary support language as the project default.
+
+##### Retention window
+
+Decide how long transcripts stay available.
+
+###### Compliance note
+
+Align retention with your privacy policy.
+
+#### Search past sessions
+
+Query transcripts by session ID, time range, or keyword.
+
+##### Session ID lookup
+
+Use the session ID when you need one exact call.
+
+###### Fast path
+
+ID lookup is the quickest way to open a known transcript.
+
+##### Keyword search
+
+Search transcript text when you do not know the session ID.
+
+###### Search tip
+
+Prefer distinctive phrases over very short tokens.
+
 ## Related pages
 
+Cross-link to nearby docs when you continue setup or switch products.
+
+### Continue in Voice
+
+#### Voice quickstart
+
+Place a first test call after you review these concepts.
+
+##### Quickstart link
+
 - [Voice quickstart](/en/v4/voice/quickstart) — place your first call
-- [Storage overview](/en/v4/storage/overview) — switch products to open Storage docs
+
+###### What you will do
+
+Start a session, confirm status, and read the transcript.
+
+### Switch to Storage
+
+#### Storage overview
+
+Open Storage when you want the other product path.
+
+##### Overview link
+
+- [Storage overview](/en/v4/storage/overview) — open Storage docs in the product switcher
+
+###### Product switcher tip
+
+Voice and Storage stay separate products in the switcher.

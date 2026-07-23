@@ -15,11 +15,118 @@ Use this product for buckets, objects, and access policies.
 
 Create buckets, upload objects, and manage prefixes from the Storage API.
 
+#### Bucket naming rules
+
+Use lowercase letters, numbers, and hyphens. Keep names unique within your project.
+
+##### Allowed characters
+
+Stick to `a-z`, `0-9`, and `-`.
+
+###### Length limits
+
+Keep bucket names short enough to scan in lists and logs.
+
+##### Reserved names
+
+Avoid names that collide with internal system prefixes.
+
+###### Naming tip
+
+Prefix demo buckets with `demo-` so they are easy to clean up.
+
+#### Object keys and prefixes
+
+Organize objects with slash-separated prefixes so you can list and filter by folder.
+
+##### Prefix design
+
+Group related objects under a shared prefix such as `reports/2026/`.
+
+###### Listing by prefix
+
+Pass the prefix when you list objects to shrink the result set.
+
+##### Key uniqueness
+
+Each key must be unique within a bucket.
+
+###### Overwrite behavior
+
+Uploading to an existing key replaces the previous object version unless versioning is enabled.
+
 ### Access policies
 
 Control who can read and write objects with scoped credentials.
 
+#### Read-only credentials
+
+Issue credentials that can list and download objects but cannot upload or delete.
+
+##### Reader roles
+
+Grant read access to apps that only need to fetch files.
+
+###### Audit readers
+
+Review read-only keys quarterly and revoke unused ones.
+
+##### Download limits
+
+Throttle or monitor large downloads from read-only keys.
+
+###### Rate signals
+
+Watch for sudden spikes that may indicate a leaked key.
+
+#### Write credentials
+
+Issue credentials that can upload and overwrite objects in a specific bucket.
+
+##### Writer roles
+
+Scope write keys to one bucket whenever possible.
+
+###### Blast radius
+
+Narrow scopes limit damage if a write key leaks.
+
+##### Delete permissions
+
+Separate delete rights from routine upload rights.
+
+###### Safer default
+
+Omit delete from day-to-day write keys.
+
 ## Related pages
 
+Cross-link to nearby docs when you switch products or continue setup.
+
+### Continue in Storage
+
+#### Storage quickstart
+
+Upload your first object after you understand the concepts.
+
+##### Quickstart link
+
 - [Storage quickstart](/en/v4/storage/quickstart) — upload your first object
-- [Voice overview](/en/v4/voice/overview) — switch products to open Voice docs
+
+###### What you will do
+
+Create a bucket, upload a file, and verify the object key.
+
+### Switch to Voice
+
+#### Voice overview
+
+Open Voice when you want the other product path.
+
+##### Overview link
+
+- [Voice overview](/en/v4/voice/overview) — open Voice docs in the product switcher
+
+###### Product switcher tip
+
+Storage and Voice stay separate products in the switcher.

@@ -11,15 +11,158 @@ Use the product switcher to open **Voice** as a different product.
 
 Confirm you have a project and an API key with Storage write access.
 
+### Project setup
+
+Create or select a project before you call the Storage API.
+
+#### Choose a region
+
+Pick the region closest to your users to reduce upload and download latency.
+
+##### Preferred regions
+
+Start with the region nearest your primary traffic.
+
+###### Latency checklist
+
+Measure round-trip time from your app hosts before you lock a default region.
+
+##### Fallback regions
+
+Keep a secondary region ready if the primary region is unavailable.
+
+###### Failover notes
+
+Document when to switch regions and who owns the cutover.
+
+#### Create an API key
+
+Generate an API key with Storage write scope and store it as an environment variable.
+
+##### Key scopes
+
+Limit the key to the buckets this quickstart needs.
+
+###### Scope example
+
+Use write access for one test bucket only while you follow this guide.
+
+##### Key storage
+
+Keep the key out of source control.
+
+###### Local env file
+
+Store the key in `.env.local` and load it in your shell before API calls.
+
 ### Create a bucket
 
 Create an empty bucket before you upload objects.
+
+#### Set a bucket name
+
+Choose a unique name that matches your naming rules.
+
+##### Naming pattern
+
+Use `team-env-purpose`, for example `docs-dev-uploads`.
+
+###### Invalid names
+
+Avoid uppercase letters, spaces, and underscore-only names.
+
+##### Name collisions
+
+If create fails, pick a new name and retry.
+
+###### Collision checklist
+
+Confirm the name is unused in the project, then recreate the bucket.
+
+#### Confirm the empty bucket
+
+List buckets and verify the new bucket appears with zero objects.
+
+##### List response
+
+Check that `objectCount` is `0` for the new bucket.
+
+###### Empty-state tip
+
+If the count is not zero, you may be looking at a different bucket.
 
 ### Upload an object
 
 Send a file to the bucket and verify it appears in the object list.
 
+#### Pick a local file
+
+Use a small test file so you can confirm the upload quickly.
+
+##### File size
+
+Keep the first upload under 1 MB.
+
+###### Sample file
+
+A short text file is enough for this quickstart.
+
+##### Content type
+
+Set a content type that matches the file.
+
+###### Text uploads
+
+Use `text/plain` for `.txt` files.
+
+#### Verify the object key
+
+List objects in the bucket and confirm the uploaded key matches what you sent.
+
+##### Exact key match
+
+Compare the returned key to the key in your upload request.
+
+###### Mismatch fix
+
+Re-upload with an explicit key if the API assigned an unexpected name.
+
+##### Download check
+
+Download the object once to confirm bytes match the local file.
+
+###### Integrity tip
+
+Compare file size locally and in the object metadata.
+
 ## Next steps
 
+Move on to concepts or try the other product.
+
+### Learn Storage concepts
+
+#### Storage overview
+
+Read the overview for buckets, objects, and access policies.
+
+##### Overview link
+
 - [Storage overview](/en/v4/storage/overview) — concepts for buckets and policies
+
+###### Why read it next
+
+It explains policy choices you will need after the first upload.
+
+### Try Voice
+
+#### Voice quickstart
+
+Switch products when you want to exercise the Voice path.
+
+##### Quickstart link
+
 - [Voice quickstart](/en/v4/voice/quickstart) — try the Voice product quickstart
+
+###### Product switcher tip
+
+Use the product switcher to leave Storage and open Voice.

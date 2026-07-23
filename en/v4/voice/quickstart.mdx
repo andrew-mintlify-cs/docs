@@ -6,3 +6,163 @@ description: "Navigation demo quickstart for the Voice product."
 You are on the **Voice** quickstart.
 
 Use the product switcher to open **Storage** as a different product.
+
+## Before you start
+
+Confirm you have a project and an API key with Voice call access.
+
+### Project setup
+
+Create or select a project before you place a call.
+
+#### Choose a phone number
+
+Provision or select a Voice number your project can use for outbound calls.
+
+##### Number inventory
+
+List numbers already attached to the project.
+
+###### Pick one number
+
+Choose a single outbound number for this quickstart.
+
+##### Number capabilities
+
+Confirm outbound calling is enabled.
+
+###### Capability check
+
+If outbound is disabled, enable it before the first dial.
+
+#### Create an API key
+
+Generate an API key with Voice scope and store it as an environment variable.
+
+##### Key scopes
+
+Limit the key to call create and transcript read.
+
+###### Scope example
+
+Omit unrelated product scopes while you test Voice.
+
+##### Key storage
+
+Keep the key out of source control.
+
+###### Local env file
+
+Store the key in `.env.local` and load it before API calls.
+
+### Place your first call
+
+Start a short test call so you can verify audio and session status.
+
+#### Start the session
+
+Create an outbound session with a destination number and your callback URL.
+
+##### Request body
+
+Include from number, to number, and webhook URL.
+
+###### Minimal payload
+
+Those three fields are enough for a first successful dial.
+
+##### Session response
+
+Save the session ID from the create response.
+
+###### ID tip
+
+You need the session ID for status and transcript checks.
+
+#### Confirm call status
+
+Poll or webhook-listen until the session reports connected or completed.
+
+##### Polling
+
+Query session status every few seconds during the test.
+
+###### Stop condition
+
+Stop polling when status is `completed` or `failed`.
+
+##### Webhooks
+
+Prefer webhooks once your endpoint is ready.
+
+###### Webhook tip
+
+Return `200` quickly and process events asynchronously.
+
+### Review the transcript
+
+After the call ends, fetch the transcript for that session.
+
+#### Open the session record
+
+Look up the session by ID in the Voice API or dashboard.
+
+##### API lookup
+
+GET the session resource with the saved session ID.
+
+###### Not-found handling
+
+If the session is missing, confirm you are in the right project.
+
+#### Read transcript text
+
+Confirm the transcript contains the expected spoken content from the test call.
+
+##### Text presence
+
+Check that transcript text is non-empty.
+
+###### Empty transcript
+
+If text is empty, confirm transcription was enabled for the session.
+
+##### Quality spot-check
+
+Skim for obvious recognition errors on key phrases.
+
+###### Retry tip
+
+Place a second short call if the first transcript is unusable.
+
+## Next steps
+
+Move on to concepts or try the other product.
+
+### Learn Voice concepts
+
+#### Voice overview
+
+Read the overview for calls, streams, and transcripts.
+
+##### Overview link
+
+- [Voice overview](/en/v4/voice/overview) — concepts for calls and transcripts
+
+###### Why read it next
+
+It covers dialing and transcript options beyond this quickstart.
+
+### Try Storage
+
+#### Storage quickstart
+
+Switch products when you want to exercise the Storage path.
+
+##### Quickstart link
+
+- [Storage quickstart](/en/v4/storage/quickstart) — try the Storage product quickstart
+
+###### Product switcher tip
+
+Use the product switcher to leave Voice and open Storage.
