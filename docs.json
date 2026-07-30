@@ -65,7 +65,7 @@
             "products": [
               {
                 "product": "Tabs Product",
-                "description": "Sidebar dropdown pattern \u2014 NOT the product switcher",
+                "description": "Sidebar dropdown pattern — NOT the product switcher",
                 "icon": "browser",
                 "tabs": [
                   {
@@ -230,7 +230,7 @@
               },
               {
                 "product": "Dropdowns Product",
-                "description": "Sidebar dropdown pattern \u2014 NOT the product switcher",
+                "description": "Sidebar dropdown pattern — NOT the product switcher",
                 "icon": "caret-down",
                 "dropdowns": [
                   {
@@ -324,7 +324,7 @@
               },
               {
                 "product": "Plain Product (no menu)",
-                "description": "Product switcher jumps straight into docs \u2014 no product menu",
+                "description": "Product switcher jumps straight into docs — no product menu",
                 "icon": "box",
                 "groups": [
                   {
@@ -346,84 +346,96 @@
               },
               {
                 "product": "Product + Menu: Core API",
-                "description": "Product switcher expands into a multi-column product menu",
+                "description": "Product with a tab that contains a multi-column menu",
                 "icon": "api",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides FOR MEN",
-                    "icon": "book-open",
-                    "description": "Product menu column \u2014 Guides",
-                    "groups": [
+                    "tab": "Menu",
+                    "icon": "api",
+                    "menu": [
                       {
-                        "group": "Getting started",
-                        "icon": "flag",
-                        "pages": [
-                          "en/v2/menu-core/guides/intro",
-                          "en/v2/menu-core/guides/auth",
-                          "en/v2/menu-core/guides/webhooks"
+                        "item": "Menu: Guides FOR MEN",
+                        "icon": "book-open",
+                        "description": "Product menu column — Guides",
+                        "groups": [
+                          {
+                            "group": "Getting started",
+                            "icon": "flag",
+                            "pages": [
+                              "en/v2/menu-core/guides/intro",
+                              "en/v2/menu-core/guides/auth",
+                              "en/v2/menu-core/guides/webhooks"
+                            ]
+                          }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "item": "Menu: API reference FOR ALL",
-                    "icon": "square-terminal",
-                    "description": "Product menu column \u2014 API reference",
-                    "groups": [
+                      },
                       {
-                        "group": "Endpoints",
+                        "item": "Menu: API reference FOR ALL",
+                        "icon": "square-terminal",
+                        "description": "Product menu column — API reference",
+                        "groups": [
+                          {
+                            "group": "Endpoints",
+                            "icon": "code",
+                            "pages": [
+                              "en/v2/menu-core/api/overview",
+                              "en/v2/menu-core/api/users",
+                              "en/v2/menu-core/api/orders"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "item": "Menu: SDKs",
                         "icon": "code",
+                        "description": "Product menu column — SDKs",
                         "pages": [
-                          "en/v2/menu-core/api/overview",
-                          "en/v2/menu-core/api/users",
-                          "en/v2/menu-core/api/orders"
+                          "en/v2/menu-core/sdks/node",
+                          "en/v2/menu-core/sdks/python"
                         ]
+                      },
+                      {
+                        "item": "Menu: Changelog (external)",
+                        "icon": "list",
+                        "href": "https://mintlify.com/blog"
                       }
                     ]
-                  },
-                  {
-                    "item": "Menu: SDKs",
-                    "icon": "code",
-                    "description": "Product menu column \u2014 SDKs",
-                    "pages": [
-                      "en/v2/menu-core/sdks/node",
-                      "en/v2/menu-core/sdks/python"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Changelog (external)",
-                    "icon": "list",
-                    "href": "https://mintlify.com/blog"
                   }
                 ]
               },
               {
                 "product": "Product + Menu: Analytics",
-                "description": "Second product menu example \u2014 open switcher to expand",
+                "description": "Second example — product with a tab menu",
                 "icon": "chart-line",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides",
-                    "icon": "book",
-                    "pages": [
-                      "en/v2/menu-analytics/guides/intro",
-                      "en/v2/menu-analytics/guides/events"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Query API",
-                    "icon": "database",
-                    "pages": [
-                      "en/v2/menu-analytics/api/overview",
-                      "en/v2/menu-analytics/api/queries"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Dashboards",
-                    "icon": "chart-bar",
-                    "pages": [
-                      "en/v2/menu-analytics/dashboards/overview",
-                      "en/v2/menu-analytics/dashboards/share"
+                    "tab": "Menu",
+                    "icon": "chart-line",
+                    "menu": [
+                      {
+                        "item": "Menu: Guides",
+                        "icon": "book",
+                        "pages": [
+                          "en/v2/menu-analytics/guides/intro",
+                          "en/v2/menu-analytics/guides/events"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Query API",
+                        "icon": "database",
+                        "pages": [
+                          "en/v2/menu-analytics/api/overview",
+                          "en/v2/menu-analytics/api/queries"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Dashboards",
+                        "icon": "chart-bar",
+                        "pages": [
+                          "en/v2/menu-analytics/dashboards/overview",
+                          "en/v2/menu-analytics/dashboards/share"
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -445,7 +457,7 @@
                 "products": [
                   {
                     "product": "Tabs Product",
-                    "description": "Horizontal top tabs \u2014 compare with Dropdowns Product",
+                    "description": "Horizontal top tabs — compare with Dropdowns Product",
                     "icon": "browser",
                     "groups": [
                       {
@@ -460,7 +472,7 @@
                   },
                   {
                     "product": "Dropdowns Product",
-                    "description": "Sidebar dropdown switcher \u2014 compare with Tabs Product",
+                    "description": "Sidebar dropdown switcher — compare with Tabs Product",
                     "icon": "caret-down",
                     "pages": [
                       "en/v1/overview"
@@ -485,7 +497,7 @@
                 "products": [
                   {
                     "product": "Tabs Product",
-                    "description": "Horizontal top tabs \u2014 compare with Dropdowns Product",
+                    "description": "Horizontal top tabs — compare with Dropdowns Product",
                     "icon": "browser",
                     "groups": [
                       {
@@ -502,7 +514,7 @@
                   },
                   {
                     "product": "Dropdowns Product",
-                    "description": "Sidebar dropdown switcher \u2014 compare with Tabs Product",
+                    "description": "Sidebar dropdown switcher — compare with Tabs Product",
                     "icon": "caret-down",
                     "pages": [
                       "en/v3/overview",
@@ -511,23 +523,29 @@
                   },
                   {
                     "product": "Product + Menu: Core API",
-                    "description": "Product switcher expands into a multi-column product menu",
+                    "description": "Product with a tab that contains a multi-column menu",
                     "icon": "api",
-                    "menu": [
+                    "tabs": [
                       {
-                        "item": "Menu: Guides",
-                        "icon": "book-open",
-                        "pages": [
-                          "en/v3/overview",
-                          "en/v3/roadmap"
-                        ]
-                      },
-                      {
-                        "item": "Menu: API reference",
-                        "icon": "square-terminal",
-                        "pages": [
-                          "en/v3/beta-features",
-                          "en/v3/breaking-changes"
+                        "tab": "Menu",
+                        "icon": "api",
+                        "menu": [
+                          {
+                            "item": "Menu: Guides",
+                            "icon": "book-open",
+                            "pages": [
+                              "en/v3/overview",
+                              "en/v3/roadmap"
+                            ]
+                          },
+                          {
+                            "item": "Menu: API reference",
+                            "icon": "square-terminal",
+                            "pages": [
+                              "en/v3/beta-features",
+                              "en/v3/breaking-changes"
+                            ]
+                          }
                         ]
                       }
                     ]
@@ -592,7 +610,7 @@
             "products": [
               {
                 "product": "Producto Tabs",
-                "description": "Dropdown del sidebar \u2014 NO es el product switcher",
+                "description": "Dropdown del sidebar — NO es el product switcher",
                 "icon": "browser",
                 "tabs": [
                   {
@@ -605,7 +623,7 @@
                     ]
                   },
                   {
-                    "tab": "Gu\u00eda de instalaci\u00f3n",
+                    "tab": "Guía de instalación",
                     "icon": "download",
                     "anchors": [
                       {
@@ -621,7 +639,7 @@
                             ]
                           },
                           {
-                            "group": "Pasos de instalaci\u00f3n",
+                            "group": "Pasos de instalación",
                             "icon": "list-ol",
                             "pages": [
                               "es/v2/tabs/install/cli",
@@ -732,7 +750,7 @@
                     ]
                   },
                   {
-                    "tab": "Pesta\u00f1a externa",
+                    "tab": "Pestaña externa",
                     "icon": "arrow-up-right",
                     "href": "https://www.mintlify.com/docs/organize/navigation"
                   }
@@ -740,7 +758,7 @@
               },
               {
                 "product": "Producto Dropdowns",
-                "description": "Dropdown del sidebar \u2014 NO es el product switcher",
+                "description": "Dropdown del sidebar — NO es el product switcher",
                 "icon": "caret-down",
                 "dropdowns": [
                   {
@@ -764,7 +782,7 @@
                         ]
                       },
                       {
-                        "group": "Gu\u00edas pr\u00e1cticas",
+                        "group": "Guías prácticas",
                         "icon": "list-check",
                         "pages": [
                           "es/v2/dropdowns/docs/guides-onboarding",
@@ -785,7 +803,7 @@
                         ]
                       },
                       {
-                        "group": "B\u00e1sicos del spec",
+                        "group": "Básicos del spec",
                         "icon": "screwdriver-wrench",
                         "pages": [
                           "es/v2/dropdowns/api/auth",
@@ -834,7 +852,7 @@
               },
               {
                 "product": "Producto simple (sin menu)",
-                "description": "El product switcher entra directo \u2014 sin product menu",
+                "description": "El product switcher entra directo — sin product menu",
                 "icon": "box",
                 "groups": [
                   {
@@ -856,84 +874,96 @@
               },
               {
                 "product": "Product + Menu: Core API",
-                "description": "El product switcher se expande en un men\u00fa multi-columna",
+                "description": "Producto con una pestaña que contiene un menú multi-columna",
                 "icon": "api",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides",
-                    "icon": "book-open",
-                    "description": "Product menu column \u2014 Guides",
-                    "groups": [
+                    "tab": "Menú",
+                    "icon": "api",
+                    "menu": [
                       {
-                        "group": "Primeros pasos",
-                        "icon": "flag",
-                        "pages": [
-                          "es/v2/menu-core/guides/intro",
-                          "es/v2/menu-core/guides/auth",
-                          "es/v2/menu-core/guides/webhooks"
+                        "item": "Menu: Guides",
+                        "icon": "book-open",
+                        "description": "Product menu column — Guides",
+                        "groups": [
+                          {
+                            "group": "Primeros pasos",
+                            "icon": "flag",
+                            "pages": [
+                              "es/v2/menu-core/guides/intro",
+                              "es/v2/menu-core/guides/auth",
+                              "es/v2/menu-core/guides/webhooks"
+                            ]
+                          }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "item": "Menu: API reference",
-                    "icon": "square-terminal",
-                    "description": "Product menu column \u2014 API reference",
-                    "groups": [
+                      },
                       {
-                        "group": "Endpoints",
+                        "item": "Menu: API reference",
+                        "icon": "square-terminal",
+                        "description": "Product menu column — API reference",
+                        "groups": [
+                          {
+                            "group": "Endpoints",
+                            "icon": "code",
+                            "pages": [
+                              "es/v2/menu-core/api/overview",
+                              "es/v2/menu-core/api/users",
+                              "es/v2/menu-core/api/orders"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "item": "Menu: SDKs",
                         "icon": "code",
+                        "description": "Product menu column — SDKs",
                         "pages": [
-                          "es/v2/menu-core/api/overview",
-                          "es/v2/menu-core/api/users",
-                          "es/v2/menu-core/api/orders"
+                          "es/v2/menu-core/sdks/node",
+                          "es/v2/menu-core/sdks/python"
                         ]
+                      },
+                      {
+                        "item": "Menu: Changelog (external)",
+                        "icon": "list",
+                        "href": "https://mintlify.com/blog"
                       }
                     ]
-                  },
-                  {
-                    "item": "Menu: SDKs",
-                    "icon": "code",
-                    "description": "Product menu column \u2014 SDKs",
-                    "pages": [
-                      "es/v2/menu-core/sdks/node",
-                      "es/v2/menu-core/sdks/python"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Changelog (external)",
-                    "icon": "list",
-                    "href": "https://mintlify.com/blog"
                   }
                 ]
               },
               {
                 "product": "Product + Menu: Analytics",
-                "description": "Segundo ejemplo de product menu",
+                "description": "Segundo ejemplo — producto con menú en una pestaña",
                 "icon": "chart-line",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides",
-                    "icon": "book",
-                    "pages": [
-                      "es/v2/menu-analytics/guides/intro",
-                      "es/v2/menu-analytics/guides/events"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Query API",
-                    "icon": "database",
-                    "pages": [
-                      "es/v2/menu-analytics/api/overview",
-                      "es/v2/menu-analytics/api/queries"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Dashboards",
-                    "icon": "chart-bar",
-                    "pages": [
-                      "es/v2/menu-analytics/dashboards/overview",
-                      "es/v2/menu-analytics/dashboards/share"
+                    "tab": "Menú",
+                    "icon": "chart-line",
+                    "menu": [
+                      {
+                        "item": "Menu: Guides",
+                        "icon": "book",
+                        "pages": [
+                          "es/v2/menu-analytics/guides/intro",
+                          "es/v2/menu-analytics/guides/events"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Query API",
+                        "icon": "database",
+                        "pages": [
+                          "es/v2/menu-analytics/api/overview",
+                          "es/v2/menu-analytics/api/queries"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Dashboards",
+                        "icon": "chart-bar",
+                        "pages": [
+                          "es/v2/menu-analytics/dashboards/overview",
+                          "es/v2/menu-analytics/dashboards/share"
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -950,12 +980,12 @@
                 "href": "/en/v2/capybara-embeds"
               },
               {
-                "anchor": "Documentaci\u00f3n",
+                "anchor": "Documentación",
                 "icon": "book-open",
                 "products": [
                   {
                     "product": "Producto Tabs",
-                    "description": "Tabs horizontales \u2014 comp\u00e1ralo con Dropdowns",
+                    "description": "Tabs horizontales — compáralo con Dropdowns",
                     "icon": "browser",
                     "groups": [
                       {
@@ -970,7 +1000,7 @@
                   },
                   {
                     "product": "Producto Dropdowns",
-                    "description": "Desplegable del sidebar \u2014 comp\u00e1ralo con Tabs",
+                    "description": "Desplegable del sidebar — compáralo con Tabs",
                     "icon": "caret-down",
                     "pages": [
                       "es/v1/overview"
@@ -990,12 +1020,12 @@
                 "href": "/en/v2/capybara-embeds"
               },
               {
-                "anchor": "Documentaci\u00f3n",
+                "anchor": "Documentación",
                 "icon": "book-open",
                 "products": [
                   {
                     "product": "Producto Tabs",
-                    "description": "Tabs horizontales \u2014 comp\u00e1ralo con Dropdowns",
+                    "description": "Tabs horizontales — compáralo con Dropdowns",
                     "icon": "browser",
                     "groups": [
                       {
@@ -1012,7 +1042,7 @@
                   },
                   {
                     "product": "Producto Dropdowns",
-                    "description": "Desplegable del sidebar \u2014 comp\u00e1ralo con Tabs",
+                    "description": "Desplegable del sidebar — compáralo con Tabs",
                     "icon": "caret-down",
                     "pages": [
                       "es/v3/overview",
@@ -1021,23 +1051,29 @@
                   },
                   {
                     "product": "Product + Menu: Core API",
-                    "description": "El product switcher se expande en un men\u00fa multi-columna",
+                    "description": "Producto con una pestaña que contiene un menú multi-columna",
                     "icon": "api",
-                    "menu": [
+                    "tabs": [
                       {
-                        "item": "Menu: Guides",
-                        "icon": "book-open",
-                        "pages": [
-                          "es/v3/overview",
-                          "es/v3/roadmap"
-                        ]
-                      },
-                      {
-                        "item": "Menu: API reference",
-                        "icon": "square-terminal",
-                        "pages": [
-                          "es/v3/beta-features",
-                          "es/v3/breaking-changes"
+                        "tab": "Menú",
+                        "icon": "api",
+                        "menu": [
+                          {
+                            "item": "Menu: Guides",
+                            "icon": "book-open",
+                            "pages": [
+                              "es/v3/overview",
+                              "es/v3/roadmap"
+                            ]
+                          },
+                          {
+                            "item": "Menu: API reference",
+                            "icon": "square-terminal",
+                            "pages": [
+                              "es/v3/beta-features",
+                              "es/v3/breaking-changes"
+                            ]
+                          }
                         ]
                       }
                     ]
@@ -1058,7 +1094,7 @@
             "products": [
               {
                 "product": "Produit Tabs",
-                "description": "Dropdown de la sidebar \u2014 PAS le product switcher",
+                "description": "Dropdown de la sidebar — PAS le product switcher",
                 "icon": "browser",
                 "tabs": [
                   {
@@ -1079,7 +1115,7 @@
                         "icon": "wrench",
                         "groups": [
                           {
-                            "group": "Aper\u00e7u",
+                            "group": "Aperçu",
                             "icon": "circle-info",
                             "pages": [
                               "fr/v2/tabs/install/overview",
@@ -1087,7 +1123,7 @@
                             ]
                           },
                           {
-                            "group": "\u00c9tapes d'installation",
+                            "group": "Étapes d'installation",
                             "icon": "list-ol",
                             "pages": [
                               "fr/v2/tabs/install/cli",
@@ -1128,18 +1164,18 @@
                     ]
                   },
                   {
-                    "tab": "R\u00e9f\u00e9rence API",
+                    "tab": "Référence API",
                     "icon": "square-terminal",
                     "groups": [
                       {
-                        "group": "Aper\u00e7u",
+                        "group": "Aperçu",
                         "icon": "book",
                         "pages": [
                           "fr/v2/tabs/api/intro"
                         ]
                       },
                       {
-                        "group": "Concepts cl\u00e9s",
+                        "group": "Concepts clés",
                         "icon": "key",
                         "pages": [
                           "fr/v2/tabs/api/auth",
@@ -1155,7 +1191,7 @@
                         ]
                       },
                       {
-                        "group": "\u00c9v\u00e9nements",
+                        "group": "Événements",
                         "icon": "bolt",
                         "pages": [
                           "fr/v2/tabs/api/webhooks"
@@ -1189,7 +1225,7 @@
                         ]
                       },
                       {
-                        "group": "Sch\u00e9mas",
+                        "group": "Schémas",
                         "icon": "diagram-project",
                         "pages": [
                           "fr/v2/tabs/cookbook/patterns"
@@ -1206,7 +1242,7 @@
               },
               {
                 "product": "Produit Dropdowns",
-                "description": "Dropdown de la sidebar \u2014 PAS le product switcher",
+                "description": "Dropdown de la sidebar — PAS le product switcher",
                 "icon": "caret-down",
                 "dropdowns": [
                   {
@@ -1214,7 +1250,7 @@
                     "icon": "book",
                     "groups": [
                       {
-                        "group": "Aper\u00e7u",
+                        "group": "Aperçu",
                         "icon": "compass",
                         "pages": [
                           "fr/v2/dropdowns/compare",
@@ -1244,7 +1280,7 @@
                     "icon": "code",
                     "groups": [
                       {
-                        "group": "Aper\u00e7u",
+                        "group": "Aperçu",
                         "icon": "book-open",
                         "pages": [
                           "fr/v2/dropdowns/api/overview"
@@ -1273,7 +1309,7 @@
                     "icon": "handshake",
                     "groups": [
                       {
-                        "group": "Aper\u00e7u",
+                        "group": "Aperçu",
                         "icon": "house",
                         "pages": [
                           "fr/v2/dropdowns/partners/overview"
@@ -1300,7 +1336,7 @@
               },
               {
                 "product": "Produit simple (sans menu)",
-                "description": "Le product switcher entre directement \u2014 pas de product menu",
+                "description": "Le product switcher entre directement — pas de product menu",
                 "icon": "box",
                 "groups": [
                   {
@@ -1322,84 +1358,96 @@
               },
               {
                 "product": "Product + Menu: Core API",
-                "description": "Le product switcher s\u2019ouvre en menu multi-colonnes",
+                "description": "Produit avec un onglet contenant un menu multi-colonnes",
                 "icon": "api",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides",
-                    "icon": "book-open",
-                    "description": "Product menu column \u2014 Guides",
-                    "groups": [
+                    "tab": "Menu",
+                    "icon": "api",
+                    "menu": [
                       {
-                        "group": "Premiers pas",
-                        "icon": "flag",
-                        "pages": [
-                          "fr/v2/menu-core/guides/intro",
-                          "fr/v2/menu-core/guides/auth",
-                          "fr/v2/menu-core/guides/webhooks"
+                        "item": "Menu: Guides",
+                        "icon": "book-open",
+                        "description": "Product menu column — Guides",
+                        "groups": [
+                          {
+                            "group": "Premiers pas",
+                            "icon": "flag",
+                            "pages": [
+                              "fr/v2/menu-core/guides/intro",
+                              "fr/v2/menu-core/guides/auth",
+                              "fr/v2/menu-core/guides/webhooks"
+                            ]
+                          }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "item": "Menu: API reference",
-                    "icon": "square-terminal",
-                    "description": "Product menu column \u2014 API reference",
-                    "groups": [
+                      },
                       {
-                        "group": "Endpoints",
+                        "item": "Menu: API reference",
+                        "icon": "square-terminal",
+                        "description": "Product menu column — API reference",
+                        "groups": [
+                          {
+                            "group": "Endpoints",
+                            "icon": "code",
+                            "pages": [
+                              "fr/v2/menu-core/api/overview",
+                              "fr/v2/menu-core/api/users",
+                              "fr/v2/menu-core/api/orders"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "item": "Menu: SDKs",
                         "icon": "code",
+                        "description": "Product menu column — SDKs",
                         "pages": [
-                          "fr/v2/menu-core/api/overview",
-                          "fr/v2/menu-core/api/users",
-                          "fr/v2/menu-core/api/orders"
+                          "fr/v2/menu-core/sdks/node",
+                          "fr/v2/menu-core/sdks/python"
                         ]
+                      },
+                      {
+                        "item": "Menu: Changelog (external)",
+                        "icon": "list",
+                        "href": "https://mintlify.com/blog"
                       }
                     ]
-                  },
-                  {
-                    "item": "Menu: SDKs",
-                    "icon": "code",
-                    "description": "Product menu column \u2014 SDKs",
-                    "pages": [
-                      "fr/v2/menu-core/sdks/node",
-                      "fr/v2/menu-core/sdks/python"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Changelog (external)",
-                    "icon": "list",
-                    "href": "https://mintlify.com/blog"
                   }
                 ]
               },
               {
                 "product": "Product + Menu: Analytics",
-                "description": "Deuxi\u00e8me exemple de product menu",
+                "description": "Deuxième exemple — produit avec menu dans un onglet",
                 "icon": "chart-line",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides",
-                    "icon": "book",
-                    "pages": [
-                      "fr/v2/menu-analytics/guides/intro",
-                      "fr/v2/menu-analytics/guides/events"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Query API",
-                    "icon": "database",
-                    "pages": [
-                      "fr/v2/menu-analytics/api/overview",
-                      "fr/v2/menu-analytics/api/queries"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Dashboards",
-                    "icon": "chart-bar",
-                    "pages": [
-                      "fr/v2/menu-analytics/dashboards/overview",
-                      "fr/v2/menu-analytics/dashboards/share"
+                    "tab": "Menu",
+                    "icon": "chart-line",
+                    "menu": [
+                      {
+                        "item": "Menu: Guides",
+                        "icon": "book",
+                        "pages": [
+                          "fr/v2/menu-analytics/guides/intro",
+                          "fr/v2/menu-analytics/guides/events"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Query API",
+                        "icon": "database",
+                        "pages": [
+                          "fr/v2/menu-analytics/api/overview",
+                          "fr/v2/menu-analytics/api/queries"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Dashboards",
+                        "icon": "chart-bar",
+                        "pages": [
+                          "fr/v2/menu-analytics/dashboards/overview",
+                          "fr/v2/menu-analytics/dashboards/share"
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -1421,7 +1469,7 @@
                 "products": [
                   {
                     "product": "Produit Tabs",
-                    "description": "Tabs horizontaux \u2014 \u00e0 comparer avec Dropdowns",
+                    "description": "Tabs horizontaux — à comparer avec Dropdowns",
                     "icon": "browser",
                     "groups": [
                       {
@@ -1436,7 +1484,7 @@
                   },
                   {
                     "product": "Produit Dropdowns",
-                    "description": "Menu d\u00e9roulant sidebar \u2014 \u00e0 comparer avec Tabs",
+                    "description": "Menu déroulant sidebar — à comparer avec Tabs",
                     "icon": "caret-down",
                     "pages": [
                       "fr/v1/overview"
@@ -1461,11 +1509,11 @@
                 "products": [
                   {
                     "product": "Produit Tabs",
-                    "description": "Tabs horizontaux \u2014 \u00e0 comparer avec Dropdowns",
+                    "description": "Tabs horizontaux — à comparer avec Dropdowns",
                     "icon": "browser",
                     "groups": [
                       {
-                        "group": "Aper\u00e7u Future",
+                        "group": "Aperçu Future",
                         "icon": "telescope",
                         "pages": [
                           "fr/v3/overview",
@@ -1478,7 +1526,7 @@
                   },
                   {
                     "product": "Produit Dropdowns",
-                    "description": "Menu d\u00e9roulant sidebar \u2014 \u00e0 comparer avec Tabs",
+                    "description": "Menu déroulant sidebar — à comparer avec Tabs",
                     "icon": "caret-down",
                     "pages": [
                       "fr/v3/overview",
@@ -1487,23 +1535,29 @@
                   },
                   {
                     "product": "Product + Menu: Core API",
-                    "description": "Le product switcher s\u2019ouvre en menu multi-colonnes",
+                    "description": "Produit avec un onglet contenant un menu multi-colonnes",
                     "icon": "api",
-                    "menu": [
+                    "tabs": [
                       {
-                        "item": "Menu: Guides",
-                        "icon": "book-open",
-                        "pages": [
-                          "fr/v3/overview",
-                          "fr/v3/roadmap"
-                        ]
-                      },
-                      {
-                        "item": "Menu: API reference",
-                        "icon": "square-terminal",
-                        "pages": [
-                          "fr/v3/beta-features",
-                          "fr/v3/breaking-changes"
+                        "tab": "Menu",
+                        "icon": "api",
+                        "menu": [
+                          {
+                            "item": "Menu: Guides",
+                            "icon": "book-open",
+                            "pages": [
+                              "fr/v3/overview",
+                              "fr/v3/roadmap"
+                            ]
+                          },
+                          {
+                            "item": "Menu: API reference",
+                            "icon": "square-terminal",
+                            "pages": [
+                              "fr/v3/beta-features",
+                              "fr/v3/breaking-changes"
+                            ]
+                          }
                         ]
                       }
                     ]
@@ -1523,12 +1577,12 @@
             "default": true,
             "products": [
               {
-                "product": "Tabs \u4ea7\u54c1",
-                "description": "\u4fa7\u680f Dropdown \u6a21\u5f0f \u2014 \u4e0d\u662f\u4ea7\u54c1\u5207\u6362\u5668",
+                "product": "Tabs 产品",
+                "description": "侧栏 Dropdown 模式 — 不是产品切换器",
                 "icon": "browser",
                 "tabs": [
                   {
-                    "tab": "\u5bf9\u6bd4 Tabs",
+                    "tab": "对比 Tabs",
                     "icon": "table-columns",
                     "pages": [
                       "cn/v2/compare/products-menus-dropdowns",
@@ -1537,7 +1591,7 @@
                     ]
                   },
                   {
-                    "tab": "\u5b89\u88c5\u6307\u5357",
+                    "tab": "安装指南",
                     "icon": "download",
                     "anchors": [
                       {
@@ -1545,7 +1599,7 @@
                         "icon": "wrench",
                         "groups": [
                           {
-                            "group": "\u6982\u89c8",
+                            "group": "概览",
                             "icon": "circle-info",
                             "pages": [
                               "cn/v2/tabs/install/overview",
@@ -1553,7 +1607,7 @@
                             ]
                           },
                           {
-                            "group": "\u5b89\u88c5\u6b65\u9aa4",
+                            "group": "安装步骤",
                             "icon": "list-ol",
                             "pages": [
                               "cn/v2/tabs/install/cli",
@@ -1561,7 +1615,7 @@
                             ]
                           },
                           {
-                            "group": "\u5e2e\u52a9",
+                            "group": "帮助",
                             "icon": "life-ring",
                             "expanded": false,
                             "pages": [
@@ -1575,7 +1629,7 @@
                         "icon": "rocket",
                         "groups": [
                           {
-                            "group": "\u73af\u5883",
+                            "group": "环境",
                             "icon": "server",
                             "pages": [
                               "cn/v2/tabs/deploy/github-app",
@@ -1583,7 +1637,7 @@
                             ]
                           },
                           {
-                            "group": "\u4e0a\u7ebf",
+                            "group": "上线",
                             "icon": "flag-checkered",
                             "pages": [
                               "cn/v2/tabs/deploy/checklists"
@@ -1594,18 +1648,18 @@
                     ]
                   },
                   {
-                    "tab": "API \u53c2\u8003",
+                    "tab": "API 参考",
                     "icon": "square-terminal",
                     "groups": [
                       {
-                        "group": "\u6982\u89c8",
+                        "group": "概览",
                         "icon": "book",
                         "pages": [
                           "cn/v2/tabs/api/intro"
                         ]
                       },
                       {
-                        "group": "\u6838\u5fc3\u6982\u5ff5",
+                        "group": "核心概念",
                         "icon": "key",
                         "pages": [
                           "cn/v2/tabs/api/auth",
@@ -1613,7 +1667,7 @@
                         ]
                       },
                       {
-                        "group": "Users \u63a5\u53e3",
+                        "group": "Users 接口",
                         "icon": "users",
                         "pages": [
                           "cn/v2/tabs/api/users-list",
@@ -1621,7 +1675,7 @@
                         ]
                       },
                       {
-                        "group": "\u4e8b\u4ef6",
+                        "group": "事件",
                         "icon": "bolt",
                         "pages": [
                           "cn/v2/tabs/api/webhooks"
@@ -1634,12 +1688,12 @@
                     "icon": "utensils",
                     "groups": [
                       {
-                        "group": "\u793a\u4f8b",
+                        "group": "示例",
                         "icon": "flask",
                         "pages": [
                           "cn/v2/tabs/cookbook/hello",
                           {
-                            "group": "\u8ba4\u8bc1",
+                            "group": "认证",
                             "expanded": true,
                             "pages": [
                               "cn/v2/tabs/cookbook/auth-recipe"
@@ -1655,7 +1709,7 @@
                         ]
                       },
                       {
-                        "group": "\u6a21\u5f0f",
+                        "group": "模式",
                         "icon": "diagram-project",
                         "pages": [
                           "cn/v2/tabs/cookbook/patterns"
@@ -1664,23 +1718,23 @@
                     ]
                   },
                   {
-                    "tab": "\u5916\u90e8\u9009\u9879\u5361",
+                    "tab": "外部选项卡",
                     "icon": "arrow-up-right",
                     "href": "https://www.mintlify.com/docs/organize/navigation"
                   }
                 ]
               },
               {
-                "product": "Dropdowns \u4ea7\u54c1",
-                "description": "\u4fa7\u680f Dropdown \u6a21\u5f0f \u2014 \u4e0d\u662f\u4ea7\u54c1\u5207\u6362\u5668",
+                "product": "Dropdowns 产品",
+                "description": "侧栏 Dropdown 模式 — 不是产品切换器",
                 "icon": "caret-down",
                 "dropdowns": [
                   {
-                    "dropdown": "Product Docs \u4e0b\u62c9",
+                    "dropdown": "Product Docs 下拉",
                     "icon": "book",
                     "groups": [
                       {
-                        "group": "\u6982\u89c8",
+                        "group": "概览",
                         "icon": "compass",
                         "pages": [
                           "cn/v2/dropdowns/compare",
@@ -1688,7 +1742,7 @@
                         ]
                       },
                       {
-                        "group": "\u57fa\u7840",
+                        "group": "基础",
                         "icon": "cubes",
                         "pages": [
                           "cn/v2/dropdowns/docs/concepts",
@@ -1696,7 +1750,7 @@
                         ]
                       },
                       {
-                        "group": "\u64cd\u4f5c\u6307\u5357",
+                        "group": "操作指南",
                         "icon": "list-check",
                         "pages": [
                           "cn/v2/dropdowns/docs/guides-onboarding",
@@ -1706,18 +1760,18 @@
                     ]
                   },
                   {
-                    "dropdown": "API Spec \u4e0b\u62c9",
+                    "dropdown": "API Spec 下拉",
                     "icon": "code",
                     "groups": [
                       {
-                        "group": "\u6982\u89c8",
+                        "group": "概览",
                         "icon": "book-open",
                         "pages": [
                           "cn/v2/dropdowns/api/overview"
                         ]
                       },
                       {
-                        "group": "\u89c4\u683c\u57fa\u7840",
+                        "group": "规格基础",
                         "icon": "screwdriver-wrench",
                         "pages": [
                           "cn/v2/dropdowns/api/auth",
@@ -1725,7 +1779,7 @@
                         ]
                       },
                       {
-                        "group": "\u8d44\u6e90",
+                        "group": "资源",
                         "icon": "database",
                         "pages": [
                           "cn/v2/dropdowns/api/orders",
@@ -1735,25 +1789,25 @@
                     ]
                   },
                   {
-                    "dropdown": "Partner Hub \u4e0b\u62c9",
+                    "dropdown": "Partner Hub 下拉",
                     "icon": "handshake",
                     "groups": [
                       {
-                        "group": "\u6982\u89c8",
+                        "group": "概览",
                         "icon": "house",
                         "pages": [
                           "cn/v2/dropdowns/partners/overview"
                         ]
                       },
                       {
-                        "group": "\u5408\u4f5c\u4f19\u4f34",
+                        "group": "合作伙伴",
                         "icon": "address-book",
                         "pages": [
                           "cn/v2/dropdowns/partners/directory"
                         ]
                       },
                       {
-                        "group": "\u6784\u5efa",
+                        "group": "构建",
                         "icon": "hammer",
                         "pages": [
                           "cn/v2/dropdowns/partners/build",
@@ -1765,12 +1819,12 @@
                 ]
               },
               {
-                "product": "\u666e\u901a\u4ea7\u54c1\uff08\u65e0 menu\uff09",
-                "description": "\u4ea7\u54c1\u5207\u6362\u5668\u76f4\u63a5\u8fdb\u5165\u6587\u6863 \u2014 \u65e0 product menu",
+                "product": "普通产品（无 menu）",
+                "description": "产品切换器直接进入文档 — 无 product menu",
                 "icon": "box",
                 "groups": [
                   {
-                    "group": "\u5165\u95e8",
+                    "group": "入门",
                     "icon": "play",
                     "pages": [
                       "cn/v2/plain/overview",
@@ -1778,7 +1832,7 @@
                     ]
                   },
                   {
-                    "group": "\u5e2e\u52a9",
+                    "group": "帮助",
                     "icon": "circle-question",
                     "pages": [
                       "cn/v2/plain/faq"
@@ -1788,84 +1842,96 @@
               },
               {
                 "product": "Product + Menu: Core API",
-                "description": "\u4ea7\u54c1\u5207\u6362\u5668\u5c55\u5f00\u4e3a\u591a\u5217 product menu",
+                "description": "产品内含带多列菜单的选项卡",
                 "icon": "api",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides",
-                    "icon": "book-open",
-                    "description": "Product menu column \u2014 Guides",
-                    "groups": [
+                    "tab": "菜单",
+                    "icon": "api",
+                    "menu": [
                       {
-                        "group": "\u5165\u95e8",
-                        "icon": "flag",
-                        "pages": [
-                          "cn/v2/menu-core/guides/intro",
-                          "cn/v2/menu-core/guides/auth",
-                          "cn/v2/menu-core/guides/webhooks"
+                        "item": "Menu: Guides",
+                        "icon": "book-open",
+                        "description": "Product menu column — Guides",
+                        "groups": [
+                          {
+                            "group": "入门",
+                            "icon": "flag",
+                            "pages": [
+                              "cn/v2/menu-core/guides/intro",
+                              "cn/v2/menu-core/guides/auth",
+                              "cn/v2/menu-core/guides/webhooks"
+                            ]
+                          }
                         ]
-                      }
-                    ]
-                  },
-                  {
-                    "item": "Menu: API reference",
-                    "icon": "square-terminal",
-                    "description": "Product menu column \u2014 API reference",
-                    "groups": [
+                      },
                       {
-                        "group": "Endpoints",
+                        "item": "Menu: API reference",
+                        "icon": "square-terminal",
+                        "description": "Product menu column — API reference",
+                        "groups": [
+                          {
+                            "group": "Endpoints",
+                            "icon": "code",
+                            "pages": [
+                              "cn/v2/menu-core/api/overview",
+                              "cn/v2/menu-core/api/users",
+                              "cn/v2/menu-core/api/orders"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "item": "Menu: SDKs",
                         "icon": "code",
+                        "description": "Product menu column — SDKs",
                         "pages": [
-                          "cn/v2/menu-core/api/overview",
-                          "cn/v2/menu-core/api/users",
-                          "cn/v2/menu-core/api/orders"
+                          "cn/v2/menu-core/sdks/node",
+                          "cn/v2/menu-core/sdks/python"
                         ]
+                      },
+                      {
+                        "item": "Menu: Changelog (external)",
+                        "icon": "list",
+                        "href": "https://mintlify.com/blog"
                       }
                     ]
-                  },
-                  {
-                    "item": "Menu: SDKs",
-                    "icon": "code",
-                    "description": "Product menu column \u2014 SDKs",
-                    "pages": [
-                      "cn/v2/menu-core/sdks/node",
-                      "cn/v2/menu-core/sdks/python"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Changelog (external)",
-                    "icon": "list",
-                    "href": "https://mintlify.com/blog"
                   }
                 ]
               },
               {
                 "product": "Product + Menu: Analytics",
-                "description": "\u7b2c\u4e8c\u4e2a product menu \u793a\u4f8b",
+                "description": "第二个示例 — 产品内含菜单选项卡",
                 "icon": "chart-line",
-                "menu": [
+                "tabs": [
                   {
-                    "item": "Menu: Guides",
-                    "icon": "book",
-                    "pages": [
-                      "cn/v2/menu-analytics/guides/intro",
-                      "cn/v2/menu-analytics/guides/events"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Query API",
-                    "icon": "database",
-                    "pages": [
-                      "cn/v2/menu-analytics/api/overview",
-                      "cn/v2/menu-analytics/api/queries"
-                    ]
-                  },
-                  {
-                    "item": "Menu: Dashboards",
-                    "icon": "chart-bar",
-                    "pages": [
-                      "cn/v2/menu-analytics/dashboards/overview",
-                      "cn/v2/menu-analytics/dashboards/share"
+                    "tab": "菜单",
+                    "icon": "chart-line",
+                    "menu": [
+                      {
+                        "item": "Menu: Guides",
+                        "icon": "book",
+                        "pages": [
+                          "cn/v2/menu-analytics/guides/intro",
+                          "cn/v2/menu-analytics/guides/events"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Query API",
+                        "icon": "database",
+                        "pages": [
+                          "cn/v2/menu-analytics/api/overview",
+                          "cn/v2/menu-analytics/api/queries"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Dashboards",
+                        "icon": "chart-bar",
+                        "pages": [
+                          "cn/v2/menu-analytics/dashboards/overview",
+                          "cn/v2/menu-analytics/dashboards/share"
+                        ]
+                      }
                     ]
                   }
                 ]
@@ -1882,16 +1948,16 @@
                 "href": "/en/v2/capybara-embeds"
               },
               {
-                "anchor": "\u6587\u6863",
+                "anchor": "文档",
                 "icon": "book-open",
                 "products": [
                   {
-                    "product": "Tabs \u4ea7\u54c1",
-                    "description": "\u9876\u90e8\u6a2a\u5411 Tabs \u2014 \u8bf7\u4e0e Dropdowns \u4ea7\u54c1\u5bf9\u6bd4",
+                    "product": "Tabs 产品",
+                    "description": "顶部横向 Tabs — 请与 Dropdowns 产品对比",
                     "icon": "browser",
                     "groups": [
                       {
-                        "group": "\u65e7\u7248",
+                        "group": "旧版",
                         "icon": "clock-rotate-left",
                         "pages": [
                           "cn/v1/overview",
@@ -1901,8 +1967,8 @@
                     ]
                   },
                   {
-                    "product": "Dropdowns \u4ea7\u54c1",
-                    "description": "\u4fa7\u680f\u4e0b\u62c9\u5207\u6362 \u2014 \u8bf7\u4e0e Tabs \u4ea7\u54c1\u5bf9\u6bd4",
+                    "product": "Dropdowns 产品",
+                    "description": "侧栏下拉切换 — 请与 Tabs 产品对比",
                     "icon": "caret-down",
                     "pages": [
                       "cn/v1/overview"
@@ -1922,16 +1988,16 @@
                 "href": "/en/v2/capybara-embeds"
               },
               {
-                "anchor": "\u6587\u6863",
+                "anchor": "文档",
                 "icon": "book-open",
                 "products": [
                   {
-                    "product": "Tabs \u4ea7\u54c1",
-                    "description": "\u9876\u90e8\u6a2a\u5411 Tabs \u2014 \u8bf7\u4e0e Dropdowns \u4ea7\u54c1\u5bf9\u6bd4",
+                    "product": "Tabs 产品",
+                    "description": "顶部横向 Tabs — 请与 Dropdowns 产品对比",
                     "icon": "browser",
                     "groups": [
                       {
-                        "group": "Future \u9884\u89c8",
+                        "group": "Future 预览",
                         "icon": "telescope",
                         "pages": [
                           "cn/v3/overview",
@@ -1943,8 +2009,8 @@
                     ]
                   },
                   {
-                    "product": "Dropdowns \u4ea7\u54c1",
-                    "description": "\u4fa7\u680f\u4e0b\u62c9\u5207\u6362 \u2014 \u8bf7\u4e0e Tabs \u4ea7\u54c1\u5bf9\u6bd4",
+                    "product": "Dropdowns 产品",
+                    "description": "侧栏下拉切换 — 请与 Tabs 产品对比",
                     "icon": "caret-down",
                     "pages": [
                       "cn/v3/overview",
@@ -1953,23 +2019,29 @@
                   },
                   {
                     "product": "Product + Menu: Core API",
-                    "description": "\u4ea7\u54c1\u5207\u6362\u5668\u5c55\u5f00\u4e3a\u591a\u5217 product menu",
+                    "description": "产品内含带多列菜单的选项卡",
                     "icon": "api",
-                    "menu": [
+                    "tabs": [
                       {
-                        "item": "Menu: Guides",
-                        "icon": "book-open",
-                        "pages": [
-                          "cn/v3/overview",
-                          "cn/v3/roadmap"
-                        ]
-                      },
-                      {
-                        "item": "Menu: API reference",
-                        "icon": "square-terminal",
-                        "pages": [
-                          "cn/v3/beta-features",
-                          "cn/v3/breaking-changes"
+                        "tab": "菜单",
+                        "icon": "api",
+                        "menu": [
+                          {
+                            "item": "Menu: Guides",
+                            "icon": "book-open",
+                            "pages": [
+                              "cn/v3/overview",
+                              "cn/v3/roadmap"
+                            ]
+                          },
+                          {
+                            "item": "Menu: API reference",
+                            "icon": "square-terminal",
+                            "pages": [
+                              "cn/v3/beta-features",
+                              "cn/v3/breaking-changes"
+                            ]
+                          }
                         ]
                       }
                     ]
