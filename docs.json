@@ -109,6 +109,14 @@
                             "pages": [
                               "en/v2/tabs/install/troubleshooting"
                             ]
+                          },
+                          {
+                            "group": "Internal writing notes",
+                            "hidden": true,
+                            "searchable": true,
+                            "pages": [
+                              "essentials/hidden-writing-style-notes"
+                            ]
                           }
                         ]
                       },
@@ -203,6 +211,14 @@
                           "en/v2/tabs/cookbook/patterns"
                         ]
                       }
+                    ]
+                  },
+                  {
+                    "tab": "Hidden context",
+                    "hidden": true,
+                    "searchable": true,
+                    "pages": [
+                      "hidden-pages/ai-assistant-context"
                     ]
                   },
                   {
