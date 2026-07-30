@@ -12,6 +12,9 @@ Click the green **Use this template** button at the top of this repo to copy the
 
 **[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
 
+<!-- Deploy trigger: verifying push webhook -->
+
+
 ## AI-assisted writing
 
 Set up your AI coding tool to work with Mintlify:
