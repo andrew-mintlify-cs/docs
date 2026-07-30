@@ -31,7 +31,11 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/docs/en/v2/compare/products-menus-dropdowns"
+      "destination": "/en/v2/compare/products-menus-dropdowns"
+    },
+    {
+      "source": "/docs/:path*",
+      "destination": "/:path*"
     }
   ],
   "navigation": {
