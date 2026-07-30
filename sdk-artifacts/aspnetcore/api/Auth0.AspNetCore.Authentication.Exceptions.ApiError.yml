@@ -1,0 +1,629 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  commentId: T:Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  id: ApiError
+  parent: Auth0.AspNetCore.Authentication.Exceptions
+  children:
+  - Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error
+  - Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message
+  - Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse(System.Net.Http.HttpResponseMessage)
+  langs:
+  - csharp
+  - vb
+  name: ApiError
+  nameWithType: ApiError
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: ApiError
+    path: ../src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+    startLine: 10
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.Exceptions
+  summary: Error information captured from a failed API request.
+  example: []
+  syntax:
+    content: public class ApiError
+    content.vb: Public Class ApiError
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error
+  commentId: P:Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error
+  id: Error
+  parent: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: ApiError.Error
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Error
+    path: ../src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+    startLine: 15
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.Exceptions
+  summary: Description of the failing HTTP Status Code.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("error")]
+
+      public string Error { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("error")>
+
+      Public Property [Error] As String
+  overload: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: error
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message
+  commentId: P:Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message
+  id: Message
+  parent: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: ApiError.Message
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Message
+    path: ../src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+    startLine: 21
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.Exceptions
+  summary: Description of the error.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("error_description")]
+
+      public string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("error_description")>
+
+      Public Property Message As String
+  overload: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: error_description
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse(System.Net.Http.HttpResponseMessage)
+  commentId: M:Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse(System.Net.Http.HttpResponseMessage)
+  id: Parse(System.Net.Http.HttpResponseMessage)
+  parent: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  langs:
+  - csharp
+  - vb
+  name: Parse(HttpResponseMessage)
+  nameWithType: ApiError.Parse(HttpResponseMessage)
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse(System.Net.Http.HttpResponseMessage)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Parse
+    path: ../src/Auth0.AspNetCore.Authentication/Exceptions/ApiError.cs
+    startLine: 30
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.Exceptions
+  summary: Parse a <xref href="System.Net.Http.HttpResponseMessage" data-throw-if-not-resolved="false"></xref> into an <xref href="Auth0.AspNetCore.Authentication.Exceptions.ApiError" data-throw-if-not-resolved="false"></xref> asynchronously.
+  example: []
+  syntax:
+    content: public static Task<ApiError?> Parse(HttpResponseMessage response)
+    parameters:
+    - id: response
+      type: System.Net.Http.HttpResponseMessage
+      description: <xref href="System.Net.Http.HttpResponseMessage" data-throw-if-not-resolved="false"></xref> to parse.
+    return:
+      type: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.Exceptions.ApiError}
+      description: >-
+        <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> representing the operation and associated <xref href="Auth0.AspNetCore.Authentication.Exceptions.ApiError" data-throw-if-not-resolved="false"></xref> on
+            successful completion.
+    content.vb: Public Shared Function Parse(response As HttpResponseMessage) As Task(Of ApiError)
+  overload: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse*
+references:
+- uid: Auth0.AspNetCore.Authentication.Exceptions
+  commentId: N:Auth0.AspNetCore.Authentication.Exceptions
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.Exceptions
+  nameWithType: Auth0.AspNetCore.Authentication.Exceptions
+  fullName: Auth0.AspNetCore.Authentication.Exceptions
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.Exceptions
+    name: Exceptions
+    href: Auth0.AspNetCore.Authentication.Exceptions.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.Exceptions
+    name: Exceptions
+    href: Auth0.AspNetCore.Authentication.Exceptions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error
+  href: Auth0.AspNetCore.Authentication.Exceptions.ApiError.html#Auth0_AspNetCore_Authentication_Exceptions_ApiError_Error
+  name: Error
+  nameWithType: ApiError.Error
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Error
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message
+  href: Auth0.AspNetCore.Authentication.Exceptions.ApiError.html#Auth0_AspNetCore_Authentication_Exceptions_ApiError_Message
+  name: Message
+  nameWithType: ApiError.Message
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Message
+- uid: System.Net.Http.HttpResponseMessage
+  commentId: T:System.Net.Http.HttpResponseMessage
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  commentId: T:Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  parent: Auth0.AspNetCore.Authentication.Exceptions
+  href: Auth0.AspNetCore.Authentication.Exceptions.ApiError.html
+  name: ApiError
+  nameWithType: ApiError
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse
+  href: Auth0.AspNetCore.Authentication.Exceptions.ApiError.html#Auth0_AspNetCore_Authentication_Exceptions_ApiError_Parse_System_Net_Http_HttpResponseMessage_
+  name: Parse
+  nameWithType: ApiError.Parse
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError.Parse
+- uid: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.Exceptions.ApiError}
+  commentId: T:System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.Exceptions.ApiError}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<ApiError>
+  nameWithType: Task<ApiError>
+  fullName: System.Threading.Tasks.Task<Auth0.AspNetCore.Authentication.Exceptions.ApiError>
+  nameWithType.vb: Task(Of ApiError)
+  fullName.vb: System.Threading.Tasks.Task(Of Auth0.AspNetCore.Authentication.Exceptions.ApiError)
+  name.vb: Task(Of ApiError)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+    name: ApiError
+    href: Auth0.AspNetCore.Authentication.Exceptions.ApiError.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+    name: ApiError
+    href: Auth0.AspNetCore.Authentication.Exceptions.ApiError.html
+  - name: )
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

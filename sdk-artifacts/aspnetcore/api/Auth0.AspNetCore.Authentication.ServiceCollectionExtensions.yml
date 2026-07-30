@@ -1,0 +1,533 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions
+  commentId: T:Auth0.AspNetCore.Authentication.ServiceCollectionExtensions
+  id: ServiceCollectionExtensions
+  parent: Auth0.AspNetCore.Authentication
+  children:
+  - Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  - Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  langs:
+  - csharp
+  - vb
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/ServiceCollectionExtensions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: ServiceCollectionExtensions
+    path: ../src/Auth0.AspNetCore.Authentication/ServiceCollectionExtensions.cs
+    startLine: 8
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Contains <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> extension(s) for registering Auth0.
+  example: []
+  syntax:
+    content: public static class ServiceCollectionExtensions
+    content.vb: Public Module ServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  commentId: M:Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  id: AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  isExtensionMethod: true
+  parent: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddAuth0WebAppAuthentication(IServiceCollection, Action<Auth0WebAppOptions>)
+  nameWithType: ServiceCollectionExtensions.AddAuth0WebAppAuthentication(IServiceCollection, Action<Auth0WebAppOptions>)
+  fullName: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Auth0.AspNetCore.Authentication.Auth0WebAppOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/ServiceCollectionExtensions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: AddAuth0WebAppAuthentication
+    path: ../src/Auth0.AspNetCore.Authentication/ServiceCollectionExtensions.cs
+    startLine: 16
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Add Auth0 configuration using Open ID Connect
+  example: []
+  syntax:
+    content: public static Auth0WebAppAuthenticationBuilder AddAuth0WebAppAuthentication(this IServiceCollection services, Action<Auth0WebAppOptions> configureOptions)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The original <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> instance
+    - id: configureOptions
+      type: System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions}
+      description: A delegate used to configure the <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppOptions" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: The <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref> instance that has been created.
+    content.vb: Public Shared Function AddAuth0WebAppAuthentication(services As IServiceCollection, configureOptions As Action(Of Auth0WebAppOptions)) As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication*
+  nameWithType.vb: ServiceCollectionExtensions.AddAuth0WebAppAuthentication(IServiceCollection, Action(Of Auth0WebAppOptions))
+  fullName.vb: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Auth0.AspNetCore.Authentication.Auth0WebAppOptions))
+  name.vb: AddAuth0WebAppAuthentication(IServiceCollection, Action(Of Auth0WebAppOptions))
+- uid: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  commentId: M:Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  id: AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions})
+  isExtensionMethod: true
+  parent: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddAuth0WebAppAuthentication(IServiceCollection, string, Action<Auth0WebAppOptions>)
+  nameWithType: ServiceCollectionExtensions.AddAuth0WebAppAuthentication(IServiceCollection, string, Action<Auth0WebAppOptions>)
+  fullName: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, string, System.Action<Auth0.AspNetCore.Authentication.Auth0WebAppOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/ServiceCollectionExtensions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: AddAuth0WebAppAuthentication
+    path: ../src/Auth0.AspNetCore.Authentication/ServiceCollectionExtensions.cs
+    startLine: 27
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Add Auth0 configuration using Open ID Connect
+  example: []
+  syntax:
+    content: public static Auth0WebAppAuthenticationBuilder AddAuth0WebAppAuthentication(this IServiceCollection services, string authenticationScheme, Action<Auth0WebAppOptions> configureOptions)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The original <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> instance
+    - id: authenticationScheme
+      type: System.String
+    - id: configureOptions
+      type: System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions}
+      description: A delegate used to configure the <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppOptions" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: The <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref> instance that has been created.
+    content.vb: Public Shared Function AddAuth0WebAppAuthentication(services As IServiceCollection, authenticationScheme As String, configureOptions As Action(Of Auth0WebAppOptions)) As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication*
+  nameWithType.vb: ServiceCollectionExtensions.AddAuth0WebAppAuthentication(IServiceCollection, String, Action(Of Auth0WebAppOptions))
+  fullName.vb: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection, String, System.Action(Of Auth0.AspNetCore.Authentication.Auth0WebAppOptions))
+  name.vb: AddAuth0WebAppAuthentication(IServiceCollection, String, Action(Of Auth0WebAppOptions))
+references:
+- uid: Auth0.AspNetCore.Authentication
+  commentId: N:Auth0.AspNetCore.Authentication
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication
+  nameWithType: Auth0.AspNetCore.Authentication
+  fullName: Auth0.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppOptions.html
+  name: Auth0WebAppOptions
+  nameWithType: Auth0WebAppOptions
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html
+  name: Auth0WebAppAuthenticationBuilder
+  nameWithType: Auth0WebAppAuthenticationBuilder
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+- uid: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication*
+  commentId: Overload:Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication
+  href: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.html#Auth0_AspNetCore_Authentication_ServiceCollectionExtensions_AddAuth0WebAppAuthentication_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Auth0_AspNetCore_Authentication_Auth0WebAppOptions__
+  name: AddAuth0WebAppAuthentication
+  nameWithType: ServiceCollectionExtensions.AddAuth0WebAppAuthentication
+  fullName: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions.AddAuth0WebAppAuthentication
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions}
+  commentId: T:System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Auth0WebAppOptions>
+  nameWithType: Action<Auth0WebAppOptions>
+  fullName: System.Action<Auth0.AspNetCore.Authentication.Auth0WebAppOptions>
+  nameWithType.vb: Action(Of Auth0WebAppOptions)
+  fullName.vb: System.Action(Of Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  name.vb: Action(Of Auth0WebAppOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+    name: Auth0WebAppOptions
+    href: Auth0.AspNetCore.Authentication.Auth0WebAppOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+    name: Auth0WebAppOptions
+    href: Auth0.AspNetCore.Authentication.Auth0WebAppOptions.html
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

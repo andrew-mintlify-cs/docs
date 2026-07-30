@@ -1,0 +1,947 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  id: Auth0WebAppAuthenticationBuilder
+  parent: Auth0.AspNetCore.Authentication
+  children:
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken(System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions})
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains(System.Action{Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions})
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore(Microsoft.AspNetCore.Authentication.Cookies.ITicketStore)
+  - Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore``1
+  langs:
+  - csharp
+  - vb
+  name: Auth0WebAppAuthenticationBuilder
+  nameWithType: Auth0WebAppAuthenticationBuilder
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Auth0WebAppAuthenticationBuilder
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 20
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Builder to add functionality on top of OpenId Connect authentication.
+  example: []
+  syntax:
+    content: public class Auth0WebAppAuthenticationBuilder
+    content.vb: Public Class Auth0WebAppAuthenticationBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  id: '#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)'
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Auth0WebAppAuthenticationBuilder(IServiceCollection, Auth0WebAppOptions)
+  nameWithType: Auth0WebAppAuthenticationBuilder.Auth0WebAppAuthenticationBuilder(IServiceCollection, Auth0WebAppOptions)
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.Auth0WebAppAuthenticationBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection, Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 31
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Constructs an instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public Auth0WebAppAuthenticationBuilder(IServiceCollection services, Auth0WebAppOptions options)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The original <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> instance
+    - id: options
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+      description: The <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppOptions" data-throw-if-not-resolved="false"></xref> used when calling AddAuth0WebAppAuthentication.
+    content.vb: Public Sub New(services As IServiceCollection, options As Auth0WebAppOptions)
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor*
+  nameWithType.vb: Auth0WebAppAuthenticationBuilder.New(IServiceCollection, Auth0WebAppOptions)
+  fullName.vb: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.New(Microsoft.Extensions.DependencyInjection.IServiceCollection, Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  name.vb: New(IServiceCollection, Auth0WebAppOptions)
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  id: '#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,Auth0.AspNetCore.Authentication.Auth0WebAppOptions)'
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Auth0WebAppAuthenticationBuilder(IServiceCollection, string, Auth0WebAppOptions)
+  nameWithType: Auth0WebAppAuthenticationBuilder.Auth0WebAppAuthenticationBuilder(IServiceCollection, string, Auth0WebAppOptions)
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.Auth0WebAppAuthenticationBuilder(Microsoft.Extensions.DependencyInjection.IServiceCollection, string, Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 41
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Constructs an instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public Auth0WebAppAuthenticationBuilder(IServiceCollection services, string authenticationScheme, Auth0WebAppOptions options)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: The original <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> instance
+    - id: authenticationScheme
+      type: System.String
+      description: The authentication scheme to use.
+    - id: options
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+      description: The <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppOptions" data-throw-if-not-resolved="false"></xref> used when calling AddAuth0WebAppAuthentication.
+    content.vb: Public Sub New(services As IServiceCollection, authenticationScheme As String, options As Auth0WebAppOptions)
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor*
+  nameWithType.vb: Auth0WebAppAuthenticationBuilder.New(IServiceCollection, String, Auth0WebAppOptions)
+  fullName.vb: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.New(Microsoft.Extensions.DependencyInjection.IServiceCollection, String, Auth0.AspNetCore.Authentication.Auth0WebAppOptions)
+  name.vb: New(IServiceCollection, String, Auth0WebAppOptions)
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken(System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions})
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken(System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions})
+  id: WithAccessToken(System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions})
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithAccessToken(Action<Auth0WebAppWithAccessTokenOptions>)
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithAccessToken(Action<Auth0WebAppWithAccessTokenOptions>)
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken(System.Action<Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithAccessToken
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 53
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Configures the use of Access Tokens
+  example: []
+  syntax:
+    content: public Auth0WebAppAuthenticationBuilder WithAccessToken(Action<Auth0WebAppWithAccessTokenOptions> configureOptions)
+    parameters:
+    - id: configureOptions
+      type: System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions}
+      description: A delegate used to configure the <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: An instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function WithAccessToken(configureOptions As Action(Of Auth0WebAppWithAccessTokenOptions)) As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken*
+  nameWithType.vb: Auth0WebAppAuthenticationBuilder.WithAccessToken(Action(Of Auth0WebAppWithAccessTokenOptions))
+  fullName.vb: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken(System.Action(Of Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions))
+  name.vb: WithAccessToken(Action(Of Auth0WebAppWithAccessTokenOptions))
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout
+  id: WithBackchannelLogout
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithBackchannelLogout()
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithBackchannelLogout()
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout()
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithBackchannelLogout
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 63
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Configures the use of Access Tokens
+  example: []
+  syntax:
+    content: public Auth0WebAppAuthenticationBuilder WithBackchannelLogout()
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: An instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function WithBackchannelLogout() As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+  id: WithAuthenticationApiClient
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithAuthenticationApiClient()
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient()
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient()
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithAuthenticationApiClient
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 80
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Registers an <xref href="Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient" data-throw-if-not-resolved="false"></xref> for calling Auth0 Authentication API
+
+    MFA endpoints (for example, to recover from an <code>mfa_required</code> error). The client
+
+    authenticates using the <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppOptions.ClientId" data-throw-if-not-resolved="false"></xref> and client credentials
+
+    configured on the SDK.
+  example: []
+  syntax:
+    content: public Auth0WebAppAuthenticationBuilder WithAuthenticationApiClient()
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: An instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function WithAuthenticationApiClient() As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains(System.Action{Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions})
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains(System.Action{Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions})
+  id: WithCustomDomains(System.Action{Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions})
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithCustomDomains(Action<Auth0CustomDomainsOptions>)
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithCustomDomains(Action<Auth0CustomDomainsOptions>)
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains(System.Action<Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithCustomDomains
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 104
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Configures support for multiple Auth0 custom domains with dynamic domain resolution.
+  example: []
+  syntax:
+    content: public Auth0WebAppAuthenticationBuilder WithCustomDomains(Action<Auth0CustomDomainsOptions> configureOptions)
+    parameters:
+    - id: configureOptions
+      type: System.Action{Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions}
+      description: A delegate used to configure the <xref href="Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: An instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function WithCustomDomains(configureOptions As Action(Of Auth0CustomDomainsOptions)) As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains*
+  nameWithType.vb: Auth0WebAppAuthenticationBuilder.WithCustomDomains(Action(Of Auth0CustomDomainsOptions))
+  fullName.vb: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains(System.Action(Of Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions))
+  name.vb: WithCustomDomains(Action(Of Auth0CustomDomainsOptions))
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore``1
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore``1
+  id: WithSessionStore``1
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithSessionStore<TStore>()
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithSessionStore<TStore>()
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore<TStore>()
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithSessionStore
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 119
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Stores the authentication session server-side using the supplied
+
+    <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.cookies.iticketstore">ITicketStore</a>,
+
+    keeping only a session key in the cookie. <code class="typeparamref">TStore</code> is resolved
+
+    from the service provider, so it may depend on other registered services
+
+    (e.g. <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.extensions.caching.distributed.idistributedcache">IDistributedCache</a>).
+  example: []
+  syntax:
+    content: 'public Auth0WebAppAuthenticationBuilder WithSessionStore<TStore>() where TStore : class, ITicketStore'
+    typeParameters:
+    - id: TStore
+      description: The <code>ITicketStore</code> implementation to use.
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: An instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function WithSessionStore(Of TStore As {Class, ITicketStore})() As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore*
+  nameWithType.vb: Auth0WebAppAuthenticationBuilder.WithSessionStore(Of TStore)()
+  fullName.vb: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore(Of TStore)()
+  name.vb: WithSessionStore(Of TStore)()
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore(Microsoft.AspNetCore.Authentication.Cookies.ITicketStore)
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore(Microsoft.AspNetCore.Authentication.Cookies.ITicketStore)
+  id: WithSessionStore(Microsoft.AspNetCore.Authentication.Cookies.ITicketStore)
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithSessionStore(ITicketStore)
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithSessionStore(ITicketStore)
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore(Microsoft.AspNetCore.Authentication.Cookies.ITicketStore)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithSessionStore
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppAuthenticationBuilder.cs
+    startLine: 136
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Stores the authentication session server-side using the supplied
+
+    <a href="https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.cookies.iticketstore">ITicketStore</a>
+
+    instance, keeping only a session key in the cookie.
+  example: []
+  syntax:
+    content: public Auth0WebAppAuthenticationBuilder WithSessionStore(ITicketStore ticketStore)
+    parameters:
+    - id: ticketStore
+      type: Microsoft.AspNetCore.Authentication.Cookies.ITicketStore
+      description: The <code>ITicketStore</code> instance to use.
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+      description: An instance of <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder" data-throw-if-not-resolved="false"></xref>
+    content.vb: Public Function WithSessionStore(ticketStore As ITicketStore) As Auth0WebAppAuthenticationBuilder
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore*
+references:
+- uid: Auth0.AspNetCore.Authentication
+  commentId: N:Auth0.AspNetCore.Authentication
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication
+  nameWithType: Auth0.AspNetCore.Authentication
+  fullName: Auth0.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html
+  name: Auth0WebAppAuthenticationBuilder
+  nameWithType: Auth0WebAppAuthenticationBuilder
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppOptions.html
+  name: Auth0WebAppOptions
+  nameWithType: Auth0WebAppOptions
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.#ctor
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_Auth0_AspNetCore_Authentication_Auth0WebAppOptions_
+  name: Auth0WebAppAuthenticationBuilder
+  nameWithType: Auth0WebAppAuthenticationBuilder.Auth0WebAppAuthenticationBuilder
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.Auth0WebAppAuthenticationBuilder
+  nameWithType.vb: Auth0WebAppAuthenticationBuilder.New
+  fullName.vb: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.New
+  name.vb: New
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html
+  name: Auth0WebAppWithAccessTokenOptions
+  nameWithType: Auth0WebAppWithAccessTokenOptions
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithAccessToken_System_Action_Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions__
+  name: WithAccessToken
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithAccessToken
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAccessToken
+- uid: System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions}
+  commentId: T:System.Action{Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Auth0WebAppWithAccessTokenOptions>
+  nameWithType: Action<Auth0WebAppWithAccessTokenOptions>
+  fullName: System.Action<Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions>
+  nameWithType.vb: Action(Of Auth0WebAppWithAccessTokenOptions)
+  fullName.vb: System.Action(Of Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions)
+  name.vb: Action(Of Auth0WebAppWithAccessTokenOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+    name: Auth0WebAppWithAccessTokenOptions
+    href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+    name: Auth0WebAppWithAccessTokenOptions
+    href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithBackchannelLogout
+  name: WithBackchannelLogout
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithBackchannelLogout
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithBackchannelLogout
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html
+  name: IAuthenticationApiClient
+  nameWithType: IAuthenticationApiClient
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppOptions.ClientId
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppOptions.ClientId
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppOptions_ClientId
+  name: ClientId
+  nameWithType: Auth0WebAppOptions.ClientId
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppOptions.ClientId
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithAuthenticationApiClient
+  name: WithAuthenticationApiClient
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+  href: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions.html
+  name: Auth0CustomDomainsOptions
+  nameWithType: Auth0CustomDomainsOptions
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithCustomDomains_System_Action_Auth0_AspNetCore_Authentication_CustomDomains_Auth0CustomDomainsOptions__
+  name: WithCustomDomains
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithCustomDomains
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithCustomDomains
+- uid: System.Action{Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions}
+  commentId: T:System.Action{Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<Auth0CustomDomainsOptions>
+  nameWithType: Action<Auth0CustomDomainsOptions>
+  fullName: System.Action<Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions>
+  nameWithType.vb: Action(Of Auth0CustomDomainsOptions)
+  fullName.vb: System.Action(Of Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions)
+  name.vb: Action(Of Auth0CustomDomainsOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+    name: Auth0CustomDomainsOptions
+    href: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+    name: Auth0CustomDomainsOptions
+    href: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions.html
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithSessionStore__1
+  name: WithSessionStore
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithSessionStore
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithSessionStore
+- uid: Microsoft.AspNetCore.Authentication.Cookies.ITicketStore
+  commentId: T:Microsoft.AspNetCore.Authentication.Cookies.ITicketStore
+  parent: Microsoft.AspNetCore.Authentication.Cookies
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.cookies.iticketstore
+  name: ITicketStore
+  nameWithType: ITicketStore
+  fullName: Microsoft.AspNetCore.Authentication.Cookies.ITicketStore
+- uid: Microsoft.AspNetCore.Authentication.Cookies
+  commentId: N:Microsoft.AspNetCore.Authentication.Cookies
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Authentication.Cookies
+  nameWithType: Microsoft.AspNetCore.Authentication.Cookies
+  fullName: Microsoft.AspNetCore.Authentication.Cookies
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Authentication
+    name: Authentication
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication
+  - name: .
+  - uid: Microsoft.AspNetCore.Authentication.Cookies
+    name: Cookies
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.cookies
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Authentication
+    name: Authentication
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication
+  - name: .
+  - uid: Microsoft.AspNetCore.Authentication.Cookies
+    name: Cookies
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.cookies

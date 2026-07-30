@@ -1,0 +1,189 @@
+### YamlMime:TableOfContent
+items:
+- uid: Auth0.AspNetCore.Authentication
+  name: Auth0.AspNetCore.Authentication
+  type: Namespace
+  items:
+  - uid: Auth0.AspNetCore.Authentication.AccessTokenForConnectionRequest
+    name: AccessTokenForConnectionRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AccessTokenRefreshFailedContext
+    name: AccessTokenRefreshFailedContext
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AccessTokenRefreshedContext
+    name: AccessTokenRefreshedContext
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AccessTokenRequest
+    name: AccessTokenRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.ActClaim
+    name: ActClaim
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.Auth0AuthenticationParameters
+    name: Auth0AuthenticationParameters
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.Auth0Constants
+    name: Auth0Constants
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder
+    name: Auth0WebAppAuthenticationBuilder
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppOptions
+    name: Auth0WebAppOptions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenEvents
+    name: Auth0WebAppWithAccessTokenEvents
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+    name: Auth0WebAppWithAccessTokenOptions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationBuilderExtensions
+    name: AuthenticationBuilderExtensions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder
+    name: BaseAuthenticationPropertiesBuilder
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+    name: CustomTokenExchangeException
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeRequest
+    name: CustomTokenExchangeRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeResult
+    name: CustomTokenExchangeResult
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.DictionaryExtensions
+    name: DictionaryExtensions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.HttpContextExtensions
+    name: HttpContextExtensions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+    name: LoginAuthenticationPropertiesBuilder
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.LogoutAuthenticationPropertiesBuilder
+    name: LogoutAuthenticationPropertiesBuilder
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.MfaRequiredException
+    name: MfaRequiredException
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+    name: MfaTokenExpiredException
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.MfaTokenInvalidException
+    name: MfaTokenInvalidException
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.OpenIdConnectConfigurationKeys
+    name: OpenIdConnectConfigurationKeys
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+    name: RefreshClaimsValidationType
+    type: Enum
+  - uid: Auth0.AspNetCore.Authentication.ServiceCollectionExtensions
+    name: ServiceCollectionExtensions
+    type: Class
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi
+  type: Namespace
+  items:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+    name: AuthenticationApiClient
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+    name: IAuthenticationApiClient
+    type: Interface
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  type: Namespace
+  items:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+    name: AssociateMfaAuthenticatorRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+    name: AssociateMfaAuthenticatorResponse
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator
+    name: Authenticator
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+    name: DeleteMfaAuthenticatorRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+    name: MfaChallengeRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequirement
+    name: MfaChallengeRequirement
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse
+    name: MfaChallengeResponse
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+    name: MfaOobTokenRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse
+    name: MfaOobTokenResponse
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+    name: MfaOtpTokenRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse
+    name: MfaOtpTokenResponse
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+    name: MfaRecoveryCodeRequest
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse
+    name: MfaRecoveryCodeResponse
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRequirements
+    name: MfaRequirements
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.TokenBase
+    name: TokenBase
+    type: Class
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+  name: Auth0.AspNetCore.Authentication.BackchannelLogout
+  type: Namespace
+  items:
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ApplicationBuilderExtensions
+    name: ApplicationBuilderExtensions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout.BackchannelLogoutHandler
+    name: BackchannelLogoutHandler
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout.DefaultLogoutTokenHandler
+    name: DefaultLogoutTokenHandler
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout.HttpContextExtensions
+    name: HttpContextExtensions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+    name: ILogoutTokenHandler
+    type: Interface
+- uid: Auth0.AspNetCore.Authentication.CustomDomains
+  name: Auth0.AspNetCore.Authentication.CustomDomains
+  type: Namespace
+  items:
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+    name: Auth0CustomDomainsOptions
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+    name: IConfigurationManagerCache
+    type: Interface
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+    name: MemoryConfigurationManagerCache
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.NullConfigurationManagerCache
+    name: NullConfigurationManagerCache
+    type: Class
+- uid: Auth0.AspNetCore.Authentication.Exceptions
+  name: Auth0.AspNetCore.Authentication.Exceptions
+  type: Namespace
+  items:
+  - uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+    name: ApiError
+    type: Class
+  - uid: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+    name: ErrorApiException
+    type: Class
+memberLayout: SamePage

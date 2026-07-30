@@ -1,0 +1,666 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+  commentId: T:Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+  id: MfaTokenExpiredException
+  parent: Auth0.AspNetCore.Authentication
+  children:
+  - Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor
+  - Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  langs:
+  - csharp
+  - vb
+  name: MfaTokenExpiredException
+  nameWithType: MfaTokenExpiredException
+  fullName: Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/MfaTokenExpiredException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: MfaTokenExpiredException
+    path: ../src/Auth0.AspNetCore.Authentication/MfaTokenExpiredException.cs
+    startLine: 11
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Thrown when an encrypted <code>mfa_token</code> blob (see <xref href="Auth0.AspNetCore.Authentication.MfaRequiredException.MfaToken" data-throw-if-not-resolved="false"></xref>)
+
+    has passed its 5-minute lifetime. The MFA flow must be restarted to obtain a fresh token.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class MfaTokenExpiredException : ErrorApiException, ISerializable
+    content.vb: >-
+      <Serializable>
+
+      Public Class MfaTokenExpiredException Inherits ErrorApiException Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  - Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.ApiError
+  - Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.StatusCode
+  - System.Exception.GetBaseException
+  - System.Exception.GetType
+  - System.Exception.ToString
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor
+  commentId: M:Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor
+  id: '#ctor'
+  parent: Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+  langs:
+  - csharp
+  - vb
+  name: MfaTokenExpiredException()
+  nameWithType: MfaTokenExpiredException.MfaTokenExpiredException()
+  fullName: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.MfaTokenExpiredException()
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/MfaTokenExpiredException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/MfaTokenExpiredException.cs
+    startLine: 21
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Creates an <xref href="Auth0.AspNetCore.Authentication.MfaTokenExpiredException" data-throw-if-not-resolved="false"></xref> with a default error payload.
+  example: []
+  syntax:
+    content: public MfaTokenExpiredException()
+    content.vb: Public Sub New()
+  overload: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor*
+  nameWithType.vb: MfaTokenExpiredException.New()
+  fullName.vb: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.New()
+  name.vb: New()
+- uid: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+  parent: Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+  langs:
+  - csharp
+  - vb
+  name: MfaTokenExpiredException(SerializationInfo, StreamingContext)
+  nameWithType: MfaTokenExpiredException.MfaTokenExpiredException(SerializationInfo, StreamingContext)
+  fullName: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.MfaTokenExpiredException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/MfaTokenExpiredException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/MfaTokenExpiredException.cs
+    startLine: 27
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Initializes a new instance of the <xref href="System.Exception" data-throw-if-not-resolved="false"></xref> class with serialized data.
+  example: []
+  syntax:
+    content: protected MfaTokenExpiredException(SerializationInfo serializationInfo, StreamingContext streamingContext)
+    parameters:
+    - id: serializationInfo
+      type: System.Runtime.Serialization.SerializationInfo
+    - id: streamingContext
+      type: System.Runtime.Serialization.StreamingContext
+    content.vb: Protected Sub New(serializationInfo As SerializationInfo, streamingContext As StreamingContext)
+  overload: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: <code class="paramref">info</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  - type: System.Runtime.Serialization.SerializationException
+    commentId: T:System.Runtime.Serialization.SerializationException
+    description: The class name is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or <xref href="System.Exception.HResult" data-throw-if-not-resolved="false"></xref> is zero (0).
+  nameWithType.vb: MfaTokenExpiredException.New(SerializationInfo, StreamingContext)
+  fullName.vb: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.New(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name.vb: New(SerializationInfo, StreamingContext)
+references:
+- uid: Auth0.AspNetCore.Authentication.MfaRequiredException.MfaToken
+  commentId: P:Auth0.AspNetCore.Authentication.MfaRequiredException.MfaToken
+  href: Auth0.AspNetCore.Authentication.MfaRequiredException.html#Auth0_AspNetCore_Authentication_MfaRequiredException_MfaToken
+  name: MfaToken
+  nameWithType: MfaRequiredException.MfaToken
+  fullName: Auth0.AspNetCore.Authentication.MfaRequiredException.MfaToken
+- uid: Auth0.AspNetCore.Authentication
+  commentId: N:Auth0.AspNetCore.Authentication
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication
+  nameWithType: Auth0.AspNetCore.Authentication
+  fullName: Auth0.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  commentId: T:Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  parent: Auth0.AspNetCore.Authentication.Exceptions
+  href: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.html
+  name: ErrorApiException
+  nameWithType: ErrorApiException
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.ApiError
+  commentId: P:Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.ApiError
+  parent: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  href: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.html#Auth0_AspNetCore_Authentication_Exceptions_ErrorApiException_ApiError
+  name: ApiError
+  nameWithType: ErrorApiException.ApiError
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.ApiError
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.StatusCode
+  commentId: P:Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.StatusCode
+  parent: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  href: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.html#Auth0_AspNetCore_Authentication_Exceptions_ErrorApiException_StatusCode
+  name: StatusCode
+  nameWithType: ErrorApiException.StatusCode
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.StatusCode
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.Exceptions
+  commentId: N:Auth0.AspNetCore.Authentication.Exceptions
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.Exceptions
+  nameWithType: Auth0.AspNetCore.Authentication.Exceptions
+  fullName: Auth0.AspNetCore.Authentication.Exceptions
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.Exceptions
+    name: Exceptions
+    href: Auth0.AspNetCore.Authentication.Exceptions.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.Exceptions
+    name: Exceptions
+    href: Auth0.AspNetCore.Authentication.Exceptions.html
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+  commentId: T:Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+  href: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.html
+  name: MfaTokenExpiredException
+  nameWithType: MfaTokenExpiredException
+  fullName: Auth0.AspNetCore.Authentication.MfaTokenExpiredException
+- uid: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor*
+  commentId: Overload:Auth0.AspNetCore.Authentication.MfaTokenExpiredException.#ctor
+  href: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.html#Auth0_AspNetCore_Authentication_MfaTokenExpiredException__ctor
+  name: MfaTokenExpiredException
+  nameWithType: MfaTokenExpiredException.MfaTokenExpiredException
+  fullName: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.MfaTokenExpiredException
+  nameWithType.vb: MfaTokenExpiredException.New
+  fullName.vb: Auth0.AspNetCore.Authentication.MfaTokenExpiredException.New
+  name.vb: New
+- uid: System.Runtime.Serialization.SerializationInfo
+  commentId: T:System.Runtime.Serialization.SerializationInfo
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationinfo
+  name: SerializationInfo
+  nameWithType: SerializationInfo
+  fullName: System.Runtime.Serialization.SerializationInfo
+- uid: System.Runtime.Serialization.StreamingContext
+  commentId: T:System.Runtime.Serialization.StreamingContext
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.streamingcontext
+  name: StreamingContext
+  nameWithType: StreamingContext
+  fullName: System.Runtime.Serialization.StreamingContext
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: System.Runtime.Serialization.SerializationException
+  commentId: T:System.Runtime.Serialization.SerializationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.serializationexception
+  name: SerializationException
+  nameWithType: SerializationException
+  fullName: System.Runtime.Serialization.SerializationException

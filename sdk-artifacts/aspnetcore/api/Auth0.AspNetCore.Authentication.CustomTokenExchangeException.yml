@@ -1,0 +1,728 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  commentId: T:Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  id: CustomTokenExchangeException
+  parent: Auth0.AspNetCore.Authentication
+  children:
+  - Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor(System.Nullable{System.Int32},System.String,System.String)
+  - Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor(System.String)
+  - Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error
+  - Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription
+  - Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode
+  langs:
+  - csharp
+  - vb
+  name: CustomTokenExchangeException
+  nameWithType: CustomTokenExchangeException
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: CustomTokenExchangeException
+    path: ../src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+    startLine: 9
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Thrown when a Custom Token Exchange fails — either client-side validation of the
+
+    request, or rejection by the Auth0 token endpoint. Carries the token-endpoint status code and
+
+    error details when the failure came from the network; never carries token-bearing bytes.
+  example: []
+  syntax:
+    content: 'public class CustomTokenExchangeException : Exception, ISerializable'
+    content.vb: Public Class CustomTokenExchangeException Inherits Exception Implements ISerializable
+  inheritance:
+  - System.Object
+  - System.Exception
+  implements:
+  - System.Runtime.Serialization.ISerializable
+  inheritedMembers:
+  - System.Exception.GetBaseException
+  - System.Exception.GetType
+  - System.Exception.ToString
+  - System.Exception.Data
+  - System.Exception.HelpLink
+  - System.Exception.HResult
+  - System.Exception.InnerException
+  - System.Exception.Message
+  - System.Exception.Source
+  - System.Exception.StackTrace
+  - System.Exception.TargetSite
+  - System.Exception.SerializeObjectState
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode
+  commentId: P:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode
+  id: StatusCode
+  parent: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  langs:
+  - csharp
+  - vb
+  name: StatusCode
+  nameWithType: CustomTokenExchangeException.StatusCode
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: StatusCode
+    path: ../src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+    startLine: 12
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: The HTTP status code returned by the token endpoint, when the failure was a rejection.
+  example: []
+  syntax:
+    content: public int? StatusCode { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public ReadOnly Property StatusCode As Integer?
+  overload: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode*
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error
+  commentId: P:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error
+  id: Error
+  parent: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: CustomTokenExchangeException.Error
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Error
+    path: ../src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+    startLine: 15
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: The <code>error</code> code from the token endpoint's error body, when present.
+  example: []
+  syntax:
+    content: public string? Error { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property [Error] As String
+  overload: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error*
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription
+  commentId: P:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription
+  id: ErrorDescription
+  parent: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  langs:
+  - csharp
+  - vb
+  name: ErrorDescription
+  nameWithType: CustomTokenExchangeException.ErrorDescription
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: ErrorDescription
+    path: ../src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+    startLine: 18
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: The <code>error_description</code> from the token endpoint's error body, when present.
+  example: []
+  syntax:
+    content: public string? ErrorDescription { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ErrorDescription As String
+  overload: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription*
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor(System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  langs:
+  - csharp
+  - vb
+  name: CustomTokenExchangeException(string)
+  nameWithType: CustomTokenExchangeException.CustomTokenExchangeException(string)
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.CustomTokenExchangeException(string)
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+    startLine: 21
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Creates an exception for a client-side validation failure.
+  example: []
+  syntax:
+    content: public CustomTokenExchangeException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor*
+  nameWithType.vb: CustomTokenExchangeException.New(String)
+  fullName.vb: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.New(String)
+  name.vb: New(String)
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor(System.Nullable{System.Int32},System.String,System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor(System.Nullable{System.Int32},System.String,System.String)
+  id: '#ctor(System.Nullable{System.Int32},System.String,System.String)'
+  parent: Auth0.AspNetCore.Authentication.CustomTokenExchangeException
+  langs:
+  - csharp
+  - vb
+  name: CustomTokenExchangeException(int?, string?, string?)
+  nameWithType: CustomTokenExchangeException.CustomTokenExchangeException(int?, string?, string?)
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.CustomTokenExchangeException(int?, string?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/CustomTokenExchangeException.cs
+    startLine: 26
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Creates an exception for a token-endpoint rejection.
+  example: []
+  syntax:
+    content: public CustomTokenExchangeException(int? statusCode, string? error, string? errorDescription)
+    parameters:
+    - id: statusCode
+      type: System.Nullable{System.Int32}
+    - id: error
+      type: System.String
+    - id: errorDescription
+      type: System.String
+    content.vb: Public Sub New(statusCode As Integer?, [error] As String, errorDescription As String)
+  overload: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor*
+  nameWithType.vb: CustomTokenExchangeException.New(Integer?, String, String)
+  fullName.vb: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.New(Integer?, String, String)
+  name.vb: New(Integer?, String, String)
+references:
+- uid: Auth0.AspNetCore.Authentication
+  commentId: N:Auth0.AspNetCore.Authentication
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication
+  nameWithType: Auth0.AspNetCore.Authentication
+  fullName: Auth0.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Runtime.Serialization.ISerializable
+  commentId: T:System.Runtime.Serialization.ISerializable
+  parent: System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization.iserializable
+  name: ISerializable
+  nameWithType: ISerializable
+  fullName: System.Runtime.Serialization.ISerializable
+- uid: System.Exception.GetBaseException
+  commentId: M:System.Exception.GetBaseException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  name: GetBaseException()
+  nameWithType: Exception.GetBaseException()
+  fullName: System.Exception.GetBaseException()
+  spec.csharp:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetBaseException
+    name: GetBaseException
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.getbaseexception
+  - name: (
+  - name: )
+- uid: System.Exception.GetType
+  commentId: M:System.Exception.GetType
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  name: GetType()
+  nameWithType: Exception.GetType()
+  fullName: System.Exception.GetType()
+  spec.csharp:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.gettype
+  - name: (
+  - name: )
+- uid: System.Exception.ToString
+  commentId: M:System.Exception.ToString
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  name: ToString()
+  nameWithType: Exception.ToString()
+  fullName: System.Exception.ToString()
+  spec.csharp:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Exception.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.exception.tostring
+  - name: (
+  - name: )
+- uid: System.Exception.Data
+  commentId: P:System.Exception.Data
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.data
+  name: Data
+  nameWithType: Exception.Data
+  fullName: System.Exception.Data
+- uid: System.Exception.HelpLink
+  commentId: P:System.Exception.HelpLink
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.helplink
+  name: HelpLink
+  nameWithType: Exception.HelpLink
+  fullName: System.Exception.HelpLink
+- uid: System.Exception.HResult
+  commentId: P:System.Exception.HResult
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.hresult
+  name: HResult
+  nameWithType: Exception.HResult
+  fullName: System.Exception.HResult
+- uid: System.Exception.InnerException
+  commentId: P:System.Exception.InnerException
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.innerexception
+  name: InnerException
+  nameWithType: Exception.InnerException
+  fullName: System.Exception.InnerException
+- uid: System.Exception.Message
+  commentId: P:System.Exception.Message
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.message
+  name: Message
+  nameWithType: Exception.Message
+  fullName: System.Exception.Message
+- uid: System.Exception.Source
+  commentId: P:System.Exception.Source
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.source
+  name: Source
+  nameWithType: Exception.Source
+  fullName: System.Exception.Source
+- uid: System.Exception.StackTrace
+  commentId: P:System.Exception.StackTrace
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.stacktrace
+  name: StackTrace
+  nameWithType: Exception.StackTrace
+  fullName: System.Exception.StackTrace
+- uid: System.Exception.TargetSite
+  commentId: P:System.Exception.TargetSite
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.targetsite
+  name: TargetSite
+  nameWithType: Exception.TargetSite
+  fullName: System.Exception.TargetSite
+- uid: System.Exception.SerializeObjectState
+  commentId: E:System.Exception.SerializeObjectState
+  parent: System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception.serializeobjectstate
+  name: SerializeObjectState
+  nameWithType: Exception.SerializeObjectState
+  fullName: System.Exception.SerializeObjectState
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Runtime.Serialization
+  commentId: N:System.Runtime.Serialization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Runtime.Serialization
+  nameWithType: System.Runtime.Serialization
+  fullName: System.Runtime.Serialization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Runtime
+    name: Runtime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime
+  - name: .
+  - uid: System.Runtime.Serialization
+    name: Serialization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.runtime.serialization
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode
+  href: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.html#Auth0_AspNetCore_Authentication_CustomTokenExchangeException_StatusCode
+  name: StatusCode
+  nameWithType: CustomTokenExchangeException.StatusCode
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.StatusCode
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error
+  href: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.html#Auth0_AspNetCore_Authentication_CustomTokenExchangeException_Error
+  name: Error
+  nameWithType: CustomTokenExchangeException.Error
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.Error
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription
+  href: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.html#Auth0_AspNetCore_Authentication_CustomTokenExchangeException_ErrorDescription
+  name: ErrorDescription
+  nameWithType: CustomTokenExchangeException.ErrorDescription
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.ErrorDescription
+- uid: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomTokenExchangeException.#ctor
+  href: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.html#Auth0_AspNetCore_Authentication_CustomTokenExchangeException__ctor_System_String_
+  name: CustomTokenExchangeException
+  nameWithType: CustomTokenExchangeException.CustomTokenExchangeException
+  fullName: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.CustomTokenExchangeException
+  nameWithType.vb: CustomTokenExchangeException.New
+  fullName.vb: Auth0.AspNetCore.Authentication.CustomTokenExchangeException.New
+  name.vb: New

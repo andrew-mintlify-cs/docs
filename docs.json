@@ -444,6 +444,49 @@
                     ]
                   }
                 ]
+              },
+              {
+                "product": "SDK Reference",
+                "description": "Auto-generated SDK docs from TypeDoc, DocFX, Sphinx, and phpDocumentor artifacts",
+                "icon": "code",
+                "tabs": [
+                  {
+                    "tab": "JavaScript (TypeDoc)",
+                    "icon": "js",
+                    "sdk": {
+                      "format": "typedoc",
+                      "source": "sdk-artifacts/spa-js/typedoc.json",
+                      "directory": "sdk/spa-js"
+                    }
+                  },
+                  {
+                    "tab": ".NET (DocFX)",
+                    "icon": "microsoft",
+                    "sdk": {
+                      "format": "docfx",
+                      "source": "sdk-artifacts/aspnetcore/api",
+                      "directory": "sdk/aspnetcore"
+                    }
+                  },
+                  {
+                    "tab": "Python (Sphinx)",
+                    "icon": "python",
+                    "sdk": {
+                      "format": "sphinx",
+                      "source": "sdk-artifacts/python/json",
+                      "directory": "sdk/python"
+                    }
+                  },
+                  {
+                    "tab": "PHP (phpDocumentor)",
+                    "icon": "php",
+                    "sdk": {
+                      "format": "phpdoc",
+                      "source": "sdk-artifacts/php/structure.xml",
+                      "directory": "sdk/php"
+                    }
+                  }
+                ]
               }
             ]
           },

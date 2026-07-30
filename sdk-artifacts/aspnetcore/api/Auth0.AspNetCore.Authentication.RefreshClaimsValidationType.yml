@@ -1,0 +1,168 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  commentId: T:Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  id: RefreshClaimsValidationType
+  parent: Auth0.AspNetCore.Authentication
+  children:
+  - Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  - Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.SkipSignature
+  langs:
+  - csharp
+  - vb
+  name: RefreshClaimsValidationType
+  nameWithType: RefreshClaimsValidationType
+  fullName: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  type: Enum
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/RefreshClaimsValidationType.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: RefreshClaimsValidationType
+    path: ../src/Auth0.AspNetCore.Authentication/RefreshClaimsValidationType.cs
+    startLine: 7
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Controls how rigorously the refreshed <code>id_token</code> is validated before its claims
+
+    replace the <xref href="System.Security.Claims.ClaimsPrincipal" data-throw-if-not-resolved="false"></xref> when
+
+    <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh" data-throw-if-not-resolved="false"></xref> is enabled.
+  example: []
+  syntax:
+    content: public enum RefreshClaimsValidationType
+    content.vb: Public Enum RefreshClaimsValidationType
+- uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  commentId: F:Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  id: Full
+  parent: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  langs:
+  - csharp
+  - vb
+  name: Full
+  nameWithType: RefreshClaimsValidationType.Full
+  fullName: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  type: Field
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/RefreshClaimsValidationType.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Full
+    path: ../src/Auth0.AspNetCore.Authentication/RefreshClaimsValidationType.cs
+    startLine: 16
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Validate the refreshed <code>id_token</code> signature against the cached JWKS, plus
+
+    issuer, audience and lifetime, and the SDK's business-rule checks (sub, iat, azp, org).
+
+    The <code>auth_time</code>/<code>MaxAge</code> login-freshness check is intentionally not applied
+
+    on refresh, since a refresh grant does not re-authenticate the user. This is the
+
+    default and the safe choice.
+  example: []
+  syntax:
+    content: Full = 0
+    return:
+      type: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+- uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.SkipSignature
+  commentId: F:Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.SkipSignature
+  id: SkipSignature
+  parent: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  langs:
+  - csharp
+  - vb
+  name: SkipSignature
+  nameWithType: RefreshClaimsValidationType.SkipSignature
+  fullName: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.SkipSignature
+  type: Field
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/RefreshClaimsValidationType.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: SkipSignature
+    path: ../src/Auth0.AspNetCore.Authentication/RefreshClaimsValidationType.cs
+    startLine: 25
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Skip <b>only</b> the cryptographic signature check (trusting the back-channel TLS
+
+    exchange with the token endpoint). Issuer, audience and lifetime are still validated,
+
+    and the SDK's business-rule checks (sub, iat, azp, org) still run, so the resulting
+
+    claims are mapped identically to <xref href="Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full" data-throw-if-not-resolved="false"></xref>. Lower cost and lower fidelity
+
+    than <xref href="Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: SkipSignature = 1
+    return:
+      type: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+references:
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_RebuildPrincipalOnRefresh
+  name: RebuildPrincipalOnRefresh
+  nameWithType: Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+- uid: Auth0.AspNetCore.Authentication
+  commentId: N:Auth0.AspNetCore.Authentication
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication
+  nameWithType: Auth0.AspNetCore.Authentication
+  fullName: Auth0.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+- uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  commentId: T:Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.html
+  name: RefreshClaimsValidationType
+  nameWithType: RefreshClaimsValidationType
+  fullName: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+- uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  commentId: F:Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  href: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.html#Auth0_AspNetCore_Authentication_RefreshClaimsValidationType_Full
+  name: Full
+  nameWithType: RefreshClaimsValidationType.Full
+  fullName: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full

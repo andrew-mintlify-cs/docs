@@ -1,0 +1,1472 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  id: AuthenticationApiClient
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi
+  children:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: AuthenticationApiClient
+  nameWithType: AuthenticationApiClient
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: AuthenticationApiClient
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 22
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: >-
+    A client for the subset of Auth0 Authentication API endpoints needed to recover from an
+
+    <code>mfa_required</code> error: triggering an MFA challenge, completing MFA via the OTP / OOB /
+
+    recovery-code grants, and managing authenticators.
+  remarks: >-
+    This is implemented over System.Text.Json within this SDK. The interface name, registration
+
+    (<xref href="Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient" data-throw-if-not-resolved="false"></xref>) and method
+
+    shapes intentionally mirror the planned <code>Auth0.AuthenticationApi</code> integration so that a
+
+    future swap to that package is invisible to consumers. The request/response types in
+
+    <code>Auth0.AspNetCore.Authentication.AuthenticationApi.Models</code> are this SDK's own and form a
+
+    permanent public contract.
+  example: []
+  syntax:
+    content: 'public class AuthenticationApiClient : IAuthenticationApiClient, IDisposable'
+    content.vb: Public Class AuthenticationApiClient Implements IAuthenticationApiClient, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri
+  id: BaseUri
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: BaseUri
+  nameWithType: AuthenticationApiClient.BaseUri
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: BaseUri
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 63
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: The base URI of the Auth0 Authentication API (e.g. <code>https://your-domain.auth0.com</code>).
+  example: []
+  syntax:
+    content: public Uri BaseUri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property BaseUri As Uri
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.BaseUri
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+  id: MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: MfaChallengeAsync(MfaChallengeRequest, CancellationToken)
+  nameWithType: AuthenticationApiClient.MfaChallengeAsync(MfaChallengeRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: MfaChallengeAsync
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 66
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Triggers an MFA challenge (OTP, SMS, voice, or push) for an <code>mfa_token</code>.
+  example: []
+  syntax:
+    content: public Task<MfaChallengeResponse> MfaChallengeAsync(MfaChallengeRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse}
+    content.vb: Public Function MfaChallengeAsync(request As MfaChallengeRequest, cancellationToken As CancellationToken = Nothing) As Task(Of MfaChallengeResponse)
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+  id: GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: GetTokenAsync(MfaOtpTokenRequest, CancellationToken)
+  nameWithType: AuthenticationApiClient.GetTokenAsync(MfaOtpTokenRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: GetTokenAsync
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 85
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Completes MFA using a one-time password (OTP) code.
+  example: []
+  syntax:
+    content: public Task<MfaOtpTokenResponse> GetTokenAsync(MfaOtpTokenRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse}
+    content.vb: Public Function GetTokenAsync(request As MfaOtpTokenRequest, cancellationToken As CancellationToken = Nothing) As Task(Of MfaOtpTokenResponse)
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+  id: GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: GetTokenAsync(MfaOobTokenRequest, CancellationToken)
+  nameWithType: AuthenticationApiClient.GetTokenAsync(MfaOobTokenRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: GetTokenAsync
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 105
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Completes MFA using an out-of-band (OOB) code.
+  example: []
+  syntax:
+    content: public Task<MfaOobTokenResponse> GetTokenAsync(MfaOobTokenRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse}
+    content.vb: Public Function GetTokenAsync(request As MfaOobTokenRequest, cancellationToken As CancellationToken = Nothing) As Task(Of MfaOobTokenResponse)
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+  id: GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: GetTokenAsync(MfaRecoveryCodeRequest, CancellationToken)
+  nameWithType: AuthenticationApiClient.GetTokenAsync(MfaRecoveryCodeRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: GetTokenAsync
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 153
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Completes MFA using a recovery code.
+  example: []
+  syntax:
+    content: public Task<MfaRecoveryCodeResponse> GetTokenAsync(MfaRecoveryCodeRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse}
+    content.vb: Public Function GetTokenAsync(request As MfaRecoveryCodeRequest, cancellationToken As CancellationToken = Nothing) As Task(Of MfaRecoveryCodeResponse)
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  id: AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: AssociateMfaAuthenticatorAsync(AssociateMfaAuthenticatorRequest, CancellationToken)
+  nameWithType: AuthenticationApiClient.AssociateMfaAuthenticatorAsync(AssociateMfaAuthenticatorRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: AssociateMfaAuthenticatorAsync
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 173
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Associates (enrolls) a new MFA authenticator.
+  example: []
+  syntax:
+    content: public Task<AssociateMfaAuthenticatorResponse> AssociateMfaAuthenticatorAsync(AssociateMfaAuthenticatorRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse}
+    content.vb: Public Function AssociateMfaAuthenticatorAsync(request As AssociateMfaAuthenticatorRequest, cancellationToken As CancellationToken = Nothing) As Task(Of AssociateMfaAuthenticatorResponse)
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+  id: ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: ListMfaAuthenticatorsAsync(string, CancellationToken)
+  nameWithType: AuthenticationApiClient.ListMfaAuthenticatorsAsync(string, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: ListMfaAuthenticatorsAsync
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 189
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Lists the MFA authenticators associated with the user identified by the access token.
+  example: []
+  syntax:
+    content: public Task<IList<Authenticator>> ListMfaAuthenticatorsAsync(string accessToken, CancellationToken cancellationToken = default)
+    parameters:
+    - id: accessToken
+      type: System.String
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IList{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator}}
+    content.vb: Public Function ListMfaAuthenticatorsAsync(accessToken As String, cancellationToken As CancellationToken = Nothing) As Task(Of IList(Of Authenticator))
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+  nameWithType.vb: AuthenticationApiClient.ListMfaAuthenticatorsAsync(String, CancellationToken)
+  fullName.vb: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync(String, System.Threading.CancellationToken)
+  name.vb: ListMfaAuthenticatorsAsync(String, CancellationToken)
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  id: DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: DeleteMfaAuthenticatorAsync(DeleteMfaAuthenticatorRequest, CancellationToken)
+  nameWithType: AuthenticationApiClient.DeleteMfaAuthenticatorAsync(DeleteMfaAuthenticatorRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: DeleteMfaAuthenticatorAsync
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 200
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Deletes an associated MFA authenticator by ID.
+  example: []
+  syntax:
+    content: public Task DeleteMfaAuthenticatorAsync(DeleteMfaAuthenticatorRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function DeleteMfaAuthenticatorAsync(request As DeleteMfaAuthenticatorRequest, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync*
+  implements:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose
+  id: Dispose
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AuthenticationApiClient.Dispose()
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Dispose
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/AuthenticationApiClient.cs
+    startLine: 212
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+  commentId: M:Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithAuthenticationApiClient
+  name: WithAuthenticationApiClient()
+  nameWithType: Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient()
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient()
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+    name: WithAuthenticationApiClient
+    href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithAuthenticationApiClient
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.WithAuthenticationApiClient
+    name: WithAuthenticationApiClient
+    href: Auth0.AspNetCore.Authentication.Auth0WebAppAuthenticationBuilder.html#Auth0_AspNetCore_Authentication_Auth0WebAppAuthenticationBuilder_WithAuthenticationApiClient
+  - name: (
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html
+  name: IAuthenticationApiClient
+  nameWithType: IAuthenticationApiClient
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_AuthenticationApiClient_BaseUri
+  name: BaseUri
+  nameWithType: AuthenticationApiClient.BaseUri
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.BaseUri
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.BaseUri
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.BaseUri
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_BaseUri
+  name: BaseUri
+  nameWithType: IAuthenticationApiClient.BaseUri
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.BaseUri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uri
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_AuthenticationApiClient_MfaChallengeAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaChallengeRequest_System_Threading_CancellationToken_
+  name: MfaChallengeAsync
+  nameWithType: AuthenticationApiClient.MfaChallengeAsync
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.MfaChallengeAsync
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_MfaChallengeAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaChallengeRequest_System_Threading_CancellationToken_
+  name: MfaChallengeAsync(MfaChallengeRequest, CancellationToken)
+  nameWithType: IAuthenticationApiClient.MfaChallengeAsync(MfaChallengeRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+    name: MfaChallengeAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_MfaChallengeAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaChallengeRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+    name: MfaChallengeRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.MfaChallengeAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest,System.Threading.CancellationToken)
+    name: MfaChallengeAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_MfaChallengeAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaChallengeRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+    name: MfaChallengeRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest.html
+  name: MfaChallengeRequest
+  nameWithType: MfaChallengeRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse}
+  commentId: T:System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MfaChallengeResponse>
+  nameWithType: Task<MfaChallengeResponse>
+  fullName: System.Threading.Tasks.Task<Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse>
+  nameWithType.vb: Task(Of MfaChallengeResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse)
+  name.vb: Task(Of MfaChallengeResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse
+    name: MfaChallengeResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse
+    name: MfaChallengeResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse.html
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+    name: Models
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+    name: Models
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_AuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaOtpTokenRequest_System_Threading_CancellationToken_
+  name: GetTokenAsync
+  nameWithType: AuthenticationApiClient.GetTokenAsync
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.GetTokenAsync
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaOtpTokenRequest_System_Threading_CancellationToken_
+  name: GetTokenAsync(MfaOtpTokenRequest, CancellationToken)
+  nameWithType: IAuthenticationApiClient.GetTokenAsync(MfaOtpTokenRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+    name: GetTokenAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaOtpTokenRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+    name: MfaOtpTokenRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest,System.Threading.CancellationToken)
+    name: GetTokenAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaOtpTokenRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+    name: MfaOtpTokenRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest.html
+  name: MfaOtpTokenRequest
+  nameWithType: MfaOtpTokenRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+- uid: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse}
+  commentId: T:System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MfaOtpTokenResponse>
+  nameWithType: Task<MfaOtpTokenResponse>
+  fullName: System.Threading.Tasks.Task<Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse>
+  nameWithType.vb: Task(Of MfaOtpTokenResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse)
+  name.vb: Task(Of MfaOtpTokenResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse
+    name: MfaOtpTokenResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse
+    name: MfaOtpTokenResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse.html
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaOobTokenRequest_System_Threading_CancellationToken_
+  name: GetTokenAsync(MfaOobTokenRequest, CancellationToken)
+  nameWithType: IAuthenticationApiClient.GetTokenAsync(MfaOobTokenRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+    name: GetTokenAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaOobTokenRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+    name: MfaOobTokenRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest,System.Threading.CancellationToken)
+    name: GetTokenAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaOobTokenRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+    name: MfaOobTokenRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest.html
+  name: MfaOobTokenRequest
+  nameWithType: MfaOobTokenRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+- uid: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse}
+  commentId: T:System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MfaOobTokenResponse>
+  nameWithType: Task<MfaOobTokenResponse>
+  fullName: System.Threading.Tasks.Task<Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse>
+  nameWithType.vb: Task(Of MfaOobTokenResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse)
+  name.vb: Task(Of MfaOobTokenResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse
+    name: MfaOobTokenResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse
+    name: MfaOobTokenResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse.html
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaRecoveryCodeRequest_System_Threading_CancellationToken_
+  name: GetTokenAsync(MfaRecoveryCodeRequest, CancellationToken)
+  nameWithType: IAuthenticationApiClient.GetTokenAsync(MfaRecoveryCodeRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+    name: GetTokenAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaRecoveryCodeRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+    name: MfaRecoveryCodeRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.GetTokenAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest,System.Threading.CancellationToken)
+    name: GetTokenAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_GetTokenAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_MfaRecoveryCodeRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+    name: MfaRecoveryCodeRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest.html
+  name: MfaRecoveryCodeRequest
+  nameWithType: MfaRecoveryCodeRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+- uid: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse}
+  commentId: T:System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<MfaRecoveryCodeResponse>
+  nameWithType: Task<MfaRecoveryCodeResponse>
+  fullName: System.Threading.Tasks.Task<Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse>
+  nameWithType.vb: Task(Of MfaRecoveryCodeResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse)
+  name.vb: Task(Of MfaRecoveryCodeResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse
+    name: MfaRecoveryCodeResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse
+    name: MfaRecoveryCodeResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse.html
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_AuthenticationApiClient_AssociateMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  name: AssociateMfaAuthenticatorAsync
+  nameWithType: AuthenticationApiClient.AssociateMfaAuthenticatorAsync
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.AssociateMfaAuthenticatorAsync
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_AssociateMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  name: AssociateMfaAuthenticatorAsync(AssociateMfaAuthenticatorRequest, CancellationToken)
+  nameWithType: IAuthenticationApiClient.AssociateMfaAuthenticatorAsync(AssociateMfaAuthenticatorRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+    name: AssociateMfaAuthenticatorAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_AssociateMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+    name: AssociateMfaAuthenticatorRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.AssociateMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest,System.Threading.CancellationToken)
+    name: AssociateMfaAuthenticatorAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_AssociateMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+    name: AssociateMfaAuthenticatorRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest.html
+  name: AssociateMfaAuthenticatorRequest
+  nameWithType: AssociateMfaAuthenticatorRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+- uid: System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse}
+  commentId: T:System.Threading.Tasks.Task{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<AssociateMfaAuthenticatorResponse>
+  nameWithType: Task<AssociateMfaAuthenticatorResponse>
+  fullName: System.Threading.Tasks.Task<Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse>
+  nameWithType.vb: Task(Of AssociateMfaAuthenticatorResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse)
+  name.vb: Task(Of AssociateMfaAuthenticatorResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+    name: AssociateMfaAuthenticatorResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+    name: AssociateMfaAuthenticatorResponse
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_AuthenticationApiClient_ListMfaAuthenticatorsAsync_System_String_System_Threading_CancellationToken_
+  name: ListMfaAuthenticatorsAsync
+  nameWithType: AuthenticationApiClient.ListMfaAuthenticatorsAsync
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.ListMfaAuthenticatorsAsync
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_ListMfaAuthenticatorsAsync_System_String_System_Threading_CancellationToken_
+  name: ListMfaAuthenticatorsAsync(string, CancellationToken)
+  nameWithType: IAuthenticationApiClient.ListMfaAuthenticatorsAsync(string, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.ListMfaAuthenticatorsAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: IAuthenticationApiClient.ListMfaAuthenticatorsAsync(String, CancellationToken)
+  fullName.vb: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.ListMfaAuthenticatorsAsync(String, System.Threading.CancellationToken)
+  name.vb: ListMfaAuthenticatorsAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+    name: ListMfaAuthenticatorsAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_ListMfaAuthenticatorsAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.ListMfaAuthenticatorsAsync(System.String,System.Threading.CancellationToken)
+    name: ListMfaAuthenticatorsAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_ListMfaAuthenticatorsAsync_System_String_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IList{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IList{Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IList<Authenticator>>
+  nameWithType: Task<IList<Authenticator>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IList<Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator>>
+  nameWithType.vb: Task(Of IList(Of Authenticator))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IList(Of Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator))
+  name.vb: Task(Of IList(Of Authenticator))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator
+    name: Authenticator
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator
+    name: Authenticator
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator.html
+  - name: )
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_AuthenticationApiClient_DeleteMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_DeleteMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  name: DeleteMfaAuthenticatorAsync
+  nameWithType: AuthenticationApiClient.DeleteMfaAuthenticatorAsync
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.DeleteMfaAuthenticatorAsync
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  commentId: M:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_DeleteMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_DeleteMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  name: DeleteMfaAuthenticatorAsync(DeleteMfaAuthenticatorRequest, CancellationToken)
+  nameWithType: IAuthenticationApiClient.DeleteMfaAuthenticatorAsync(DeleteMfaAuthenticatorRequest, CancellationToken)
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+    name: DeleteMfaAuthenticatorAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_DeleteMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_DeleteMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+    name: DeleteMfaAuthenticatorRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.DeleteMfaAuthenticatorAsync(Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest,System.Threading.CancellationToken)
+    name: DeleteMfaAuthenticatorAsync
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_IAuthenticationApiClient_DeleteMfaAuthenticatorAsync_Auth0_AspNetCore_Authentication_AuthenticationApi_Models_DeleteMfaAuthenticatorRequest_System_Threading_CancellationToken_
+  - name: (
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+    name: DeleteMfaAuthenticatorRequest
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest.html
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest.html
+  name: DeleteMfaAuthenticatorRequest
+  nameWithType: DeleteMfaAuthenticatorRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html#Auth0_AspNetCore_Authentication_AuthenticationApi_AuthenticationApiClient_Dispose
+  name: Dispose
+  nameWithType: AuthenticationApiClient.Dispose
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

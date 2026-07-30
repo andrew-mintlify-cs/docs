@@ -1,0 +1,776 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  commentId: T:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  id: LoginAuthenticationPropertiesBuilder
+  parent: Auth0.AspNetCore.Authentication
+  children:
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.#ctor(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience(System.String)
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation(System.String)
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization(System.String)
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter(System.String,System.String)
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)
+  - Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LoginAuthenticationPropertiesBuilder
+  nameWithType: LoginAuthenticationPropertiesBuilder
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: LoginAuthenticationPropertiesBuilder
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 11
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Builder class for <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.authenticationproperties">AuthenticationProperties</a> when calling login.
+  remarks: Allows for Auth0 specific first-class properties when constructing an instance of <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.authenticationproperties">AuthenticationProperties</a>.
+  example: []
+  syntax:
+    content: 'public class LoginAuthenticationPropertiesBuilder : BaseAuthenticationPropertiesBuilder'
+    content.vb: Public Class LoginAuthenticationPropertiesBuilder Inherits BaseAuthenticationPropertiesBuilder
+  inheritance:
+  - System.Object
+  - Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder
+  inheritedMembers:
+  - Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder.AuthenticationProperties
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.#ctor(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.#ctor(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
+  id: '#ctor(Microsoft.AspNetCore.Authentication.AuthenticationProperties)'
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: LoginAuthenticationPropertiesBuilder(AuthenticationProperties?)
+  nameWithType: LoginAuthenticationPropertiesBuilder.LoginAuthenticationPropertiesBuilder(AuthenticationProperties?)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.LoginAuthenticationPropertiesBuilder(Microsoft.AspNetCore.Authentication.AuthenticationProperties?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 14
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  syntax:
+    content: public LoginAuthenticationPropertiesBuilder(AuthenticationProperties? properties = null)
+    parameters:
+    - id: properties
+      type: Microsoft.AspNetCore.Authentication.AuthenticationProperties
+    content.vb: Public Sub New(properties As AuthenticationProperties = Nothing)
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.#ctor*
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.New(AuthenticationProperties)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.New(Microsoft.AspNetCore.Authentication.AuthenticationProperties)
+  name.vb: New(AuthenticationProperties)
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)
+  id: WithRedirectUri(System.String)
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithRedirectUri(string)
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithRedirectUri(string)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(string)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithRedirectUri
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 24
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Build the <xref href="Microsoft.AspNetCore.Authentication.AuthenticationProperties" data-throw-if-not-resolved="false"></xref> using the provided redirect URI
+  remarks: Defaults to "/" when <xref href="Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)" data-throw-if-not-resolved="false"></xref> is not called while building the <xref href="Microsoft.AspNetCore.Authentication.AuthenticationProperties" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public LoginAuthenticationPropertiesBuilder WithRedirectUri(string redirectUri)
+    parameters:
+    - id: redirectUri
+      type: System.String
+      description: Full path or absolute URI to be used to redirect back to your application.
+    return:
+      type: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+      description: The current <xref href="Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function WithRedirectUri(redirectUri As String) As LoginAuthenticationPropertiesBuilder
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri*
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.WithRedirectUri(String)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(String)
+  name.vb: WithRedirectUri(String)
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope(System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope(System.String)
+  id: WithScope(System.String)
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithScope(string)
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithScope(string)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope(string)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithScope
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 35
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Build the <xref href="Microsoft.AspNetCore.Authentication.AuthenticationProperties" data-throw-if-not-resolved="false"></xref> using the provided scope.
+  example: []
+  syntax:
+    content: public LoginAuthenticationPropertiesBuilder WithScope(string scope)
+    parameters:
+    - id: scope
+      type: System.String
+      description: Scopes to be used to request token(s). (e.g. "Scope1 Scope2 Scope3")
+    return:
+      type: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+      description: The current <xref href="Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function WithScope(scope As String) As LoginAuthenticationPropertiesBuilder
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope*
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.WithScope(String)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope(String)
+  name.vb: WithScope(String)
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience(System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience(System.String)
+  id: WithAudience(System.String)
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithAudience(string)
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithAudience(string)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience(string)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithAudience
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 46
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Build the <xref href="Microsoft.AspNetCore.Authentication.AuthenticationProperties" data-throw-if-not-resolved="false"></xref> using the provided audience to request API access.
+  example: []
+  syntax:
+    content: public LoginAuthenticationPropertiesBuilder WithAudience(string audience)
+    parameters:
+    - id: audience
+      type: System.String
+      description: Audience to request API access for.
+    return:
+      type: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+      description: The current <xref href="Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function WithAudience(audience As String) As LoginAuthenticationPropertiesBuilder
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience*
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.WithAudience(String)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience(String)
+  name.vb: WithAudience(String)
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization(System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization(System.String)
+  id: WithOrganization(System.String)
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithOrganization(string)
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithOrganization(string)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization(string)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithOrganization
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 61
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Build the <xref href="Microsoft.AspNetCore.Authentication.AuthenticationProperties" data-throw-if-not-resolved="false"></xref> using the provided organization
+  remarks: >-
+    - If you provide an Organization ID (a string with the prefix `org_`), it will be validated against the `org_id` claim of your user's ID Token. The validation is case-sensitive.
+
+    - If you provide an Organization Name (a string *without* the prefix `org_`), it will be validated against the `org_name` claim of your user's ID Token. The validation is case-insensitive.
+  example: []
+  syntax:
+    content: public LoginAuthenticationPropertiesBuilder WithOrganization(string organization)
+    parameters:
+    - id: organization
+      type: System.String
+      description: The organization used when logging in.
+    return:
+      type: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+      description: The current <xref href="Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function WithOrganization(organization As String) As LoginAuthenticationPropertiesBuilder
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization*
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.WithOrganization(String)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization(String)
+  name.vb: WithOrganization(String)
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation(System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation(System.String)
+  id: WithInvitation(System.String)
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithInvitation(string)
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithInvitation(string)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation(string)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithInvitation
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 72
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Build the <xref href="Microsoft.AspNetCore.Authentication.AuthenticationProperties" data-throw-if-not-resolved="false"></xref> using the provided invitation
+  example: []
+  syntax:
+    content: public LoginAuthenticationPropertiesBuilder WithInvitation(string invitation)
+    parameters:
+    - id: invitation
+      type: System.String
+      description: The Id of an invitation to accept. This is available from the URL that is given when participating in a user invitation flow.
+    return:
+      type: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+      description: The current <xref href="Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function WithInvitation(invitation As String) As LoginAuthenticationPropertiesBuilder
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation*
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.WithInvitation(String)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation(String)
+  name.vb: WithInvitation(String)
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter(System.String,System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter(System.String,System.String)
+  id: WithParameter(System.String,System.String)
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: WithParameter(string, string)
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithParameter(string, string)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: WithParameter
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 84
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Build the <xref href="Microsoft.AspNetCore.Authentication.AuthenticationProperties" data-throw-if-not-resolved="false"></xref> using a parameter that will be sent to Auth0's Authorize endpoint.
+  example: []
+  syntax:
+    content: public LoginAuthenticationPropertiesBuilder WithParameter(string key, string value)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key for the parameter.
+    - id: value
+      type: System.String
+      description: The value for the parameter.
+    return:
+      type: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+      description: The current <xref href="Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function WithParameter(key As String, value As String) As LoginAuthenticationPropertiesBuilder
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter*
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.WithParameter(String, String)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter(String, String)
+  name.vb: WithParameter(String, String)
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build
+  id: Build
+  parent: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: LoginAuthenticationPropertiesBuilder.Build()
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build()
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Build
+    path: ../src/Auth0.AspNetCore.Authentication/LoginAuthenticationPropertiesBuilder.cs
+    startLine: 94
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Return the configured <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.authenticationproperties">AuthenticationProperties</a>.
+  example: []
+  syntax:
+    content: public AuthenticationProperties Build()
+    return:
+      type: Microsoft.AspNetCore.Authentication.AuthenticationProperties
+      description: The configured <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.authentication.authenticationproperties">AuthenticationProperties</a>
+    content.vb: Public Function Build() As AuthenticationProperties
+  overload: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build*
+references:
+- uid: Auth0.AspNetCore.Authentication
+  commentId: N:Auth0.AspNetCore.Authentication
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication
+  nameWithType: Auth0.AspNetCore.Authentication
+  fullName: Auth0.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder
+  commentId: T:Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder.html
+  name: BaseAuthenticationPropertiesBuilder
+  nameWithType: BaseAuthenticationPropertiesBuilder
+  fullName: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder
+- uid: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder.AuthenticationProperties
+  commentId: F:Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder.AuthenticationProperties
+  parent: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder
+  href: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_BaseAuthenticationPropertiesBuilder_AuthenticationProperties
+  name: AuthenticationProperties
+  nameWithType: BaseAuthenticationPropertiesBuilder.AuthenticationProperties
+  fullName: Auth0.AspNetCore.Authentication.BaseAuthenticationPropertiesBuilder.AuthenticationProperties
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.#ctor*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.#ctor
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder__ctor_Microsoft_AspNetCore_Authentication_AuthenticationProperties_
+  name: LoginAuthenticationPropertiesBuilder
+  nameWithType: LoginAuthenticationPropertiesBuilder.LoginAuthenticationPropertiesBuilder
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.LoginAuthenticationPropertiesBuilder
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.New
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Authentication.AuthenticationProperties
+  commentId: T:Microsoft.AspNetCore.Authentication.AuthenticationProperties
+  parent: Microsoft.AspNetCore.Authentication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.authenticationproperties
+  name: AuthenticationProperties
+  nameWithType: AuthenticationProperties
+  fullName: Microsoft.AspNetCore.Authentication.AuthenticationProperties
+- uid: Microsoft.AspNetCore.Authentication
+  commentId: N:Microsoft.AspNetCore.Authentication
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Authentication
+  nameWithType: Microsoft.AspNetCore.Authentication
+  fullName: Microsoft.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Authentication
+    name: Authentication
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Authentication
+    name: Authentication
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  commentId: T:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html
+  name: LoginAuthenticationPropertiesBuilder
+  nameWithType: LoginAuthenticationPropertiesBuilder
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithRedirectUri_System_String_
+  name: WithRedirectUri(string)
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithRedirectUri(string)
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(string)
+  nameWithType.vb: LoginAuthenticationPropertiesBuilder.WithRedirectUri(String)
+  fullName.vb: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(String)
+  name.vb: WithRedirectUri(String)
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)
+    name: WithRedirectUri
+    href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithRedirectUri_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri(System.String)
+    name: WithRedirectUri
+    href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithRedirectUri_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithRedirectUri_System_String_
+  name: WithRedirectUri
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithRedirectUri
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithRedirectUri
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithScope_System_String_
+  name: WithScope
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithScope
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithScope
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithAudience_System_String_
+  name: WithAudience
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithAudience
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithAudience
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithOrganization_System_String_
+  name: WithOrganization
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithOrganization
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithOrganization
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithInvitation_System_String_
+  name: WithInvitation
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithInvitation
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithInvitation
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_WithParameter_System_String_System_String_
+  name: WithParameter
+  nameWithType: LoginAuthenticationPropertiesBuilder.WithParameter
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.WithParameter
+- uid: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build*
+  commentId: Overload:Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build
+  href: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.html#Auth0_AspNetCore_Authentication_LoginAuthenticationPropertiesBuilder_Build
+  name: Build
+  nameWithType: LoginAuthenticationPropertiesBuilder.Build
+  fullName: Auth0.AspNetCore.Authentication.LoginAuthenticationPropertiesBuilder.Build

@@ -1,0 +1,70 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.Exceptions
+  commentId: N:Auth0.AspNetCore.Authentication.Exceptions
+  id: Auth0.AspNetCore.Authentication.Exceptions
+  children:
+  - Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  - Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  langs:
+  - csharp
+  - vb
+  name: Auth0.AspNetCore.Authentication.Exceptions
+  nameWithType: Auth0.AspNetCore.Authentication.Exceptions
+  fullName: Auth0.AspNetCore.Authentication.Exceptions
+  type: Namespace
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+references:
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  commentId: T:Auth0.AspNetCore.Authentication.Exceptions.ApiError
+  parent: Auth0.AspNetCore.Authentication.Exceptions
+  href: Auth0.AspNetCore.Authentication.Exceptions.ApiError.html
+  name: ApiError
+  nameWithType: ApiError
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ApiError
+- uid: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  commentId: T:Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+  parent: Auth0.AspNetCore.Authentication.Exceptions
+  href: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException.html
+  name: ErrorApiException
+  nameWithType: ErrorApiException
+  fullName: Auth0.AspNetCore.Authentication.Exceptions.ErrorApiException
+- uid: Auth0.AspNetCore.Authentication.Exceptions
+  commentId: N:Auth0.AspNetCore.Authentication.Exceptions
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.Exceptions
+  nameWithType: Auth0.AspNetCore.Authentication.Exceptions
+  fullName: Auth0.AspNetCore.Authentication.Exceptions
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.Exceptions
+    name: Exceptions
+    href: Auth0.AspNetCore.Authentication.Exceptions.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.Exceptions
+    name: Exceptions
+    href: Auth0.AspNetCore.Authentication.Exceptions.html

@@ -1,0 +1,83 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.CustomDomains
+  commentId: N:Auth0.AspNetCore.Authentication.CustomDomains
+  id: Auth0.AspNetCore.Authentication.CustomDomains
+  children:
+  - Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+  - Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  - Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  - Auth0.AspNetCore.Authentication.CustomDomains.NullConfigurationManagerCache
+  langs:
+  - csharp
+  - vb
+  name: Auth0.AspNetCore.Authentication.CustomDomains
+  nameWithType: Auth0.AspNetCore.Authentication.CustomDomains
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains
+  type: Namespace
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+references:
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+  href: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions.html
+  name: Auth0CustomDomainsOptions
+  nameWithType: Auth0CustomDomainsOptions
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.Auth0CustomDomainsOptions
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  parent: Auth0.AspNetCore.Authentication.CustomDomains
+  href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html
+  name: IConfigurationManagerCache
+  nameWithType: IConfigurationManagerCache
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  href: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.html
+  name: MemoryConfigurationManagerCache
+  nameWithType: MemoryConfigurationManagerCache
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.NullConfigurationManagerCache
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.NullConfigurationManagerCache
+  href: Auth0.AspNetCore.Authentication.CustomDomains.NullConfigurationManagerCache.html
+  name: NullConfigurationManagerCache
+  nameWithType: NullConfigurationManagerCache
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.NullConfigurationManagerCache
+- uid: Auth0.AspNetCore.Authentication.CustomDomains
+  commentId: N:Auth0.AspNetCore.Authentication.CustomDomains
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.CustomDomains
+  nameWithType: Auth0.AspNetCore.Authentication.CustomDomains
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains
+    name: CustomDomains
+    href: Auth0.AspNetCore.Authentication.CustomDomains.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains
+    name: CustomDomains
+    href: Auth0.AspNetCore.Authentication.CustomDomains.html

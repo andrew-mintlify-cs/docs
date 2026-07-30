@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  id: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  children:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequirement
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRequirements
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.TokenBase
+  langs:
+  - csharp
+  - vb
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  type: Namespace
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+references:
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest.html
+  name: AssociateMfaAuthenticatorRequest
+  nameWithType: AssociateMfaAuthenticatorRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorRequest
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html
+  name: AssociateMfaAuthenticatorResponse
+  nameWithType: AssociateMfaAuthenticatorResponse
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator.html
+  name: Authenticator
+  nameWithType: Authenticator
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.Authenticator
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest.html
+  name: DeleteMfaAuthenticatorRequest
+  nameWithType: DeleteMfaAuthenticatorRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.DeleteMfaAuthenticatorRequest
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest.html
+  name: MfaChallengeRequest
+  nameWithType: MfaChallengeRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequest
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse.html
+  name: MfaChallengeResponse
+  nameWithType: MfaChallengeResponse
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeResponse
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest.html
+  name: MfaOobTokenRequest
+  nameWithType: MfaOobTokenRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenRequest
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse.html
+  name: MfaOobTokenResponse
+  nameWithType: MfaOobTokenResponse
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOobTokenResponse
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest.html
+  name: MfaOtpTokenRequest
+  nameWithType: MfaOtpTokenRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenRequest
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse.html
+  name: MfaOtpTokenResponse
+  nameWithType: MfaOtpTokenResponse
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaOtpTokenResponse
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest.html
+  name: MfaRecoveryCodeRequest
+  nameWithType: MfaRecoveryCodeRequest
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeRequest
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse.html
+  name: MfaRecoveryCodeResponse
+  nameWithType: MfaRecoveryCodeResponse
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRecoveryCodeResponse
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRequirements
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRequirements
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRequirements.html
+  name: MfaRequirements
+  nameWithType: MfaRequirements
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaRequirements
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequirement
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequirement
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequirement.html
+  name: MfaChallengeRequirement
+  nameWithType: MfaChallengeRequirement
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.MfaChallengeRequirement
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.TokenBase
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.TokenBase
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.TokenBase.html
+  name: TokenBase
+  nameWithType: TokenBase
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.TokenBase
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+    name: Models
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+    name: Models
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.html

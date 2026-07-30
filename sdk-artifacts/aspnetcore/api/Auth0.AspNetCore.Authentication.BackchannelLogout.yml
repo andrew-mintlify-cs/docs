@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+  commentId: N:Auth0.AspNetCore.Authentication.BackchannelLogout
+  id: Auth0.AspNetCore.Authentication.BackchannelLogout
+  children:
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.ApplicationBuilderExtensions
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.BackchannelLogoutHandler
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.DefaultLogoutTokenHandler
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.HttpContextExtensions
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  langs:
+  - csharp
+  - vb
+  name: Auth0.AspNetCore.Authentication.BackchannelLogout
+  nameWithType: Auth0.AspNetCore.Authentication.BackchannelLogout
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout
+  type: Namespace
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+references:
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ApplicationBuilderExtensions
+  commentId: T:Auth0.AspNetCore.Authentication.BackchannelLogout.ApplicationBuilderExtensions
+  href: Auth0.AspNetCore.Authentication.BackchannelLogout.ApplicationBuilderExtensions.html
+  name: ApplicationBuilderExtensions
+  nameWithType: ApplicationBuilderExtensions
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.ApplicationBuilderExtensions
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.BackchannelLogoutHandler
+  commentId: T:Auth0.AspNetCore.Authentication.BackchannelLogout.BackchannelLogoutHandler
+  href: Auth0.AspNetCore.Authentication.BackchannelLogout.BackchannelLogoutHandler.html
+  name: BackchannelLogoutHandler
+  nameWithType: BackchannelLogoutHandler
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.BackchannelLogoutHandler
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.HttpContextExtensions
+  commentId: T:Auth0.AspNetCore.Authentication.BackchannelLogout.HttpContextExtensions
+  href: Auth0.AspNetCore.Authentication.BackchannelLogout.HttpContextExtensions.html
+  name: HttpContextExtensions
+  nameWithType: HttpContextExtensions
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.HttpContextExtensions
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.DefaultLogoutTokenHandler
+  commentId: T:Auth0.AspNetCore.Authentication.BackchannelLogout.DefaultLogoutTokenHandler
+  href: Auth0.AspNetCore.Authentication.BackchannelLogout.DefaultLogoutTokenHandler.html
+  name: DefaultLogoutTokenHandler
+  nameWithType: DefaultLogoutTokenHandler
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.DefaultLogoutTokenHandler
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  commentId: T:Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  parent: Auth0.AspNetCore.Authentication.BackchannelLogout
+  href: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.html
+  name: ILogoutTokenHandler
+  nameWithType: ILogoutTokenHandler
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+  commentId: N:Auth0.AspNetCore.Authentication.BackchannelLogout
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.BackchannelLogout
+  nameWithType: Auth0.AspNetCore.Authentication.BackchannelLogout
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+    name: BackchannelLogout
+    href: Auth0.AspNetCore.Authentication.BackchannelLogout.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+    name: BackchannelLogout
+    href: Auth0.AspNetCore.Authentication.BackchannelLogout.html

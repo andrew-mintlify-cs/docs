@@ -1,0 +1,823 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  id: Auth0WebAppWithAccessTokenOptions
+  parent: Auth0.AspNetCore.Authentication
+  children:
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+  - Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+  langs:
+  - csharp
+  - vb
+  name: Auth0WebAppWithAccessTokenOptions
+  nameWithType: Auth0WebAppWithAccessTokenOptions
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Auth0WebAppWithAccessTokenOptions
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 8
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Options used to configure the SDK when using Access Tokens
+  example: []
+  syntax:
+    content: public class Auth0WebAppWithAccessTokenOptions
+    content.vb: Public Class Auth0WebAppWithAccessTokenOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience
+  id: Audience
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: Audience
+  nameWithType: Auth0WebAppWithAccessTokenOptions.Audience
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Audience
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 13
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: The audience to be used for requesting API access.
+  example: []
+  syntax:
+    content: public string? Audience { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Audience As String
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+  id: Scope
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: Scope
+  nameWithType: Auth0WebAppWithAccessTokenOptions.Scope
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Scope
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 18
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Scopes to be used to request token(s). (e.g. "Scope1 Scope2 Scope3")
+  example: []
+  syntax:
+    content: public string? Scope { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Scope As String
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+  id: ScopeByAudience
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: ScopeByAudience
+  nameWithType: Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: ScopeByAudience
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 25
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Optional per-audience default scopes, used when requesting access tokens for
+
+    additional audiences (MRRT). When an audience is present in this map, its value
+
+    is used as the default scope for that audience; otherwise <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope" data-throw-if-not-resolved="false"></xref> is used.
+  example: []
+  syntax:
+    content: public IReadOnlyDictionary<string, string>? ScopeByAudience { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public Property ScopeByAudience As IReadOnlyDictionary(Of String, String)
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+  id: UseRefreshTokens
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: UseRefreshTokens
+  nameWithType: Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: UseRefreshTokens
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 30
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Define whether or not Refresh Tokens should be used internally when the access token is expired.
+  example: []
+  syntax:
+    content: public bool UseRefreshTokens { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property UseRefreshTokens As Boolean
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+  id: AccessTokenExpirationLeeway
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: AccessTokenExpirationLeeway
+  nameWithType: Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: AccessTokenExpirationLeeway
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 38
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    The amount of time before an access token expires during which it is treated as
+
+    already expired, so that a refresh is triggered proactively rather than the token
+
+    lapsing mid-request. Applies to both the primary (login-time) token and additional
+
+    audience/scope tokens retrieved on demand (MRRT). Defaults to 60 seconds.
+  example: []
+  syntax:
+    content: public TimeSpan AccessTokenExpirationLeeway { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property AccessTokenExpirationLeeway As TimeSpan
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  id: RebuildPrincipalOnRefresh
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: RebuildPrincipalOnRefresh
+  nameWithType: Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: RebuildPrincipalOnRefresh
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 46
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    When <code>true</code>, the <xref href="System.Security.Claims.ClaimsPrincipal" data-throw-if-not-resolved="false"></xref> is rebuilt
+
+    from the refreshed <code>id_token</code> after a successful primary token refresh, so
+
+    <code>User.Claims</code> reflect current user information. Defaults to <code>false</code>, which
+
+    preserves the historical behavior where claims are never updated on refresh.
+  example: []
+  syntax:
+    content: public bool RebuildPrincipalOnRefresh { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property RebuildPrincipalOnRefresh As Boolean
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+  id: RefreshClaimsValidationType
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: RefreshClaimsValidationType
+  nameWithType: Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: RefreshClaimsValidationType
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 53
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: >-
+    Controls how rigorously the refreshed <code>id_token</code> is validated before its claims
+
+    replace the principal. Only consulted when <xref href="Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh" data-throw-if-not-resolved="false"></xref> is
+
+    <code>true</code>. Defaults to <xref href="Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public RefreshClaimsValidationType RefreshClaimsValidationType { get; set; }
+    parameters: []
+    return:
+      type: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+    content.vb: Public Property RefreshClaimsValidationType As RefreshClaimsValidationType
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType*
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events
+  id: Events
+  parent: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions
+  langs:
+  - csharp
+  - vb
+  name: Events
+  nameWithType: Auth0WebAppWithAccessTokenOptions.Events
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Events
+    path: ../src/Auth0.AspNetCore.Authentication/Auth0WebAppWithAccessTokenOptions.cs
+    startLine: 58
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication
+  summary: Events allowing you to hook into specific moments in the Auth0 middleware.
+  example: []
+  syntax:
+    content: public Auth0WebAppWithAccessTokenEvents? Events { get; set; }
+    parameters: []
+    return:
+      type: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenEvents
+    content.vb: Public Property Events As Auth0WebAppWithAccessTokenEvents
+  overload: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events*
+references:
+- uid: Auth0.AspNetCore.Authentication
+  commentId: N:Auth0.AspNetCore.Authentication
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication
+  nameWithType: Auth0.AspNetCore.Authentication
+  fullName: Auth0.AspNetCore.Authentication
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_Audience
+  name: Audience
+  nameWithType: Auth0WebAppWithAccessTokenOptions.Audience
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Audience
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_Scope
+  name: Scope
+  nameWithType: Auth0WebAppWithAccessTokenOptions.Scope
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_Scope
+  name: Scope
+  nameWithType: Auth0WebAppWithAccessTokenOptions.Scope
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Scope
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_ScopeByAudience
+  name: ScopeByAudience
+  nameWithType: Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.ScopeByAudience
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_UseRefreshTokens
+  name: UseRefreshTokens
+  nameWithType: Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.UseRefreshTokens
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_AccessTokenExpirationLeeway
+  name: AccessTokenExpirationLeeway
+  nameWithType: Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.AccessTokenExpirationLeeway
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_RebuildPrincipalOnRefresh
+  name: RebuildPrincipalOnRefresh
+  nameWithType: Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  commentId: P:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_RebuildPrincipalOnRefresh
+  name: RebuildPrincipalOnRefresh
+  nameWithType: Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RebuildPrincipalOnRefresh
+- uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  commentId: F:Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+  href: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.html#Auth0_AspNetCore_Authentication_RefreshClaimsValidationType_Full
+  name: Full
+  nameWithType: RefreshClaimsValidationType.Full
+  fullName: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.Full
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_RefreshClaimsValidationType
+  name: RefreshClaimsValidationType
+  nameWithType: Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.RefreshClaimsValidationType
+- uid: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  commentId: T:Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType.html
+  name: RefreshClaimsValidationType
+  nameWithType: RefreshClaimsValidationType
+  fullName: Auth0.AspNetCore.Authentication.RefreshClaimsValidationType
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events*
+  commentId: Overload:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.html#Auth0_AspNetCore_Authentication_Auth0WebAppWithAccessTokenOptions_Events
+  name: Events
+  nameWithType: Auth0WebAppWithAccessTokenOptions.Events
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenOptions.Events
+- uid: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenEvents
+  commentId: T:Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenEvents
+  parent: Auth0.AspNetCore.Authentication
+  href: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenEvents.html
+  name: Auth0WebAppWithAccessTokenEvents
+  nameWithType: Auth0WebAppWithAccessTokenEvents
+  fullName: Auth0.AspNetCore.Authentication.Auth0WebAppWithAccessTokenEvents

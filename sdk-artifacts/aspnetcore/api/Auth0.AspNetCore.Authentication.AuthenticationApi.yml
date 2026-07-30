@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi
+  id: Auth0.AspNetCore.Authentication.AuthenticationApi
+  children:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  langs:
+  - csharp
+  - vb
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi
+  type: Namespace
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+references:
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient.html
+  name: AuthenticationApiClient
+  nameWithType: AuthenticationApiClient
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.AuthenticationApiClient
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient.html
+  name: IAuthenticationApiClient
+  nameWithType: IAuthenticationApiClient
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.IAuthenticationApiClient
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html

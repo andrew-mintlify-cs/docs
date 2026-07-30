@@ -1,0 +1,293 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  commentId: T:Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  id: ILogoutTokenHandler
+  parent: Auth0.AspNetCore.Authentication.BackchannelLogout
+  children:
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync(System.String,System.String)
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync(System.String,System.String,System.String,System.TimeSpan)
+  langs:
+  - csharp
+  - vb
+  name: ILogoutTokenHandler
+  nameWithType: ILogoutTokenHandler
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  type: Interface
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/BackchannelLogout/ILogoutTokenHandler.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: ILogoutTokenHandler
+    path: ../src/Auth0.AspNetCore.Authentication/BackchannelLogout/ILogoutTokenHandler.cs
+    startLine: 5
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.BackchannelLogout
+  syntax:
+    content: public interface ILogoutTokenHandler
+    content.vb: Public Interface ILogoutTokenHandler
+  derivedClasses:
+  - Auth0.AspNetCore.Authentication.BackchannelLogout.DefaultLogoutTokenHandler
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync(System.String,System.String,System.String,System.TimeSpan)
+  commentId: M:Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync(System.String,System.String,System.String,System.TimeSpan)
+  id: OnTokenReceivedAsync(System.String,System.String,System.String,System.TimeSpan)
+  parent: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  langs:
+  - csharp
+  - vb
+  name: OnTokenReceivedAsync(string, string, string, TimeSpan)
+  nameWithType: ILogoutTokenHandler.OnTokenReceivedAsync(string, string, string, TimeSpan)
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync(string, string, string, System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/BackchannelLogout/ILogoutTokenHandler.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: OnTokenReceivedAsync
+    path: ../src/Auth0.AspNetCore.Authentication/BackchannelLogout/ILogoutTokenHandler.cs
+    startLine: 7
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.BackchannelLogout
+  syntax:
+    content: Task OnTokenReceivedAsync(string issuer, string sid, string logoutToken, TimeSpan expiration)
+    parameters:
+    - id: issuer
+      type: System.String
+    - id: sid
+      type: System.String
+    - id: logoutToken
+      type: System.String
+    - id: expiration
+      type: System.TimeSpan
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function OnTokenReceivedAsync(issuer As String, sid As String, logoutToken As String, expiration As TimeSpan) As Task
+  overload: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync*
+  nameWithType.vb: ILogoutTokenHandler.OnTokenReceivedAsync(String, String, String, TimeSpan)
+  fullName.vb: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync(String, String, String, System.TimeSpan)
+  name.vb: OnTokenReceivedAsync(String, String, String, TimeSpan)
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync(System.String,System.String)
+  commentId: M:Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync(System.String,System.String)
+  id: IsLoggedOutAsync(System.String,System.String)
+  parent: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler
+  langs:
+  - csharp
+  - vb
+  name: IsLoggedOutAsync(string, string)
+  nameWithType: ILogoutTokenHandler.IsLoggedOutAsync(string, string)
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync(string, string)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/BackchannelLogout/ILogoutTokenHandler.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: IsLoggedOutAsync
+    path: ../src/Auth0.AspNetCore.Authentication/BackchannelLogout/ILogoutTokenHandler.cs
+    startLine: 8
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.BackchannelLogout
+  syntax:
+    content: Task<bool> IsLoggedOutAsync(string issuer, string sid)
+    parameters:
+    - id: issuer
+      type: System.String
+    - id: sid
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Function IsLoggedOutAsync(issuer As String, sid As String) As Task(Of Boolean)
+  overload: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync*
+  nameWithType.vb: ILogoutTokenHandler.IsLoggedOutAsync(String, String)
+  fullName.vb: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync(String, String)
+  name.vb: IsLoggedOutAsync(String, String)
+references:
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+  commentId: N:Auth0.AspNetCore.Authentication.BackchannelLogout
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.BackchannelLogout
+  nameWithType: Auth0.AspNetCore.Authentication.BackchannelLogout
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+    name: BackchannelLogout
+    href: Auth0.AspNetCore.Authentication.BackchannelLogout.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.BackchannelLogout
+    name: BackchannelLogout
+    href: Auth0.AspNetCore.Authentication.BackchannelLogout.html
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync*
+  commentId: Overload:Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync
+  href: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.html#Auth0_AspNetCore_Authentication_BackchannelLogout_ILogoutTokenHandler_OnTokenReceivedAsync_System_String_System_String_System_String_System_TimeSpan_
+  name: OnTokenReceivedAsync
+  nameWithType: ILogoutTokenHandler.OnTokenReceivedAsync
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.OnTokenReceivedAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync*
+  commentId: Overload:Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync
+  href: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.html#Auth0_AspNetCore_Authentication_BackchannelLogout_ILogoutTokenHandler_IsLoggedOutAsync_System_String_System_String_
+  name: IsLoggedOutAsync
+  nameWithType: ILogoutTokenHandler.IsLoggedOutAsync
+  fullName: Auth0.AspNetCore.Authentication.BackchannelLogout.ILogoutTokenHandler.IsLoggedOutAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

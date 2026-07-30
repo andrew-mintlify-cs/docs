@@ -1,0 +1,785 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  commentId: T:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  id: AssociateMfaAuthenticatorResponse
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  children:
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes
+  - Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret
+  langs:
+  - csharp
+  - vb
+  name: AssociateMfaAuthenticatorResponse
+  nameWithType: AssociateMfaAuthenticatorResponse
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: AssociateMfaAuthenticatorResponse
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 6
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The response to associating (enrolling) a new MFA authenticator.
+  example: []
+  syntax:
+    content: public class AssociateMfaAuthenticatorResponse
+    content.vb: Public Class AssociateMfaAuthenticatorResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode
+  id: OobCode
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  langs:
+  - csharp
+  - vb
+  name: OobCode
+  nameWithType: AssociateMfaAuthenticatorResponse.OobCode
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: OobCode
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 9
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The code used for out-of-band authentication.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("oob_code")]
+
+      public string? OobCode { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("oob_code")>
+
+      Public Property OobCode As String
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: oob_code
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod
+  id: BindingMethod
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  langs:
+  - csharp
+  - vb
+  name: BindingMethod
+  nameWithType: AssociateMfaAuthenticatorResponse.BindingMethod
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: BindingMethod
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 13
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The binding method used.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("binding_method")]
+
+      public string? BindingMethod { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("binding_method")>
+
+      Public Property BindingMethod As String
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: binding_method
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType
+  id: AuthenticatorType
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  langs:
+  - csharp
+  - vb
+  name: AuthenticatorType
+  nameWithType: AssociateMfaAuthenticatorResponse.AuthenticatorType
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: AuthenticatorType
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 17
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The type of authenticator added.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("authenticator_type")]
+
+      public string? AuthenticatorType { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("authenticator_type")>
+
+      Public Property AuthenticatorType As String
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: authenticator_type
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel
+  id: OobChannel
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  langs:
+  - csharp
+  - vb
+  name: OobChannel
+  nameWithType: AssociateMfaAuthenticatorResponse.OobChannel
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: OobChannel
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 21
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The OOB channel used.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("oob_channel")]
+
+      public string? OobChannel { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("oob_channel")>
+
+      Public Property OobChannel As String
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: oob_channel
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes
+  id: RecoveryCodes
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  langs:
+  - csharp
+  - vb
+  name: RecoveryCodes
+  nameWithType: AssociateMfaAuthenticatorResponse.RecoveryCodes
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: RecoveryCodes
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 25
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The recovery codes generated for the user.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("recovery_codes")]
+
+      public List<string>? RecoveryCodes { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: >-
+      <JsonPropertyName("recovery_codes")>
+
+      Public Property RecoveryCodes As List(Of String)
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: recovery_codes
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri
+  id: BarcodeUri
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  langs:
+  - csharp
+  - vb
+  name: BarcodeUri
+  nameWithType: AssociateMfaAuthenticatorResponse.BarcodeUri
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: BarcodeUri
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 29
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The URI to generate a QR code for the authenticator.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("barcode_uri")]
+
+      public string? BarcodeUri { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("barcode_uri")>
+
+      Public Property BarcodeUri As String
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: barcode_uri
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret
+  commentId: P:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret
+  id: Secret
+  parent: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse
+  langs:
+  - csharp
+  - vb
+  name: Secret
+  nameWithType: AssociateMfaAuthenticatorResponse.Secret
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret
+  type: Property
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Secret
+    path: ../src/Auth0.AspNetCore.Authentication/AuthenticationApi/Models/AssociateMfaAuthenticatorResponse.cs
+    startLine: 33
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  summary: The secret to use for the OTP.
+  example: []
+  syntax:
+    content: >-
+      [JsonPropertyName("secret")]
+
+      public string? Secret { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("secret")>
+
+      Public Property Secret As String
+  overload: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: secret
+references:
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  commentId: N:Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  nameWithType: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+    name: Models
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi
+    name: AuthenticationApi
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models
+    name: Models
+    href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html#Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorResponse_OobCode
+  name: OobCode
+  nameWithType: AssociateMfaAuthenticatorResponse.OobCode
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html#Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorResponse_BindingMethod
+  name: BindingMethod
+  nameWithType: AssociateMfaAuthenticatorResponse.BindingMethod
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BindingMethod
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html#Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorResponse_AuthenticatorType
+  name: AuthenticatorType
+  nameWithType: AssociateMfaAuthenticatorResponse.AuthenticatorType
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.AuthenticatorType
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html#Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorResponse_OobChannel
+  name: OobChannel
+  nameWithType: AssociateMfaAuthenticatorResponse.OobChannel
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.OobChannel
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html#Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorResponse_RecoveryCodes
+  name: RecoveryCodes
+  nameWithType: AssociateMfaAuthenticatorResponse.RecoveryCodes
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.RecoveryCodes
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html#Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorResponse_BarcodeUri
+  name: BarcodeUri
+  nameWithType: AssociateMfaAuthenticatorResponse.BarcodeUri
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.BarcodeUri
+- uid: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret*
+  commentId: Overload:Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret
+  href: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.html#Auth0_AspNetCore_Authentication_AuthenticationApi_Models_AssociateMfaAuthenticatorResponse_Secret
+  name: Secret
+  nameWithType: AssociateMfaAuthenticatorResponse.Secret
+  fullName: Auth0.AspNetCore.Authentication.AuthenticationApi.Models.AssociateMfaAuthenticatorResponse.Secret

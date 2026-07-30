@@ -1,0 +1,970 @@
+### YamlMime:ManagedReference
+items:
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  id: MemoryConfigurationManagerCache
+  parent: Auth0.AspNetCore.Authentication.CustomDomains
+  children:
+  - Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.#ctor(System.Int32,System.Nullable{System.TimeSpan})
+  - Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear
+  - Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.DefaultMaxSize
+  - Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose
+  - Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+  langs:
+  - csharp
+  - vb
+  name: MemoryConfigurationManagerCache
+  nameWithType: MemoryConfigurationManagerCache
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  type: Class
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: MemoryConfigurationManagerCache
+    path: ../src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+    startLine: 26
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.CustomDomains
+  summary: Default in-memory cache implementation using <xref href="Microsoft.Extensions.Caching.Memory.MemoryCache" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    Default cache used when no custom <xref href="Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache" data-throw-if-not-resolved="false"></xref> is provided.
+
+    Supports configurable size limits and sliding expiration.
+  example:
+  - >-
+    <pre><code class="lang-csharp">// With default settings (100 entries, no expiration)
+
+    options.ConfigurationManagerCache = new MemoryConfigurationManagerCache();
+
+
+    // With custom settings
+
+    options.ConfigurationManagerCache = new MemoryConfigurationManagerCache(
+        maxSize: 50,
+        slidingExpiration: TimeSpan.FromHours(1)
+    );</code></pre>
+  syntax:
+    content: 'public sealed class MemoryConfigurationManagerCache : IConfigurationManagerCache, IDisposable'
+    content.vb: Public NotInheritable Class MemoryConfigurationManagerCache Implements IConfigurationManagerCache, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.DefaultMaxSize
+  commentId: F:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.DefaultMaxSize
+  id: DefaultMaxSize
+  parent: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  langs:
+  - csharp
+  - vb
+  name: DefaultMaxSize
+  nameWithType: MemoryConfigurationManagerCache.DefaultMaxSize
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.DefaultMaxSize
+  type: Field
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: DefaultMaxSize
+    path: ../src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+    startLine: 31
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.CustomDomains
+  summary: The default maximum number of entries in the cache.
+  example: []
+  syntax:
+    content: public const int DefaultMaxSize = 100
+    return:
+      type: System.Int32
+    content.vb: Public Const DefaultMaxSize As Integer = 100
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.#ctor(System.Int32,System.Nullable{System.TimeSpan})
+  commentId: M:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.#ctor(System.Int32,System.Nullable{System.TimeSpan})
+  id: '#ctor(System.Int32,System.Nullable{System.TimeSpan})'
+  parent: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  langs:
+  - csharp
+  - vb
+  name: MemoryConfigurationManagerCache(int, TimeSpan?)
+  nameWithType: MemoryConfigurationManagerCache.MemoryConfigurationManagerCache(int, TimeSpan?)
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.MemoryConfigurationManagerCache(int, System.TimeSpan?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: .ctor
+    path: ../src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+    startLine: 49
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.CustomDomains
+  summary: Initializes a new instance of the <xref href="Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache" data-throw-if-not-resolved="false"></xref> class.
+  example: []
+  syntax:
+    content: public MemoryConfigurationManagerCache(int maxSize = 100, TimeSpan? slidingExpiration = null)
+    parameters:
+    - id: maxSize
+      type: System.Int32
+      description: Maximum number of configuration managers to cache. Default is 100.
+    - id: slidingExpiration
+      type: System.Nullable{System.TimeSpan}
+      description: >-
+        Optional sliding expiration for cached entries. When set, entries that haven't 
+
+        been accessed within this duration will be removed on the next cache operation.
+    content.vb: Public Sub New(maxSize As Integer = 100, slidingExpiration As TimeSpan? = Nothing)
+  overload: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when maxSize is less than 1.
+  nameWithType.vb: MemoryConfigurationManagerCache.New(Integer, TimeSpan?)
+  fullName.vb: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.New(Integer, System.TimeSpan?)
+  name.vb: New(Integer, TimeSpan?)
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+  commentId: M:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+  id: GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+  parent: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  langs:
+  - csharp
+  - vb
+  name: GetOrCreate(string, Func<string, IConfigurationManager<OpenIdConnectConfiguration>>)
+  nameWithType: MemoryConfigurationManagerCache.GetOrCreate(string, Func<string, IConfigurationManager<OpenIdConnectConfiguration>>)
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate(string, System.Func<string, Microsoft.IdentityModel.Protocols.IConfigurationManager<Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration>>)
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: GetOrCreate
+    path: ../src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+    startLine: 66
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.CustomDomains
+  summary: Gets an existing configuration manager from the cache or creates a new one using the factory.
+  example: []
+  syntax:
+    content: public IConfigurationManager<OpenIdConnectConfiguration> GetOrCreate(string metadataAddress, Func<string, IConfigurationManager<OpenIdConnectConfiguration>> factory)
+    parameters:
+    - id: metadataAddress
+      type: System.String
+      description: The OIDC metadata endpoint URL, used as the cache key.
+    - id: factory
+      type: System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}}
+      description: Factory function to create a new configuration manager if not cached.
+    return:
+      type: Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}
+      description: The cached or newly created configuration manager.
+    content.vb: Public Function GetOrCreate(metadataAddress As String, factory As Func(Of String, IConfigurationManager(Of OpenIdConnectConfiguration))) As IConfigurationManager(Of OpenIdConnectConfiguration)
+  overload: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate*
+  implements:
+  - Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+  nameWithType.vb: MemoryConfigurationManagerCache.GetOrCreate(String, Func(Of String, IConfigurationManager(Of OpenIdConnectConfiguration)))
+  fullName.vb: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate(String, System.Func(Of String, Microsoft.IdentityModel.Protocols.IConfigurationManager(Of Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration)))
+  name.vb: GetOrCreate(String, Func(Of String, IConfigurationManager(Of OpenIdConnectConfiguration)))
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear
+  commentId: M:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear
+  id: Clear
+  parent: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: MemoryConfigurationManagerCache.Clear()
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear()
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Clear
+    path: ../src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+    startLine: 102
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.CustomDomains
+  summary: Clears all cached entries.
+  remarks: >-
+    This method is called when <xref href="Microsoft.IdentityModel.Protocols.IConfigurationManager%601.RequestRefresh" data-throw-if-not-resolved="false"></xref> is invoked
+
+    on the parent configuration manager.
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear*
+  implements:
+  - Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.Clear
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose
+  commentId: M:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose
+  id: Dispose
+  parent: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: MemoryConfigurationManagerCache.Dispose()
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+      branch: main
+      repo: https://github.com/auth0/auth0-aspnetcore-authentication
+    id: Dispose
+    path: ../src/Auth0.AspNetCore.Authentication/CustomDomains/MemoryConfigurationManagerCache.cs
+    startLine: 124
+  assemblies:
+  - Auth0.AspNetCore.Authentication
+  namespace: Auth0.AspNetCore.Authentication.CustomDomains
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Microsoft.Extensions.Caching.Memory.MemoryCache
+  commentId: T:Microsoft.Extensions.Caching.Memory.MemoryCache
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.caching.memory.memorycache
+  name: MemoryCache
+  nameWithType: MemoryCache
+  fullName: Microsoft.Extensions.Caching.Memory.MemoryCache
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  parent: Auth0.AspNetCore.Authentication.CustomDomains
+  href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html
+  name: IConfigurationManagerCache
+  nameWithType: IConfigurationManagerCache
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+- uid: Auth0.AspNetCore.Authentication.CustomDomains
+  commentId: N:Auth0.AspNetCore.Authentication.CustomDomains
+  href: Auth0.html
+  name: Auth0.AspNetCore.Authentication.CustomDomains
+  nameWithType: Auth0.AspNetCore.Authentication.CustomDomains
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains
+  spec.csharp:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains
+    name: CustomDomains
+    href: Auth0.AspNetCore.Authentication.CustomDomains.html
+  spec.vb:
+  - uid: Auth0
+    name: Auth0
+    href: Auth0.html
+  - name: .
+  - uid: Auth0.AspNetCore
+    name: AspNetCore
+    href: Auth0.AspNetCore.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication
+    name: Authentication
+    href: Auth0.AspNetCore.Authentication.html
+  - name: .
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains
+    name: CustomDomains
+    href: Auth0.AspNetCore.Authentication.CustomDomains.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  commentId: T:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+  href: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.html
+  name: MemoryConfigurationManagerCache
+  nameWithType: MemoryConfigurationManagerCache
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.#ctor*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.#ctor
+  href: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_MemoryConfigurationManagerCache__ctor_System_Int32_System_Nullable_System_TimeSpan__
+  name: MemoryConfigurationManagerCache
+  nameWithType: MemoryConfigurationManagerCache.MemoryConfigurationManagerCache
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.MemoryConfigurationManagerCache
+  nameWithType.vb: MemoryConfigurationManagerCache.New
+  fullName.vb: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.New
+  name.vb: New
+- uid: System.Nullable{System.TimeSpan}
+  commentId: T:System.Nullable{System.TimeSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan?
+  nameWithType: TimeSpan?
+  fullName: System.TimeSpan?
+  spec.csharp:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeSpan
+    name: TimeSpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timespan
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate
+  href: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_MemoryConfigurationManagerCache_GetOrCreate_System_String_System_Func_System_String_Microsoft_IdentityModel_Protocols_IConfigurationManager_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectConfiguration___
+  name: GetOrCreate
+  nameWithType: MemoryConfigurationManagerCache.GetOrCreate
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.GetOrCreate
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+  commentId: M:Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+  parent: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  isExternal: true
+  href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_IConfigurationManagerCache_GetOrCreate_System_String_System_Func_System_String_Microsoft_IdentityModel_Protocols_IConfigurationManager_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectConfiguration___
+  name: GetOrCreate(string, Func<string, IConfigurationManager<OpenIdConnectConfiguration>>)
+  nameWithType: IConfigurationManagerCache.GetOrCreate(string, Func<string, IConfigurationManager<OpenIdConnectConfiguration>>)
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.GetOrCreate(string, System.Func<string, Microsoft.IdentityModel.Protocols.IConfigurationManager<Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration>>)
+  nameWithType.vb: IConfigurationManagerCache.GetOrCreate(String, Func(Of String, IConfigurationManager(Of OpenIdConnectConfiguration)))
+  fullName.vb: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.GetOrCreate(String, System.Func(Of String, Microsoft.IdentityModel.Protocols.IConfigurationManager(Of Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration)))
+  name.vb: GetOrCreate(String, Func(Of String, IConfigurationManager(Of OpenIdConnectConfiguration)))
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+    name: GetOrCreate
+    href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_IConfigurationManagerCache_GetOrCreate_System_String_System_Func_System_String_Microsoft_IdentityModel_Protocols_IConfigurationManager_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectConfiguration___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: <
+  - uid: Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration
+    name: OpenIdConnectConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.openidconnect.openidconnectconfiguration
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.GetOrCreate(System.String,System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}})
+    name: GetOrCreate
+    href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_IConfigurationManagerCache_GetOrCreate_System_String_System_Func_System_String_Microsoft_IdentityModel_Protocols_IConfigurationManager_Microsoft_IdentityModel_Protocols_OpenIdConnect_OpenIdConnectConfiguration___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration
+    name: OpenIdConnectConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.openidconnect.openidconnectconfiguration
+  - name: )
+  - name: )
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}}
+  commentId: T:System.Func{System.String,Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<string, IConfigurationManager<OpenIdConnectConfiguration>>
+  nameWithType: Func<string, IConfigurationManager<OpenIdConnectConfiguration>>
+  fullName: System.Func<string, Microsoft.IdentityModel.Protocols.IConfigurationManager<Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration>>
+  nameWithType.vb: Func(Of String, IConfigurationManager(Of OpenIdConnectConfiguration))
+  fullName.vb: System.Func(Of String, Microsoft.IdentityModel.Protocols.IConfigurationManager(Of Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration))
+  name.vb: Func(Of String, IConfigurationManager(Of OpenIdConnectConfiguration))
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: <
+  - uid: Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration
+    name: OpenIdConnectConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.openidconnect.openidconnectconfiguration
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration
+    name: OpenIdConnectConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.openidconnect.openidconnectconfiguration
+  - name: )
+  - name: )
+- uid: Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}
+  commentId: T:Microsoft.IdentityModel.Protocols.IConfigurationManager{Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration}
+  parent: Microsoft.IdentityModel.Protocols
+  definition: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  name: IConfigurationManager<OpenIdConnectConfiguration>
+  nameWithType: IConfigurationManager<OpenIdConnectConfiguration>
+  fullName: Microsoft.IdentityModel.Protocols.IConfigurationManager<Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration>
+  nameWithType.vb: IConfigurationManager(Of OpenIdConnectConfiguration)
+  fullName.vb: Microsoft.IdentityModel.Protocols.IConfigurationManager(Of Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration)
+  name.vb: IConfigurationManager(Of OpenIdConnectConfiguration)
+  spec.csharp:
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: <
+  - uid: Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration
+    name: OpenIdConnectConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.openidconnect.openidconnectconfiguration
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.IdentityModel.Protocols.OpenIdConnect.OpenIdConnectConfiguration
+    name: OpenIdConnectConfiguration
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.openidconnect.openidconnectconfiguration
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+  commentId: T:Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  name: IConfigurationManager<T>
+  nameWithType: IConfigurationManager<T>
+  fullName: Microsoft.IdentityModel.Protocols.IConfigurationManager<T>
+  nameWithType.vb: IConfigurationManager(Of T)
+  fullName.vb: Microsoft.IdentityModel.Protocols.IConfigurationManager(Of T)
+  name.vb: IConfigurationManager(Of T)
+  spec.csharp:
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1
+    name: IConfigurationManager
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.IdentityModel.Protocols
+  commentId: N:Microsoft.IdentityModel.Protocols
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.IdentityModel.Protocols
+  nameWithType: Microsoft.IdentityModel.Protocols
+  fullName: Microsoft.IdentityModel.Protocols
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.IdentityModel
+    name: IdentityModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel
+  - name: .
+  - uid: Microsoft.IdentityModel.Protocols
+    name: Protocols
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.IdentityModel
+    name: IdentityModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel
+  - name: .
+  - uid: Microsoft.IdentityModel.Protocols
+    name: Protocols
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols
+- uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1.RequestRefresh
+  commentId: M:Microsoft.IdentityModel.Protocols.IConfigurationManager`1.RequestRefresh
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1.requestrefresh
+  name: RequestRefresh()
+  nameWithType: IConfigurationManager<T>.RequestRefresh()
+  fullName: Microsoft.IdentityModel.Protocols.IConfigurationManager<T>.RequestRefresh()
+  nameWithType.vb: IConfigurationManager(Of T).RequestRefresh()
+  fullName.vb: Microsoft.IdentityModel.Protocols.IConfigurationManager(Of T).RequestRefresh()
+  spec.csharp:
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1.RequestRefresh
+    name: RequestRefresh
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1.requestrefresh
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.IdentityModel.Protocols.IConfigurationManager`1.RequestRefresh
+    name: RequestRefresh
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.identitymodel.protocols.iconfigurationmanager-1.requestrefresh
+  - name: (
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear
+  href: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_MemoryConfigurationManagerCache_Clear
+  name: Clear
+  nameWithType: MemoryConfigurationManagerCache.Clear
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Clear
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.Clear
+  commentId: M:Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.Clear
+  parent: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache
+  href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_IConfigurationManagerCache_Clear
+  name: Clear()
+  nameWithType: IConfigurationManagerCache.Clear()
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.Clear()
+  spec.csharp:
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.Clear
+    name: Clear
+    href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_IConfigurationManagerCache_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.Clear
+    name: Clear
+    href: Auth0.AspNetCore.Authentication.CustomDomains.IConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_IConfigurationManagerCache_Clear
+  - name: (
+  - name: )
+- uid: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose*
+  commentId: Overload:Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose
+  href: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.html#Auth0_AspNetCore_Authentication_CustomDomains_MemoryConfigurationManagerCache_Dispose
+  name: Dispose
+  nameWithType: MemoryConfigurationManagerCache.Dispose
+  fullName: Auth0.AspNetCore.Authentication.CustomDomains.MemoryConfigurationManagerCache.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
