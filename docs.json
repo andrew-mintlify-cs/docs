@@ -505,6 +505,7 @@
                         "icon": "telescope",
                         "pages": [
                           "en/v3/overview",
+                          "hidden-pages/ai-assistant-context-3-2",
                           "en/v3/roadmap",
                           "en/v3/beta-features",
                           "en/v3/breaking-changes"
