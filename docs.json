@@ -198,6 +198,7 @@
                         "pages": [
                           "en/v2/tabs/cookbook/hello",
                           "essentials/sdk-reference-setup",
+                          "essentials/preview-deployments",
                           {
                             "group": "Auth",
                             "expanded": true,
