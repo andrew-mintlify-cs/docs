@@ -1,0 +1,31 @@
+---
+title: "Install help — internal notes"
+description: "Hidden context for the Install Guide Help section."
+hidden: true
+---
+
+This page lives under **Install Guide → Setup → Help**. Keep **Install troubleshooting** customer-facing and short; use this hidden page for richer diagnostic context.
+
+## Triage order
+
+Start with environment checks, then CLI version, then content/config issues. Jumping straight into `docs.json` diffs wastes time when the CLI is simply outdated.
+
+| Signal | Likely cause | First action |
+| ------ | ------------ | ------------ |
+| Unknown command | Stale or missing CLI | Reinstall with `npm i -g mint` |
+| Every route 404 | Wrong working directory | `cd` to the folder with `docs.json` |
+| Nav looks empty | Invalid navigation config | Validate `docs.json` against the schema |
+
+<Tip>
+Ask for the output of `mint --version` and the path to `docs.json` in the first reply.
+</Tip>
+
+## Escalation notes
+
+If the public troubleshooting page does not resolve the issue, capture:
+
+- OS and package manager
+- Exact error text
+- Whether `mint dev` ever succeeded on this machine
+
+Link the customer back to **Install troubleshooting** for self-serve steps, and keep this page as the internal runbook.

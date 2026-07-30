@@ -75,7 +75,9 @@
                       "en/v2/compare/products-menus-dropdowns",
                       "en/v2/tabs/compare",
                       "en/v2/tabs/when-to-use-tabs",
-                      "en/v2/capybara-embeds"
+                      "en/v2/capybara-embeds",
+                      "en/v2/compare/hidden-tabs-patterns",
+                      "en/v2/compare/hidden-tabs-decision"
                     ]
                   },
                   {
@@ -91,7 +93,8 @@
                             "icon": "circle-info",
                             "pages": [
                               "en/v2/tabs/install/overview",
-                              "en/v2/tabs/install/requirements"
+                              "en/v2/tabs/install/requirements",
+                              "en/v2/tabs/install/hidden-overview-notes"
                             ]
                           },
                           {
@@ -99,7 +102,8 @@
                             "icon": "list-ol",
                             "pages": [
                               "en/v2/tabs/install/cli",
-                              "en/v2/tabs/install/first-preview"
+                              "en/v2/tabs/install/first-preview",
+                              "en/v2/tabs/install/hidden-installation-steps-notes"
                             ]
                           },
                           {
@@ -107,7 +111,8 @@
                             "icon": "life-ring",
                             "expanded": false,
                             "pages": [
-                              "en/v2/tabs/install/troubleshooting"
+                              "en/v2/tabs/install/troubleshooting",
+                              "en/v2/tabs/install/hidden-help-notes"
                             ]
                           },
                           {
@@ -465,7 +470,8 @@
                         "icon": "clock-rotate-left",
                         "pages": [
                           "en/v1/overview",
-                          "en/v1/migration"
+                          "en/v1/migration",
+                          "en/v1/hidden-legacy-notes"
                         ]
                       }
                     ]
@@ -573,7 +579,8 @@
                         "group": "Getting started",
                         "pages": [
                           "en/v4/storage/overview",
-                          "en/v4/storage/quickstart"
+                          "en/v4/storage/quickstart",
+                          "en/v4/storage/hidden-storage-context"
                         ]
                       }
                     ]

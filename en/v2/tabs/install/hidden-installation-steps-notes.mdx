@@ -1,0 +1,32 @@
+---
+title: "Installation steps — internal notes"
+description: "Hidden context for the Install Guide Installation steps section."
+hidden: true
+---
+
+This page belongs under **Install Guide → Setup → Installation steps**. It stays out of the sidebar while documenting the CLI and first-preview workflow for internal and AI use.
+
+Public pages should stay checklist-shaped. Put failure modes and recovery tips here.
+
+## CLI install pitfalls
+
+The most common issue is a stale global CLI. Ask the customer to run:
+
+```bash
+npm i -g mint
+mint update
+```
+
+Then confirm they start `mint dev` from the directory that contains `docs.json`, not a parent monorepo folder.
+
+<Warning>
+If `docs.json` is missing from the working directory, every page resolves as a 404 in local preview.
+</Warning>
+
+## First preview checklist
+
+1. Confirm the correct **branch** is checked out.
+2. Run `mint dev` and open `http://localhost:3000`.
+3. Click **Install the CLI** and **Run your first preview** in the public docs only after local preview works.
+
+If preview fails after a successful install, clear the Mintlify cache and restart the CLI before escalating to support.
