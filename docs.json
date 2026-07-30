@@ -197,6 +197,7 @@
                         "icon": "flask",
                         "pages": [
                           "en/v2/tabs/cookbook/hello",
+                          "essentials/sdk-reference-setup",
                           {
                             "group": "Auth",
                             "expanded": true,
