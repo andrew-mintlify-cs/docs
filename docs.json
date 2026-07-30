@@ -635,6 +635,24 @@
                 }
               },
               {
+                "tab": ".NET",
+                "icon": "microsoft",
+                "sdk": {
+                  "format": "docfx",
+                  "source": "sdk-artifacts/aspnetcore/api",
+                  "directory": "sdk/dotnet"
+                }
+              },
+              {
+                "tab": "Python",
+                "icon": "python",
+                "sdk": {
+                  "format": "sphinx",
+                  "source": "sdk-artifacts/python/json",
+                  "directory": "sdk/python"
+                }
+              },
+              {
                 "tab": "PHP",
                 "icon": "php",
                 "sdk": {
