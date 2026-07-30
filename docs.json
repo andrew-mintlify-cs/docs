@@ -518,6 +518,7 @@
                     "icon": "caret-down",
                     "pages": [
                       "en/v3/overview",
+                      "hidden-pages/ai-assistant-context-3",
                       "en/v3/roadmap"
                     ]
                   },
