@@ -616,7 +616,7 @@
                 "icon": "js",
                 "sdk": {
                   "format": "typedoc",
-                  "source": "https://raw.githubusercontent.com/andrew-mintlify-cs/docs/main/sdk-artifacts/spa-js/typedoc.json",
+                  "source": "sdk-artifacts/spa-js/typedoc.json",
                   "directory": "sdk/typescript"
                 }
               }
