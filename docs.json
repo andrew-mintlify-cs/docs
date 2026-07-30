@@ -598,28 +598,27 @@
                         ]
                       }
                     ]
-                  },
-                  {
-                    "product": "SDK Reference",
-                    "description": "Auto-generated SDK reference from Javadoc artifacts",
-                    "icon": "code",
-                    "tabs": [
-                      {
-                        "tab": "Java (Javadoc)",
-                        "icon": "java",
-                        "sdk": {
-                          "format": "javadoc",
-                          "source": "https://repo1.maven.org/maven2/com/auth0/mvc-auth-commons/1.12.0/mvc-auth-commons-1.12.0-javadoc.jar",
-                          "directory": "sdk/java-mvc"
-                        }
-                      }
-                    ]
                   }
                 ]
               },
               {
                 "anchor": "Blog",
                 "href": "https://example.com/blog"
+              }
+            ]
+          },
+          {
+            "version": "v5.0",
+            "tag": "SDKs",
+            "tabs": [
+              {
+                "tab": "Java",
+                "icon": "java",
+                "sdk": {
+                  "format": "javadoc",
+                  "source": "https://repo1.maven.org/maven2/com/auth0/mvc-auth-commons/1.12.0/mvc-auth-commons-1.12.0-javadoc.jar",
+                  "directory": "sdk/java"
+                }
               }
             ]
           }
