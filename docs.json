@@ -31,7 +31,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/en/v2/compare/products-menus-dropdowns"
+      "destination": "/docs/en/v2/compare/products-menus-dropdowns"
     }
   ],
   "navigation": {
