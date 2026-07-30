@@ -609,7 +609,7 @@
                         "icon": "java",
                         "sdk": {
                           "format": "javadoc",
-                          "source": "sdk-artifacts/java-mvc/mvc-auth-commons-1.12.0-javadoc.jar",
+                          "source": "https://repo1.maven.org/maven2/com/auth0/mvc-auth-commons/1.12.0/mvc-auth-commons-1.12.0-javadoc.jar",
                           "directory": "sdk/java-mvc"
                         }
                       }
