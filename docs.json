@@ -623,6 +623,15 @@
                   "source": "sdk-artifacts/spa-js/typedoc.json",
                   "directory": "sdk/typescript"
                 }
+              },
+              {
+                "tab": "Java",
+                "icon": "java",
+                "sdk": {
+                  "format": "javadoc",
+                  "source": "https://repo1.maven.org/maven2/com/auth0/mvc-auth-commons/1.12.0/mvc-auth-commons-1.12.0-javadoc.jar",
+                  "directory": "sdk/java"
+                }
               }
             ]
           }
