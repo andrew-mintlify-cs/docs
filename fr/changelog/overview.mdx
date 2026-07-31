@@ -1,0 +1,49 @@
+---
+title: Journal des modifications
+description: Nouvelles fonctionnalités, améliorations et corrections.
+mode: "center"
+---
+
+<Update label="Semaine du 28 juillet 2026">
+
+## Nouvelles fonctionnalités
+
+**Onglets de référence SDK générés automatiquement!**
+
+Publiez la documentation de référence de vos SDK directement à partir des outils que votre équipe utilise déjà! Cinq langages sont maintenant branchés sous la v5.0, chacun rendu à partir d'un artefact natif de son outil de documentation :
+
+- **TypeScript / JavaScript** — [TypeDoc](https://typedoc.org) JSON
+- **Java** — [Javadoc](https://docs.oracle.com/en/java/javase/17/javadoc/javadoc.html) HTML
+- **.NET** — [DocFX](https://dotnet.github.io/docfx/) ManagedReference YAML
+- **Python** — [Sphinx](https://www.sphinx-doc.org) sortie JSON du builder
+- **PHP** — [phpDocumentor](https://phpdoc.org) `structure.xml`
+
+Chaque classe, interface, module et fonction obtient sa propre page — avec groupes de navigation, liens croisés et indexation complète pour la recherche — sans aucune page de référence rédigée à la main! Commencez par le nouveau [guide de configuration de la référence SDK](/essentials/sdk-reference-setup) pour voir comment pointer la propriété de navigation `sdk` vers votre artefact.
+
+**Guide des déploiements de prévisualisation!**
+
+Une toute nouvelle [page sur les déploiements de prévisualisation](/essentials/preview-deployments) vous accompagne dans la création d'URL de prévisualisation uniques pour chaque pull request! Les relecteurs cliquent sur un lien partageable et voient les changements de doc en direct avant toute fusion en production — automatique via GitHub, manuel depuis le tableau de bord, ou par programmation via l'API Admin.
+
+## Mises à jour
+
+**Référence des espèces de capybara sur la feuille de route v3!**
+
+La [feuille de route produit v3](/en/v3/roadmap) inclut désormais des sections de référence côte à côte pour le grand capybara (*Hydrochoerus hydrochaeris*) et le petit capybara (*Hydrochoerus isthmius*), avec des détails de taille, d'aire de répartition et d'habitat, ainsi qu'un tableau comparatif rapide pour vous aider à choisir la bonne espèce pour votre projet!
+
+</Update>
+
+<Update label="Semaine du 21 juillet 2026">
+
+## Nouvelles fonctionnalités
+
+**Démos de pages masquées pour la recherche et le contexte IA**
+
+Trois nouvelles pages masquées montrent comment garder du contenu de support hors de la barre latérale tout en le laissant accessible à la recherche du site et aux outils d'IA :
+
+- [Notes de style rédactionnel](/essentials/hidden-writing-style-notes) — une page masquée à l'intérieur d'un groupe masqué mais indexable.
+- [Contexte de l'assistant IA](/hidden-pages/ai-assistant-context) — une page masquée sous un onglet masqué dédié mais indexable.
+- [Notes de scoring internes](/en/v2/tabs/install/hidden-internal-scoring-notes) — une page masquée accessible uniquement par URL directe, exclue par défaut de la recherche et de l'indexation IA.
+
+Chaque page illustre une combinaison différente de `hidden: true` et des réglages `searchable`, pour vous permettre de choisir le bon niveau de visibilité pour votre contenu.
+
+</Update>
