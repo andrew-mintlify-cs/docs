@@ -2684,11 +2684,56 @@
             "tag": "SDKs",
             "tabs": [
               {
-                "tab": "Overview",
+                "tab": "Aperçu",
                 "icon": "book-open",
                 "pages": [
                   "fr-CA/v5/overview"
                 ]
+              },
+              {
+                "tab": "TypeScript",
+                "icon": "js",
+                "sdk": {
+                  "format": "typedoc",
+                  "source": "sdk-artifacts/spa-js/typedoc.json",
+                  "directory": "sdk/typescript"
+                }
+              },
+              {
+                "tab": "Java",
+                "icon": "java",
+                "sdk": {
+                  "format": "javadoc",
+                  "source": "https://repo1.maven.org/maven2/com/auth0/mvc-auth-commons/1.12.0/mvc-auth-commons-1.12.0-javadoc.jar",
+                  "directory": "sdk/java"
+                }
+              },
+              {
+                "tab": ".NET",
+                "icon": "microsoft",
+                "sdk": {
+                  "format": "docfx",
+                  "source": "sdk-artifacts/aspnetcore/api",
+                  "directory": "sdk/dotnet"
+                }
+              },
+              {
+                "tab": "Python",
+                "icon": "python",
+                "sdk": {
+                  "format": "sphinx",
+                  "source": "sdk-artifacts/python/json",
+                  "directory": "sdk/python"
+                }
+              },
+              {
+                "tab": "PHP",
+                "icon": "php",
+                "sdk": {
+                  "format": "phpdoc",
+                  "source": "sdk-artifacts/php/structure.xml",
+                  "directory": "sdk/php"
+                }
               }
             ]
           }
