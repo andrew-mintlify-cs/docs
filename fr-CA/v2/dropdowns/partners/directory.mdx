@@ -1,0 +1,29 @@
+---
+title: "Répertoire des partenaires"
+description: "Page de démonstration de navigation."
+---
+
+**Groupe :** Partenaires. Voilà, mes amis!
+
+{/* capybara-embed-demo */}
+
+## Démonstration d’intégration d’image
+
+Permutation d’image mode clair/sombre. **Chaque mode utilise une photo unique non réutilisée sur d’autres pages de la galerie.** Ah, quel raffinement!
+
+- Clair : `/images/capybaras/unique-16.jpg`
+- Sombre : `/images/capybaras/unique-32.jpg`
+
+Basculez l’apparence pour comparer.
+
+<img
+  className="block dark:hidden rounded-xl"
+  src="/images/capybaras/unique-16.jpg"
+  alt="Unique capybara photo (unique-16.jpg) — assigned exclusively to this gallery page — light-mode only via className block dark:hidden"
+/>
+
+<img
+  className="hidden dark:block rounded-xl"
+  src="/images/capybaras/unique-32.jpg"
+  alt="Unique dark-mode capybara photo (unique-32.jpg) assigned exclusively to this page — className hidden dark:block"
+/>

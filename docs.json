@@ -2124,6 +2124,620 @@
             ]
           }
         ]
+      },
+      {
+        "language": "fr-CA",
+        "versions": [
+          {
+            "version": "v2.0",
+            "tag": "Latest",
+            "default": true,
+            "products": [
+              {
+                "product": "Tabs Product",
+                "description": "Sidebar dropdown pattern — NOT the product switcher",
+                "icon": "browser",
+                "tabs": [
+                  {
+                    "tab": "Compare Tabs",
+                    "icon": "table-columns",
+                    "pages": [
+                      "fr-CA/v2/compare/products-menus-dropdowns",
+                      "fr-CA/v2/tabs/compare",
+                      "fr-CA/v2/tabs/when-to-use-tabs",
+                      "fr-CA/v2/capybara-embeds",
+                      "fr-CA/v2/compare/hidden-tabs-patterns",
+                      "fr-CA/v2/compare/hidden-tabs-decision"
+                    ]
+                  },
+                  {
+                    "tab": "Install Guide",
+                    "icon": "download",
+                    "anchors": [
+                      {
+                        "anchor": "Setup",
+                        "icon": "wrench",
+                        "groups": [
+                          {
+                            "group": "Overview",
+                            "icon": "circle-info",
+                            "pages": [
+                              "fr-CA/v2/tabs/install/overview",
+                              "fr-CA/v2/tabs/install/requirements",
+                              "fr-CA/v2/tabs/install/hidden-overview-notes"
+                            ]
+                          },
+                          {
+                            "group": "Installation steps",
+                            "icon": "list-ol",
+                            "pages": [
+                              "fr-CA/v2/tabs/install/cli",
+                              "fr-CA/v2/tabs/install/first-preview",
+                              "fr-CA/v2/tabs/install/hidden-installation-steps-notes"
+                            ]
+                          },
+                          {
+                            "group": "Help",
+                            "icon": "life-ring",
+                            "expanded": false,
+                            "pages": [
+                              "fr-CA/v2/tabs/install/troubleshooting",
+                              "fr-CA/v2/tabs/install/hidden-help-notes"
+                            ]
+                          },
+                          {
+                            "group": "Internal writing notes",
+                            "hidden": true,
+                            "searchable": true,
+                            "pages": [
+                              "essentials/hidden-writing-style-notes"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "anchor": "Deploy",
+                        "icon": "rocket",
+                        "groups": [
+                          {
+                            "group": "Environments",
+                            "icon": "server",
+                            "pages": [
+                              "fr-CA/v2/tabs/deploy/github-app",
+                              "fr-CA/v2/tabs/deploy/environments"
+                            ]
+                          },
+                          {
+                            "group": "Launch",
+                            "icon": "flag-checkered",
+                            "pages": [
+                              "fr-CA/v2/tabs/deploy/checklists"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "API Reference",
+                    "icon": "square-terminal",
+                    "groups": [
+                      {
+                        "group": "Overview",
+                        "icon": "book",
+                        "pages": [
+                          "fr-CA/v2/tabs/api/intro"
+                        ]
+                      },
+                      {
+                        "group": "Core concepts",
+                        "icon": "key",
+                        "pages": [
+                          "fr-CA/v2/tabs/api/auth",
+                          "fr-CA/v2/tabs/api/rate-limits"
+                        ]
+                      },
+                      {
+                        "group": "Users endpoints",
+                        "icon": "users",
+                        "pages": [
+                          "fr-CA/v2/tabs/api/users-list",
+                          "fr-CA/v2/tabs/api/users-create"
+                        ]
+                      },
+                      {
+                        "group": "Events",
+                        "icon": "bolt",
+                        "pages": [
+                          "fr-CA/v2/tabs/api/webhooks"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "Cookbook",
+                    "icon": "utensils",
+                    "groups": [
+                      {
+                        "group": "Recipes",
+                        "icon": "flask",
+                        "pages": [
+                          "fr-CA/v2/tabs/cookbook/hello",
+                          "essentials/sdk-reference-setup",
+                          "essentials/preview-deployments",
+                          {
+                            "group": "Auth",
+                            "expanded": true,
+                            "pages": [
+                              "fr-CA/v2/tabs/cookbook/auth-recipe"
+                            ]
+                          },
+                          {
+                            "group": "Webhooks",
+                            "expanded": false,
+                            "pages": [
+                              "fr-CA/v2/tabs/cookbook/webhook-recipe"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "group": "Patterns",
+                        "icon": "diagram-project",
+                        "pages": [
+                          "fr-CA/v2/tabs/cookbook/patterns"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tab": "Hidden context",
+                    "hidden": true,
+                    "searchable": true,
+                    "pages": [
+                      "hidden-pages/ai-assistant-context"
+                    ]
+                  },
+                  {
+                    "tab": "External Tab",
+                    "icon": "arrow-up-right",
+                    "href": "https://www.mintlify.com/docs/organize/navigation"
+                  }
+                ]
+              },
+              {
+                "product": "Dropdowns Product",
+                "description": "Sidebar dropdown pattern — NOT the product switcher",
+                "icon": "caret-down",
+                "dropdowns": [
+                  {
+                    "dropdown": "Product Docs Dropdown",
+                    "icon": "book",
+                    "groups": [
+                      {
+                        "group": "Overview",
+                        "icon": "compass",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/compare",
+                          "fr-CA/v2/dropdowns/docs/start"
+                        ]
+                      },
+                      {
+                        "group": "Foundations",
+                        "icon": "cubes",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/docs/concepts",
+                          "fr-CA/v2/dropdowns/docs/architecture"
+                        ]
+                      },
+                      {
+                        "group": "How-to guides",
+                        "icon": "list-check",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/docs/guides-onboarding",
+                          "fr-CA/v2/dropdowns/docs/guides-migrate"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "dropdown": "API Spec Dropdown",
+                    "icon": "code",
+                    "groups": [
+                      {
+                        "group": "Overview",
+                        "icon": "book-open",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/api/overview"
+                        ]
+                      },
+                      {
+                        "group": "Spec basics",
+                        "icon": "screwdriver-wrench",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/api/auth",
+                          "fr-CA/v2/dropdowns/api/errors"
+                        ]
+                      },
+                      {
+                        "group": "Resources",
+                        "icon": "database",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/api/orders",
+                          "fr-CA/v2/dropdowns/api/payments"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "dropdown": "Partner Hub Dropdown",
+                    "icon": "handshake",
+                    "groups": [
+                      {
+                        "group": "Overview",
+                        "icon": "house",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/partners/overview"
+                        ]
+                      },
+                      {
+                        "group": "Partners",
+                        "icon": "address-book",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/partners/directory"
+                        ]
+                      },
+                      {
+                        "group": "Build",
+                        "icon": "hammer",
+                        "pages": [
+                          "fr-CA/v2/dropdowns/partners/build",
+                          "fr-CA/v2/dropdowns/partners/submit"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Plain Product (no menu)",
+                "description": "Product switcher jumps straight into docs — no product menu",
+                "icon": "box",
+                "groups": [
+                  {
+                    "group": "Getting started",
+                    "icon": "play",
+                    "pages": [
+                      "fr-CA/v2/plain/overview",
+                      "fr-CA/v2/plain/getting-started"
+                    ]
+                  },
+                  {
+                    "group": "Help",
+                    "icon": "circle-question",
+                    "pages": [
+                      "fr-CA/v2/plain/faq"
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Product + Menu: Core API",
+                "description": "Product with a tab that contains a multi-column menu",
+                "icon": "api",
+                "tabs": [
+                  {
+                    "tab": "Menu",
+                    "icon": "api",
+                    "menu": [
+                      {
+                        "item": "Menu: Guides FOR MEN",
+                        "icon": "book-open",
+                        "description": "Product menu column — Guides",
+                        "groups": [
+                          {
+                            "group": "Getting started",
+                            "icon": "flag",
+                            "pages": [
+                              "fr-CA/v2/menu-core/guides/intro",
+                              "fr-CA/v2/menu-core/guides/auth",
+                              "fr-CA/v2/menu-core/guides/webhooks"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "item": "Menu: API reference FOR ALL",
+                        "icon": "square-terminal",
+                        "description": "Product menu column — API reference",
+                        "groups": [
+                          {
+                            "group": "Endpoints",
+                            "icon": "code",
+                            "pages": [
+                              "fr-CA/v2/menu-core/api/overview",
+                              "fr-CA/v2/menu-core/api/users",
+                              "fr-CA/v2/menu-core/api/orders"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "item": "Menu: SDKs",
+                        "icon": "code",
+                        "description": "Product menu column — SDKs",
+                        "pages": [
+                          "fr-CA/v2/menu-core/sdks/node",
+                          "fr-CA/v2/menu-core/sdks/python"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Changelog (external)",
+                        "icon": "list",
+                        "href": "https://mintlify.com/blog"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "product": "Product + Menu: Analytics",
+                "description": "Second example — product with a tab menu",
+                "icon": "chart-line",
+                "tabs": [
+                  {
+                    "tab": "Menu",
+                    "icon": "chart-line",
+                    "menu": [
+                      {
+                        "item": "Menu: Guides",
+                        "icon": "book",
+                        "pages": [
+                          "fr-CA/v2/menu-analytics/guides/intro",
+                          "fr-CA/v2/menu-analytics/guides/events"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Query API",
+                        "icon": "database",
+                        "pages": [
+                          "fr-CA/v2/menu-analytics/api/overview",
+                          "fr-CA/v2/menu-analytics/api/queries"
+                        ]
+                      },
+                      {
+                        "item": "Menu: Dashboards",
+                        "icon": "chart-bar",
+                        "pages": [
+                          "fr-CA/v2/menu-analytics/dashboards/overview",
+                          "fr-CA/v2/menu-analytics/dashboards/share"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v1.0",
+            "tag": "Legacy",
+            "anchors": [
+              {
+                "anchor": "Capybara image & embed gallery",
+                "icon": "image",
+                "href": "/en/v2/capybara-embeds"
+              },
+              {
+                "anchor": "Documentation",
+                "icon": "book-open",
+                "products": [
+                  {
+                    "product": "Tabs Product",
+                    "description": "Horizontal top tabs — compare with Dropdowns Product",
+                    "icon": "browser",
+                    "groups": [
+                      {
+                        "group": "Legacy",
+                        "icon": "clock-rotate-left",
+                        "pages": [
+                          "fr-CA/v1/overview",
+                          "fr-CA/v1/migration",
+                          "fr-CA/v1/hidden-legacy-notes"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "product": "Dropdowns Product",
+                    "description": "Sidebar dropdown switcher — compare with Tabs Product",
+                    "icon": "caret-down",
+                    "pages": [
+                      "fr-CA/v1/overview"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v3.0",
+            "tag": "Future",
+            "anchors": [
+              {
+                "anchor": "Capybara image & embed gallery",
+                "icon": "image",
+                "href": "/en/v2/capybara-embeds"
+              },
+              {
+                "anchor": "Documentation",
+                "icon": "book-open",
+                "products": [
+                  {
+                    "product": "Tabs Product",
+                    "description": "Horizontal top tabs — compare with Dropdowns Product",
+                    "icon": "browser",
+                    "groups": [
+                      {
+                        "group": "Future preview",
+                        "icon": "telescope",
+                        "pages": [
+                          "fr-CA/v3/overview",
+                          "hidden-pages/ai-assistant-context-3-2",
+                          "fr-CA/v3/roadmap",
+                          "fr-CA/v3/beta-features",
+                          "fr-CA/v3/breaking-changes"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "product": "Dropdowns Product",
+                    "description": "Sidebar dropdown switcher — compare with Tabs Product",
+                    "icon": "caret-down",
+                    "pages": [
+                      "fr-CA/v3/overview",
+                      "hidden-pages/ai-assistant-context-3",
+                      "fr-CA/v3/roadmap"
+                    ]
+                  },
+                  {
+                    "product": "Product + Menu: Core API",
+                    "description": "Product with a tab that contains a multi-column menu",
+                    "icon": "api",
+                    "tabs": [
+                      {
+                        "tab": "Menu",
+                        "icon": "api",
+                        "menu": [
+                          {
+                            "item": "Menu: Guides",
+                            "icon": "book-open",
+                            "pages": [
+                              "fr-CA/v3/overview",
+                              "fr-CA/v3/roadmap"
+                            ]
+                          },
+                          {
+                            "item": "Menu: API reference",
+                            "icon": "square-terminal",
+                            "pages": [
+                              "fr-CA/v3/beta-features",
+                              "fr-CA/v3/breaking-changes"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "version": "v4.0",
+            "tag": "Customers",
+            "anchors": [
+              {
+                "anchor": "Documentation",
+                "icon": "book-open",
+                "products": [
+                  {
+                    "product": "Storage",
+                    "description": "Customer Storage docs as its own product",
+                    "icon": "database",
+                    "groups": [
+                      {
+                        "group": "Getting started",
+                        "pages": [
+                          "fr-CA/v4/storage/overview",
+                          "fr-CA/v4/storage/quickstart",
+                          "fr-CA/v4/storage/hidden-storage-context"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "product": "Voice",
+                    "description": "Customer Voice docs as its own product",
+                    "icon": "phone",
+                    "groups": [
+                      {
+                        "group": "Getting started",
+                        "pages": [
+                          "fr-CA/v4/voice/overview",
+                          "fr-CA/v4/voice/quickstart"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "anchor": "Blog",
+                "href": "https://example.com/blog"
+              }
+            ]
+          },
+          {
+            "version": "v5.0",
+            "tag": "SDKs",
+            "tabs": [
+              {
+                "tab": "Aperçu",
+                "icon": "book-open",
+                "pages": [
+                  "fr-CA/v5/overview"
+                ]
+              },
+              {
+                "tab": "TypeScript",
+                "icon": "js",
+                "sdk": {
+                  "format": "typedoc",
+                  "source": "sdk-artifacts/spa-js/typedoc.json",
+                  "directory": "sdk/typescript"
+                }
+              },
+              {
+                "tab": "Java",
+                "icon": "java",
+                "sdk": {
+                  "format": "javadoc",
+                  "source": "https://repo1.maven.org/maven2/com/auth0/mvc-auth-commons/1.12.0/mvc-auth-commons-1.12.0-javadoc.jar",
+                  "directory": "sdk/java"
+                }
+              },
+              {
+                "tab": ".NET",
+                "icon": "microsoft",
+                "sdk": {
+                  "format": "docfx",
+                  "source": "sdk-artifacts/aspnetcore/api",
+                  "directory": "sdk/dotnet"
+                }
+              },
+              {
+                "tab": "Python",
+                "icon": "python",
+                "sdk": {
+                  "format": "sphinx",
+                  "source": "sdk-artifacts/python/json",
+                  "directory": "sdk/python"
+                }
+              },
+              {
+                "tab": "PHP",
+                "icon": "php",
+                "sdk": {
+                  "format": "phpdoc",
+                  "source": "sdk-artifacts/php/structure.xml",
+                  "directory": "sdk/php"
+                }
+              }
+            ]
+          }
+        ]
       }
     ]
   },

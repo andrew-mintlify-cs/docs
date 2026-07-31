@@ -1,0 +1,168 @@
+---
+title: "Démarrage rapide de Storage"
+description: "Démarrage rapide de démonstration de navigation pour le produit Storage."
+---
+
+Ah, mes amis! Vous voilà sur le démarrage rapide de **Storage**.
+
+Utilisez le sélecteur de produits pour ouvrir **Voice** en tant que produit distinct.
+
+## Avant de commencer
+
+Confirmez que vous disposez d'un projet et d'une clé d'API avec un accès en écriture à Storage — mais oui, c'est essentiel!
+
+### Configuration du projet
+
+Créez ou sélectionnez un projet avant d'appeler l'API Storage.
+
+#### Choisir une région
+
+Choisissez la région la plus proche de vos utilisateurs, afin de réduire la latence à l'envoi comme au téléchargement.
+
+##### Régions préférées
+
+Commencez par la région la plus près de votre trafic principal.
+
+###### Liste de vérification de la latence
+
+Mesurez le temps d'aller-retour depuis les hôtes de votre application avant de figer une région par défaut.
+
+##### Régions de repli
+
+Gardez une région secondaire prête, au cas où la région principale deviendrait indisponible.
+
+###### Notes de bascule
+
+Documentez le moment où l'on change de région, et qui est responsable de la transition.
+
+#### Créer une clé d'API
+
+Générez une clé d'API avec la portée d'écriture Storage, et rangez-la comme variable d'environnement.
+
+##### Portées des clés
+
+Limitez la clé aux buckets dont ce démarrage rapide a réellement besoin.
+
+###### Exemple de portée
+
+Utilisez l'accès en écriture pour un seul bucket de test, tant que vous suivez ce guide.
+
+##### Rangement des clés
+
+Gardez la clé hors du contrôle de version — voilà une règle d'or!
+
+###### Fichier .env local
+
+Rangez la clé dans `.env.local` et chargez-la dans votre shell avant tout appel d'API.
+
+### Créer un bucket
+
+Créez un bucket vide avant d'y téléverser des objets.
+
+#### Définir un nom de bucket
+
+Choisissez un nom unique, conforme à vos règles de nommage.
+
+##### Motif de nommage
+
+Utilisez `team-env-purpose`, par exemple `docs-dev-uploads`.
+
+###### Noms invalides
+
+Évitez les majuscules, les espaces et les noms composés uniquement de traits de soulignement.
+
+##### Collisions de noms
+
+Si la création échoue, choisissez un nouveau nom et réessayez.
+
+###### Liste de vérification en cas de collision
+
+Confirmez que le nom n'est pas déjà utilisé dans le projet, puis recréez le bucket.
+
+#### Confirmer que le bucket est vide
+
+Listez les buckets et vérifiez que le nouveau apparaît, avec zéro objet à son bord.
+
+##### Réponse de la liste
+
+Vérifiez que `objectCount` vaut `0` pour le nouveau bucket.
+
+###### Astuce d'état vide
+
+Si le compte n'est pas zéro, il se pourrait — mon Dieu! — que vous regardiez un autre bucket.
+
+### Téléverser un objet
+
+Envoyez un fichier vers le bucket et vérifiez qu'il apparaît dans la liste d'objets.
+
+#### Choisir un fichier local
+
+Utilisez un petit fichier de test, pour confirmer rapidement le téléversement.
+
+##### Taille du fichier
+
+Gardez le premier téléversement sous la barre du 1 Mo.
+
+###### Fichier d'exemple
+
+Un court fichier texte suffit amplement pour ce démarrage rapide.
+
+##### Type de contenu
+
+Définissez un type de contenu qui correspond au fichier.
+
+###### Téléversements textuels
+
+Utilisez `text/plain` pour les fichiers `.txt`.
+
+#### Vérifier la clé de l'objet
+
+Listez les objets du bucket et confirmez que la clé téléversée correspond bien à celle que vous avez envoyée.
+
+##### Correspondance exacte de la clé
+
+Comparez la clé retournée à celle de votre requête de téléversement.
+
+###### Correction en cas de non-correspondance
+
+Re-téléversez avec une clé explicite, si l'API avait attribué un nom inattendu.
+
+##### Vérification du téléchargement
+
+Téléchargez l'objet une fois, pour confirmer que les octets correspondent au fichier local.
+
+###### Astuce d'intégrité
+
+Comparez la taille du fichier localement et dans les métadonnées de l'objet. Voilà!
+
+## Prochaines étapes
+
+Passez aux concepts, ou essayez donc l'autre produit.
+
+### Apprendre les concepts Storage
+
+#### Aperçu de Storage
+
+Lisez l'aperçu pour tout comprendre sur les buckets, les objets et les politiques d'accès.
+
+##### Lien vers l'aperçu
+
+- [Aperçu de Storage](/fr-CA/v4/storage/overview) — concepts pour les buckets et les politiques
+
+###### Pourquoi le lire ensuite
+
+Il explique les choix de politique dont vous aurez besoin après votre premier téléversement.
+
+### Essayer Voice
+
+#### Démarrage rapide de Voice
+
+Changez de produit lorsque vous souhaitez emprunter le chemin de Voice.
+
+##### Lien vers le démarrage rapide
+
+- [Démarrage rapide de Voice](/fr-CA/v4/voice/quickstart) — essayez le démarrage rapide du produit Voice
+
+###### Astuce du sélecteur de produits
+
+Utilisez le sélecteur de produits pour quitter Storage et ouvrir Voice.
