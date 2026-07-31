@@ -1,0 +1,55 @@
+---
+title: "Aperçu de l'autogénération de SDK"
+description: "Comment cette version démontre l'autogénération de références SDK Mintlify à partir d'artefacts TypeDoc, DocFX, Javadoc, Sphinx et phpDocumentor."
+---
+
+Ah, mes amis! Cette version **v5.0** est une démonstration de l'autogénération de références SDK par Mintlify. Plutôt que d'écrire à la main une page pour chaque classe et chaque fonction — quelle corvée! —, vous pointez Mintlify vers un artefact d'outil de documentation, et il bâtit la référence pour vous. Voilà!
+
+## Comment fonctionne l'autogénération
+
+Utilisez la propriété de navigation `sdk` sur un onglet, dans `docs.json`. Mintlify analyse l'artefact et crée des groupes de navigation et des pages pour la bibliothèque — une page par classe, interface, module et fonction, avec les liens croisés et l'indexation de recherche inclus. Mais oui, tout cela d'un seul geste!
+
+```json
+"navigation": {
+  "tabs": [
+    {
+      "tab": "SDK Reference",
+      "sdk": {
+        "format": "typedoc",
+        "source": "sdk-artifacts/typedoc.json",
+        "directory": "sdk/typescript"
+      }
+    }
+  ]
+}
+```
+
+<Note>
+  Vous devez déclarer `sdk` sur un onglet. Un onglet muni de `sdk` peut inclure des `groups`, mais aucune autre structure de navigation, comme `pages`, `versions` ou `languages`. Il ne peut pas non plus inclure de propriété `openapi`, `asyncapi` ou `graphql`.
+</Note>
+
+## Champs de configuration
+
+<ParamField path="format" type="string" required>
+  L'outil de documentation qui a produit l'artefact : `typedoc`, `docfx`, `javadoc`, `sphinx` ou `phpdoc`.
+</ParamField>
+
+<ParamField path="source" type="string" required>
+  Chemin relatif vers le fichier ou le répertoire d'artefact dans votre dépôt de documentation, ou bien une URL HTTPS. N'accepte pas les URL HTTP.
+</ParamField>
+
+<ParamField path="directory" type="string">
+  Le préfixe de chemin d'URL pour les pages générées. Par défaut, `sdk-reference`.
+</ParamField>
+
+Ajoutez plusieurs onglets pour documenter plusieurs bibliothèques. Utilisez un `directory` unique pour chaque bibliothèque, afin d'éviter les collisions de routes.
+
+<Tip>
+  Ajoutez votre répertoire d'artefacts à `.mintignore`, afin que Mintlify traite les artefacts comme des entrées de compilation plutôt que de les publier comme des ressources statiques. Voilà, mes amis!
+</Tip>
+
+## Ce que vous verrez dans cette démonstration
+
+Pendant la démonstration, nous ajoutons les onglets SDK un format à la fois (TypeScript, Java, .NET, Python, PHP). Chaque onglet pointe vers un véritable artefact sous `sdk-artifacts/` (ou vers un jar distant en HTTPS, pour Java). Après le déploiement, les pages de référence générées apparaissent automatiquement sous cet onglet — comme par magie!
+
+Cet onglet Aperçu demeure la page d'accueil pour la **v5.0**, afin que vous puissiez expliquer le déroulement avant que les onglets générés ne soient raccordés.

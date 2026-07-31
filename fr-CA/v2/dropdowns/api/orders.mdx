@@ -1,0 +1,29 @@
+---
+title: "Ressource des commandes"
+description: "Page de démonstration de navigation."
+---
+
+**Groupe :** Ressources. Ah, quelle splendeur!
+
+{/* capybara-embed-demo */}
+
+## Démonstration d’intégration d’image
+
+Permutation d’image mode clair/sombre. **Chaque mode utilise une photo unique non réutilisée sur d’autres pages de la galerie.**
+
+- Clair : `/images/capybaras/unique-06.jpg`
+- Sombre : `/images/capybaras/unique-31.jpg`
+
+Mes amis, basculez l’apparence pour comparer!
+
+<img
+  className="block dark:hidden rounded-xl"
+  src="/images/capybaras/unique-06.jpg"
+  alt="Unique capybara photo (unique-06.jpg) — assigned exclusively to this gallery page — light-mode only via className block dark:hidden"
+/>
+
+<img
+  className="hidden dark:block rounded-xl"
+  src="/images/capybaras/unique-31.jpg"
+  alt="Unique dark-mode capybara photo (unique-31.jpg) assigned exclusively to this page — className hidden dark:block"
+/>
