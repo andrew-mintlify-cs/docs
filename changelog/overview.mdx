@@ -1,0 +1,49 @@
+---
+title: Changelog
+description: New features, improvements, and fixes.
+mode: "center"
+---
+
+<Update label="Week of July 28, 2026">
+
+## New features
+
+**Auto-generated SDK reference tabs!**
+
+Ship SDK reference documentation straight from the tools your team already runs! Five languages are now wired up under v5.0, each rendered from a native doc-tool artifact:
+
+- **TypeScript / JavaScript** — [TypeDoc](https://typedoc.org) JSON
+- **Java** — [Javadoc](https://docs.oracle.com/en/java/javase/17/javadoc/javadoc.html) HTML
+- **.NET** — [DocFX](https://dotnet.github.io/docfx/) ManagedReference YAML
+- **Python** — [Sphinx](https://www.sphinx-doc.org) JSON builder output
+- **PHP** — [phpDocumentor](https://phpdoc.org) `structure.xml`
+
+Every class, interface, module, and function gets its own page — with navigation groups, cross-page links, and full search indexing — no hand-authored reference pages required! Start from the new [SDK reference setup guide](/essentials/sdk-reference-setup) to see how to point the `sdk` navigation property at your artifact.
+
+**Preview deployments guide!**
+
+A brand-new [preview deployments page](/essentials/preview-deployments) walks you through unique preview URLs for every pull request! Reviewers can click a shareable link and see docs changes live before anything merges to production — automatic via GitHub, manual from the dashboard, or programmatic via the Admin API.
+
+## Updates
+
+**Capybara species reference on the v3 roadmap!**
+
+The [v3 product roadmap](/en/v3/roadmap) now includes side-by-side reference sections for the greater capybara (*Hydrochoerus hydrochaeris*) and the lesser capybara (*Hydrochoerus isthmius*), complete with size, range, and habitat details plus a quick comparison table to help you pick the right species for your project!
+
+</Update>
+
+<Update label="Week of July 21, 2026">
+
+## New features
+
+**Hidden page demos for search and AI context**
+
+Three new hidden pages show how to keep supporting content out of the sidebar while still exposing it to site search and AI tools:
+
+- [Writing style notes](/essentials/hidden-writing-style-notes) — a hidden page inside a searchable hidden group.
+- [AI assistant context](/hidden-pages/ai-assistant-context) — a hidden page under a dedicated searchable hidden tab.
+- [Internal scoring notes](/en/v2/tabs/install/hidden-internal-scoring-notes) — a hidden page accessible only by direct URL, kept out of search and AI indexing.
+
+Each page illustrates a different pattern for using `hidden: true` alongside `searchable` settings so you can pick the right level of visibility for your content.
+
+</Update>
