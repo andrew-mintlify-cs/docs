@@ -80,6 +80,7 @@
                       "en/v2/tabs/compare",
                       "en/v2/tabs/when-to-use-tabs",
                       "en/v2/capybara-embeds",
+                      "en/v2/capybara-embeds-experimental",
                       "en/v2/compare/hidden-tabs-patterns",
                       "en/v2/compare/hidden-tabs-decision"
                     ]
