@@ -81,7 +81,8 @@
                       "en/v2/tabs/when-to-use-tabs",
                       "en/v2/capybara-embeds",
                       "en/v2/compare/hidden-tabs-patterns",
-                      "en/v2/compare/hidden-tabs-decision"
+                      "en/v2/compare/hidden-tabs-decision",
+                      "changelog/overview"
                     ]
                   },
                   {
@@ -1176,7 +1177,8 @@
                     "pages": [
                       "fr/v2/compare/products-menus-dropdowns",
                       "fr/v2/tabs/compare",
-                      "fr/v2/tabs/when-to-use-tabs"
+                      "fr/v2/tabs/when-to-use-tabs",
+                      "fr/changelog/overview"
                     ]
                   },
                   {
