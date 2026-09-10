@@ -1,0 +1,78 @@
+---
+title: "MDX component test"
+sidebarTitle: "MDX component test"
+description: "Sample page exercising the MDX component: block form, conditional branches, and code fences inside JSX expressions."
+icon: "flask"
+tag: "NEW"
+---
+
+The `<MDX>` component renders the content between its tags as MDX that compiles like the rest of the page. Use it to put headings, code fences, tables, and other components inside a JSX expression. This page exercises each documented behavior so you can verify rendering.
+
+## Block form
+
+At the top level of a page, `<MDX>` groups a Markdown section into a single element. The heading, table, and code fence below all compile from inside the component.
+
+<MDX>
+  ### Compiled from a fragment
+
+  This heading and paragraph compile as Markdown even though they sit inside a JSX element. The heading should appear in the table of contents.
+
+  | Feature     | Compiles inside `<MDX>` |
+  | ----------- | ----------------------- |
+  | Headings    | Yes                     |
+  | Tables      | Yes                     |
+  | Code fences | Yes                     |
+
+  ```bash
+  echo "code fences work inside MDX fragments"
+  ```
+</MDX>
+
+## Conditional rendering
+
+`platform` is exported as `"ios"` below, so only the iOS branch renders on this page.
+
+export const platform = "ios";
+
+{platform === "ios" ? (
+  <MDX>
+    ### Install on iOS
+
+    Download the SDK, then run:
+
+    ```bash
+    pod install
+    ```
+  </MDX>
+  ) : (
+  <MDX>
+    ### Install on Android
+
+    Add the SDK to your Gradle dependencies.
+  </MDX>
+  )}
+
+<Note>
+  The "Install on Android" heading never renders, but it still appears in the table of contents. Headings inside `<MDX>` are collected even from inactive branches of a conditional.
+</Note>
+
+## Code in fragments
+
+Code fences and inline code inside `<MDX>` compile like code at the page root. Character references in fragment code decode to their characters, so `&lt;` renders as `<`.
+
+{platform !== "linux" && (
+  <MDX>
+    Clone the repository into `&lt;project-root&gt;`:
+
+    ```bash
+    git clone &lt;repository-url&gt; &lt;project-root&gt;
+    ```
+  </MDX>
+  )}
+
+## Limits
+
+- `<MDX>` components nest up to 8 levels deep.
+- A page can expand up to 500 `<MDX>` fragments inside expressions.
+
+Exceeding either limit fails the build. See the [MDX component documentation](https://www.mintlify.com/docs/components/mdx) for details.
