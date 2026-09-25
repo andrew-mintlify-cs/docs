@@ -79,7 +79,6 @@
                       "en/v2/compare/products-menus-dropdowns",
                       "en/v2/tabs/compare",
                       "en/v2/tabs/when-to-use-tabs",
-                      "en/v2/capybara-embeds",
                       "en/v2/compare/hidden-tabs-patterns",
                       "en/v2/compare/hidden-tabs-decision"
                     ]
@@ -192,13 +191,13 @@
                     "tab": "Cookbook",
                     "icon": "utensils",
                     "pages": [
-                      "en/v2/tabs/cookbook/capybara",
-                      "en/v2/tabs/cookbook/jjajungmyun",
                       {
                         "group": "Recipes",
                         "icon": "flask",
                         "pages": [
                           "en/v2/tabs/cookbook/hello",
+                          "en/v2/tabs/cookbook/capybara",
+                          "en/v2/tabs/cookbook/jjajungmyun",
                           "essentials/sdk-reference-setup",
                           "essentials/preview-deployments",
                           {
@@ -477,7 +476,6 @@
                         "group": "Legacy",
                         "icon": "clock-rotate-left",
                         "pages": [
-                          "en/v1/overview",
                           "en/v1/migration",
                           "en/v1/hidden-legacy-notes"
                         ]
@@ -489,6 +487,7 @@
                     "description": "Sidebar dropdown switcher — compare with Tabs Product",
                     "icon": "caret-down",
                     "pages": [
+                      "en/v1/overview",
                       "en/v1/overview"
                     ]
                   }
@@ -518,11 +517,7 @@
                         "group": "Future preview",
                         "icon": "telescope",
                         "pages": [
-                          "en/v3/overview",
-                          "hidden-pages/ai-assistant-context-3-2",
-                          "en/v3/roadmap",
-                          "en/v3/beta-features",
-                          "en/v3/breaking-changes"
+                          "hidden-pages/ai-assistant-context-3-2"
                         ]
                       }
                     ]
@@ -551,6 +546,8 @@
                             "icon": "book-open",
                             "pages": [
                               "en/v3/overview",
+                              "en/v3/overview",
+                              "en/v3/roadmap",
                               "en/v3/roadmap"
                             ]
                           },
@@ -559,6 +556,8 @@
                             "icon": "square-terminal",
                             "pages": [
                               "en/v3/beta-features",
+                              "en/v3/beta-features",
+                              "en/v3/breaking-changes",
                               "en/v3/breaking-changes"
                             ]
                           }
@@ -1108,7 +1107,6 @@
                         "icon": "telescope",
                         "pages": [
                           "es/v3/overview",
-                          "es/v3/roadmap",
                           "es/v3/beta-features",
                           "es/v3/breaking-changes"
                         ]
@@ -1121,6 +1119,7 @@
                     "icon": "caret-down",
                     "pages": [
                       "es/v3/overview",
+                      "es/v3/roadmap",
                       "es/v3/roadmap"
                     ]
                   },
@@ -1539,6 +1538,11 @@
                 "href": "/en/v2/capybara-embeds"
               },
               {
+                "anchor": "Capybara image & embed gallery",
+                "icon": "image",
+                "href": "/en/v2/capybara-embeds"
+              },
+              {
                 "anchor": "Documentation",
                 "icon": "book-open",
                 "products": [
@@ -1551,7 +1555,6 @@
                         "group": "Legacy",
                         "icon": "clock-rotate-left",
                         "pages": [
-                          "fr/v1/overview",
                           "fr/v1/migration"
                         ]
                       }
@@ -1562,6 +1565,7 @@
                     "description": "Menu déroulant sidebar — à comparer avec Tabs",
                     "icon": "caret-down",
                     "pages": [
+                      "fr/v1/overview",
                       "fr/v1/overview"
                     ]
                   }
@@ -1590,12 +1594,7 @@
                       {
                         "group": "Aperçu Future",
                         "icon": "telescope",
-                        "pages": [
-                          "fr/v3/overview",
-                          "fr/v3/roadmap",
-                          "fr/v3/beta-features",
-                          "fr/v3/breaking-changes"
-                        ]
+                        "pages": []
                       }
                     ]
                   },
@@ -1622,6 +1621,8 @@
                             "icon": "book-open",
                             "pages": [
                               "fr/v3/overview",
+                              "fr/v3/overview",
+                              "fr/v3/roadmap",
                               "fr/v3/roadmap"
                             ]
                           },
@@ -1630,6 +1631,8 @@
                             "icon": "square-terminal",
                             "pages": [
                               "fr/v3/beta-features",
+                              "fr/v3/beta-features",
+                              "fr/v3/breaking-changes",
                               "fr/v3/breaking-changes"
                             ]
                           }
@@ -2076,8 +2079,6 @@
                         "icon": "telescope",
                         "pages": [
                           "cn/v3/overview",
-                          "cn/v3/roadmap",
-                          "cn/v3/beta-features",
                           "cn/v3/breaking-changes"
                         ]
                       }
@@ -2106,6 +2107,7 @@
                             "icon": "book-open",
                             "pages": [
                               "cn/v3/overview",
+                              "cn/v3/roadmap",
                               "cn/v3/roadmap"
                             ]
                           },
@@ -2113,6 +2115,7 @@
                             "item": "Menu: API reference",
                             "icon": "square-terminal",
                             "pages": [
+                              "cn/v3/beta-features",
                               "cn/v3/beta-features",
                               "cn/v3/breaking-changes"
                             ]
