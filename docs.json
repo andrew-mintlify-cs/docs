@@ -191,7 +191,9 @@
                   {
                     "tab": "Cookbook",
                     "icon": "utensils",
-                    "groups": [
+                    "pages": [
+                      "en/v2/tabs/cookbook/capybara",
+                      "en/v2/tabs/cookbook/jjajungmyun",
                       {
                         "group": "Recipes",
                         "icon": "flask",
