@@ -1,0 +1,168 @@
+---
+title: "Démarrage rapide de Voice"
+description: "Démarrage rapide de démonstration de navigation pour le produit Voice."
+---
+
+Ah, mes amis! Vous voici sur le démarrage rapide de **Voice**.
+
+Utilisez le sélecteur de produits pour ouvrir **Storage**, en tant que produit distinct.
+
+## Avant de commencer
+
+Confirmez que vous disposez d'un projet et d'une clé d'API avec l'accès aux appels Voice.
+
+### Configuration du projet
+
+Créez ou sélectionnez un projet avant de passer un appel — mais oui!
+
+#### Choisir un numéro de téléphone
+
+Provisionnez ou sélectionnez un numéro Voice que votre projet peut utiliser pour les appels sortants.
+
+##### Inventaire des numéros
+
+Listez les numéros déjà rattachés au projet.
+
+###### Choisir un seul numéro
+
+Choisissez un unique numéro sortant pour ce démarrage rapide.
+
+##### Capacités du numéro
+
+Confirmez que les appels sortants sont bel et bien activés.
+
+###### Vérification des capacités
+
+Si la sortie est désactivée, activez-la avant la toute première composition.
+
+#### Créer une clé d'API
+
+Générez une clé d'API avec la portée Voice, et rangez-la comme variable d'environnement.
+
+##### Portées des clés
+
+Limitez la clé à la création d'appels et à la lecture des transcriptions.
+
+###### Exemple de portée
+
+Omettez les portées de produits non pertinents, tant que vous testez Voice.
+
+##### Rangement des clés
+
+Gardez la clé hors du contrôle de version — voilà la règle d'or!
+
+###### Fichier .env local
+
+Rangez la clé dans `.env.local` et chargez-la avant tout appel d'API.
+
+### Passer votre premier appel
+
+Démarrez un court appel de test, afin de pouvoir vérifier l'audio et le statut de session.
+
+#### Démarrer la session
+
+Créez une session sortante avec un numéro de destination et votre URL de rappel.
+
+##### Corps de la requête
+
+Incluez le numéro d'origine, le numéro de destination et l'URL du webhook.
+
+###### Charge utile minimale
+
+Ces trois champs suffisent pour une première composition réussie. Voilà!
+
+##### Réponse de session
+
+Sauvegardez l'identifiant de session tiré de la réponse de création.
+
+###### Astuce pour l'ID
+
+Vous aurez besoin de cet identifiant pour vérifier le statut et la transcription.
+
+#### Confirmer le statut de l'appel
+
+Faites du sondage, ou écoutez par webhook, jusqu'à ce que la session se déclare connectée ou terminée.
+
+##### Sondage
+
+Interrogez le statut de la session toutes les quelques secondes pendant le test.
+
+###### Condition d'arrêt
+
+Cessez le sondage lorsque le statut vaut `completed` ou `failed`.
+
+##### Webhooks
+
+Préférez les webhooks dès que votre point de terminaison est prêt.
+
+###### Astuce webhook
+
+Retournez `200` rapidement, et traitez les événements de manière asynchrone.
+
+### Relire la transcription
+
+Une fois l'appel terminé, récupérez la transcription pour cette session.
+
+#### Ouvrir la fiche de session
+
+Recherchez la session par identifiant, dans l'API Voice ou le tableau de bord.
+
+##### Recherche par API
+
+Faites un GET sur la ressource de session, avec l'identifiant que vous aviez sauvegardé.
+
+###### Gestion des « non trouvés »
+
+Si la session est introuvable, confirmez — hélas! — que vous êtes dans le bon projet.
+
+#### Lire le texte de la transcription
+
+Confirmez que la transcription contient bien le contenu parlé attendu de l'appel de test.
+
+##### Présence du texte
+
+Vérifiez que le texte de la transcription n'est pas vide.
+
+###### Transcription vide
+
+Si le texte est vide, confirmez que la transcription était activée pour la session.
+
+##### Vérification qualitative
+
+Parcourez rapidement le texte, à la recherche d'erreurs de reconnaissance évidentes sur les phrases clés.
+
+###### Astuce en cas de reprise
+
+Passez un second court appel, si la première transcription est inutilisable.
+
+## Prochaines étapes
+
+Passez aux concepts, ou essayez donc l'autre produit.
+
+### Apprendre les concepts Voice
+
+#### Aperçu de Voice
+
+Lisez l'aperçu pour tout comprendre sur les appels, les flux et les transcriptions.
+
+##### Lien vers l'aperçu
+
+- [Aperçu de Voice](/fr-CA/v4/voice/overview) — concepts pour les appels et les transcriptions
+
+###### Pourquoi le lire ensuite
+
+Il couvre les options de composition et de transcription au-delà de ce démarrage rapide.
+
+### Essayer Storage
+
+#### Démarrage rapide de Storage
+
+Changez de produit lorsque vous souhaitez emprunter le chemin de Storage.
+
+##### Lien vers le démarrage rapide
+
+- [Démarrage rapide de Storage](/fr-CA/v4/storage/quickstart) — essayez le démarrage rapide du produit Storage
+
+###### Astuce du sélecteur de produits
+
+Utilisez le sélecteur de produits pour quitter Voice et ouvrir Storage.

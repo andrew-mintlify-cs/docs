@@ -1,0 +1,132 @@
+---
+title: "Aperçu de Storage"
+description: "Page de démonstration de navigation pour le produit Storage."
+---
+
+Ah, bienvenue! Vous voici à l'intérieur du produit **Storage**, sur la **Version v4.0** (étiquette **Customers**).
+
+Storage et **Voice**, mes amis, sont deux produits bien distincts dans le sélecteur de produits.
+
+## Ce que Storage inclut
+
+Voilà! Utilisez ce produit pour les buckets, les objets et les politiques d'accès.
+
+### Buckets et objets
+
+Créez des buckets, téléversez des objets et gérez les préfixes depuis l'API Storage.
+
+#### Règles de nommage des buckets
+
+Utilisez des lettres minuscules, des chiffres et des traits d'union. Gardez les noms uniques au sein de votre projet — mais oui!
+
+##### Caractères autorisés
+
+Tenez-vous-en à `a-z`, `0-9` et `-`.
+
+###### Limites de longueur
+
+Gardez les noms de buckets assez courts pour être parcourus d'un coup d'œil dans les listes et les journaux.
+
+##### Noms réservés
+
+Évitez les noms qui entreraient en collision avec les préfixes internes du système.
+
+###### Astuce de nommage
+
+Préfixez les buckets de démonstration avec `demo-`, afin qu'ils soient faciles à faire disparaître par la suite.
+
+#### Clés et préfixes d'objets
+
+Organisez les objets à l'aide de préfixes séparés par des barres obliques, afin de pouvoir lister et filtrer par dossier.
+
+##### Conception des préfixes
+
+Regroupez les objets apparentés sous un préfixe partagé, tel que `reports/2026/`.
+
+###### Lister par préfixe
+
+Passez le préfixe lorsque vous listez les objets, afin d'alléger l'ensemble des résultats. Voilà, c'est simple!
+
+##### Unicité des clés
+
+Chaque clé doit être unique à l'intérieur d'un bucket.
+
+###### Comportement de remplacement
+
+Un téléversement vers une clé existante remplace la version précédente de l'objet, sauf si le versionnage est activé.
+
+### Politiques d'accès
+
+Contrôlez qui peut lire et écrire des objets à l'aide d'identifiants aux portées bien définies.
+
+#### Identifiants en lecture seule
+
+Émettez des identifiants qui peuvent lister et télécharger des objets, mais ni téléverser ni supprimer.
+
+##### Rôles de lecteur
+
+Accordez un accès en lecture aux applications qui n'ont besoin que de récupérer des fichiers.
+
+###### Audit des lecteurs
+
+Passez en revue les clés en lecture seule chaque trimestre, et révoquez celles qui n'ont plus d'usage.
+
+##### Limites de téléchargement
+
+Étranglez ou surveillez les téléchargements volumineux effectués avec des clés en lecture seule.
+
+###### Signaux de débit
+
+Surveillez les pics soudains, qui pourraient trahir — hélas! — une clé compromise.
+
+#### Identifiants en écriture
+
+Émettez des identifiants qui peuvent téléverser et remplacer des objets dans un bucket précis.
+
+##### Rôles d'auteur
+
+Limitez la portée des clés d'écriture à un seul bucket, chaque fois que possible.
+
+###### Rayon d'explosion
+
+Des portées étroites limitent les dégâts si une clé d'écriture venait à fuiter.
+
+##### Permissions de suppression
+
+Séparez les droits de suppression des droits de téléversement de tous les jours.
+
+###### Valeur par défaut plus sécuritaire
+
+Omettez le droit de suppression pour les clés d'écriture du quotidien.
+
+## Pages connexes
+
+Faites des liens croisés vers les documents voisins lorsque vous changez de produit ou poursuivez la configuration.
+
+### Continuer dans Storage
+
+#### Démarrage rapide de Storage
+
+Téléversez votre premier objet une fois les concepts bien compris.
+
+##### Lien vers le démarrage rapide
+
+- [Démarrage rapide de Storage](/fr-CA/v4/storage/quickstart) — téléversez votre premier objet
+
+###### Ce que vous ferez
+
+Créer un bucket, téléverser un fichier et vérifier la clé de l'objet. Voilà!
+
+### Passer à Voice
+
+#### Aperçu de Voice
+
+Ouvrez Voice lorsque vous souhaitez emprunter l'autre chemin produit.
+
+##### Lien vers l'aperçu
+
+- [Aperçu de Voice](/fr-CA/v4/voice/overview) — ouvrez la documentation Voice dans le sélecteur de produits
+
+###### Astuce du sélecteur de produits
+
+Storage et Voice demeurent des produits séparés dans le sélecteur.

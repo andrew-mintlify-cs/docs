@@ -1,0 +1,31 @@
+---
+title: "Aide à l'installation — notes internes"
+description: "Contexte caché pour la section Aide du Guide d'installation."
+hidden: true
+---
+
+Ah, mes amis! Cette page réside sous **Install Guide → Setup → Help**. Gardons la page **Install troubleshooting** courte et destinée à la clientèle; réservons cette page cachée pour un contexte de diagnostic plus riche.
+
+## Ordre de triage
+
+Commencez, s'il vous plaît, par les vérifications de l'environnement, puis la version de la CLI, et enfin les problèmes de contenu ou de configuration. Sauter directement dans les diffs de `docs.json` fait perdre un temps précieux — mais oui! — quand la CLI est simplement dépassée.
+
+| Signal | Cause probable | Première action |
+| ------ | -------------- | --------------- |
+| Commande inconnue | CLI obsolète ou absente | Réinstaller avec `npm i -g mint` |
+| Chaque route renvoie 404 | Mauvais répertoire de travail | `cd` vers le dossier contenant `docs.json` |
+| La navigation semble vide | Configuration de navigation invalide | Valider `docs.json` selon le schéma |
+
+<Tip>
+Demandez, dès la première réponse, la sortie de `mint --version` et le chemin vers `docs.json`. Voilà!
+</Tip>
+
+## Notes d'escalade
+
+Si la page publique de dépannage ne résout pas le problème, mes amis, recueillez :
+
+- Le système d'exploitation et le gestionnaire de paquets
+- Le texte exact de l'erreur
+- Si `mint dev` a déjà fonctionné, ne serait-ce qu'une fois, sur cette machine
+
+Renvoyez le client à **Install troubleshooting** pour les étapes en libre-service, et gardez cette page comme runbook interne. Voilà!

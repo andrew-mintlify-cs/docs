@@ -1,0 +1,32 @@
+---
+title: "Étapes d'installation — notes internes"
+description: "Contexte caché pour la section Étapes d'installation du Guide d'installation."
+hidden: true
+---
+
+Ah, mes amis! Cette page appartient à **Install Guide → Setup → Installation steps**. Elle demeure hors de la barre latérale, tout en documentant, avec soin, la CLI et le flux du premier aperçu — à l'usage interne et pour l'IA.
+
+Les pages publiques, elles, doivent conserver la forme d'une liste de vérification. Rangez ici, mes amis, les modes d'échec et les astuces de récupération.
+
+## Pièges de l'installation de la CLI
+
+Le problème le plus courant, voilà, est une CLI globale obsolète. Demandez au client d'exécuter :
+
+```bash
+npm i -g mint
+mint update
+```
+
+Puis confirmez qu'il lance `mint dev` depuis le répertoire qui contient `docs.json` — et non depuis un dossier parent de monorepo. Mais oui!
+
+<Warning>
+Si `docs.json` est absent du répertoire de travail, chaque page se résout en 404 dans l'aperçu local. Quelle tragédie!
+</Warning>
+
+## Liste de vérification du premier aperçu
+
+1. Confirmez que la bonne **branche** est extraite.
+2. Exécutez `mint dev` et ouvrez `http://localhost:3000`.
+3. Cliquez sur **Install the CLI** puis **Run your first preview** dans la documentation publique — seulement après que l'aperçu local fonctionne.
+
+Si l'aperçu échoue après une installation réussie, videz la cache Mintlify et redémarrez la CLI avant d'escalader au support. Voilà!
