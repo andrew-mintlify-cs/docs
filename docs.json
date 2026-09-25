@@ -2150,7 +2150,6 @@
                       "fr-CA/v2/compare/products-menus-dropdowns",
                       "fr-CA/v2/tabs/compare",
                       "fr-CA/v2/tabs/when-to-use-tabs",
-                      "fr-CA/v2/capybara-embeds",
                       "fr-CA/v2/compare/hidden-tabs-patterns",
                       "fr-CA/v2/compare/hidden-tabs-decision"
                     ]
@@ -2263,13 +2262,13 @@
                     "tab": "Cookbook",
                     "icon": "utensils",
                     "pages": [
-                      "fr-CA/v2/tabs/cookbook/capybara",
-                      "fr-CA/v2/tabs/cookbook/jjajungmyun",
                       {
                         "group": "Recipes",
                         "icon": "flask",
                         "pages": [
                           "fr-CA/v2/tabs/cookbook/hello",
+                          "fr-CA/v2/tabs/cookbook/capybara",
+                          "fr-CA/v2/tabs/cookbook/jjajungmyun",
                           "essentials/sdk-reference-setup",
                           "essentials/preview-deployments",
                           {
@@ -2548,7 +2547,6 @@
                         "group": "Legacy",
                         "icon": "clock-rotate-left",
                         "pages": [
-                          "fr-CA/v1/overview",
                           "fr-CA/v1/migration",
                           "fr-CA/v1/hidden-legacy-notes"
                         ]
@@ -2560,6 +2558,7 @@
                     "description": "Sidebar dropdown switcher — compare with Tabs Product",
                     "icon": "caret-down",
                     "pages": [
+                      "fr-CA/v1/overview",
                       "fr-CA/v1/overview"
                     ]
                   }
@@ -2589,11 +2588,7 @@
                         "group": "Future preview",
                         "icon": "telescope",
                         "pages": [
-                          "fr-CA/v3/overview",
-                          "hidden-pages/ai-assistant-context-3-2",
-                          "fr-CA/v3/roadmap",
-                          "fr-CA/v3/beta-features",
-                          "fr-CA/v3/breaking-changes"
+                          "hidden-pages/ai-assistant-context-3-2"
                         ]
                       }
                     ]
@@ -2622,6 +2617,8 @@
                             "icon": "book-open",
                             "pages": [
                               "fr-CA/v3/overview",
+                              "fr-CA/v3/overview",
+                              "fr-CA/v3/roadmap",
                               "fr-CA/v3/roadmap"
                             ]
                           },
@@ -2630,6 +2627,8 @@
                             "icon": "square-terminal",
                             "pages": [
                               "fr-CA/v3/beta-features",
+                              "fr-CA/v3/beta-features",
+                              "fr-CA/v3/breaking-changes",
                               "fr-CA/v3/breaking-changes"
                             ]
                           }
