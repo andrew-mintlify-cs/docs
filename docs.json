@@ -194,8 +194,6 @@
                     "pages": [
                       "en/v2/tabs/cookbook/capybara",
                       "en/v2/tabs/cookbook/jjajungmyun",
-                      "en/v2/tabs/cookbook/delete-me-oheka",
-                      "en/v2/tabs/cookbook/delete-me-ozu",
                       {
                         "group": "Recipes",
                         "icon": "flask",
