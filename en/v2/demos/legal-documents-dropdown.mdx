@@ -1,0 +1,15 @@
+---
+title: "Legal documents (dropdown)"
+description: "The same ServiceFilter component rendered as a dropdown instead of pills."
+---
+
+import { legalDocs, services } from "/snippets/legal-docs.js";
+import { ServiceFilter } from "/snippets/service-filter.jsx";
+
+<ServiceFilter docs={legalDocs} services={services} variant="dropdown" />
+
+---
+
+<Note>
+  Same component and data as the [pill variant](/en/v2/demos/legal-documents), with `variant="dropdown"`. Only the control changes; the filtering, grouping, and URL sync are shared.
+</Note>
