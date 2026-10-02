@@ -1,0 +1,53 @@
+---
+title: "Produits vs Menus de produits vs Listes déroulantes"
+description: "Page de démonstration de navigation."
+---
+
+Ah, mes amis! Ces trois fonctionnalités peuvent toutes ressembler à des « listes déroulantes », mais elles vivent à **différents endroits** dans l’interface. Voilà la subtilité!
+
+## 1. Produits (sélecteur de produit)
+
+- **Où :** le sélecteur de produit (habituellement près du haut / de la zone du logo)
+- **Ce qu’il permute :** des sites de documentation de produits entiers, sous un même déploiement Mintlify
+- **Modèle mental :** Paiements vs Identité vs Analytique — des produits distincts, des arborescences de documentation distinctes
+
+Dans cette démonstration, ouvrez le **sélecteur de produit** et cherchez des noms comme **Tabs Product**, **Dropdowns Product**, **Plain Product** et les entrées **Product + Menu**.
+
+## 2. Menus de produits (`menu` sur un produit)
+
+- **Où :** toujours dans le **sélecteur de produit**
+- **Ce qui change :** au lieu de plonger directement dans un produit, cette entrée ouvre un **menu multi-colonnes** (Guides / API / Journal des versions / …)
+- **Modèle mental :** un produit, plusieurs portes d’entrée mises en évidence depuis le sélecteur
+
+Essayez **Product + Menu: Core API** ou **Product + Menu: Analytics** dans le sélecteur de produit — mais oui, ces entrées s’étendent en éléments de menu étiquetés!
+
+## 3. Listes déroulantes (patron de navigation dans la barre latérale)
+
+- **Où :** en **haut de la barre latérale de gauche**, à l’intérieur d’un produit
+- **Ce qu’elle permute :** des sections *à l’intérieur* du produit actuel (Docs / Spécification API / Partenaires)
+- **Modèle mental :** comme les onglets, mais compacts — les pairs se cachent dans un menu de barre latérale plutôt que dans une barre d’onglets horizontale
+
+Ouvrez **Dropdowns Product**, puis utilisez la liste déroulante de la barre latérale. Ce contrôle n’est **pas** le sélecteur de produit.
+
+## Contraste rapide
+
+| Fonctionnalité | Emplacement UI | Permute entre | Clé de configuration |
+| --- | --- | --- | --- |
+| **Produits** | Sélecteur de produit | Produits entiers | `products[]` |
+| **Menus de produits** | Sélecteur de produit (entrée étendue) | Portes d’entrée *à l’intérieur* d’un produit | `products[].menu[]` |
+| **Listes déroulantes** | Haut de la barre latérale | Sections à l’intérieur du produit actuel | `dropdowns[]` |
+
+Si deux contrôles se ressemblent, vérifiez **où** le menu est apparu : sélecteur de produit ou barre latérale. Voilà!
+
+{/* capybara-embed-demo */}
+
+## Démonstration d’intégration d’image
+
+HTML `<img>` avec largeur `style` en ligne JSX, employant le chemin local unique `/images/capybaras/unique-03.jpg`.
+
+<img
+  src="/images/capybaras/unique-03.jpg"
+  alt="Unique capybara photo (unique-03.jpg) — assigned exclusively to this gallery page embedded with an HTML img tag and inline style width 450px"
+  style={{width: "450px", height: "auto"}}
+  className="rounded-lg"
+/>

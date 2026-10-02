@@ -1,0 +1,17 @@
+---
+title: "Documents juridiques"
+description: "Filtrez les documents juridiques par service grâce à un composant React personnalisé (variante en pastilles)."
+---
+
+import { legalDocs, services } from "/snippets/legal-docs.js";
+import { ServiceFilter } from "/snippets/service-filter.jsx";
+
+<ServiceFilter docs={legalDocs} services={services} variant="pills" />
+
+---
+
+<Note>
+  Ah, mes amis! Cette page est une démonstration d'un filtre au niveau de la page bâti sous forme de [composant React personnalisé](https://www.mintlify.com/docs/customize/react-components).
+  La liste des documents vit dans `snippets/legal-docs.js`, le composant dans `snippets/service-filter.jsx`, et les styles des pastilles dans `service-filter.css`.
+  Le filtre sélectionné est conservé dans l'URL (`?service=object-storage`), de sorte que les vues filtrées sont partageables. Voyez la [variante en menu déroulant](/fr-CA/v2/demos/legal-documents-dropdown) du même composant. Voilà!
+</Note>

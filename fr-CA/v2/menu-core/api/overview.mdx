@@ -1,0 +1,31 @@
+---
+title: "Menu API principale · Aperçu de l'API"
+description: "Page de démonstration de navigation."
+---
+
+Ah, mes amis! Vous voici sous l'élément du menu du produit **Menu : Référence de l'API**.
+
+Même produit (**API principale**), mais une porte d'entrée de menu différente des Guides. Quelle diversité, mais oui!
+
+{/* capybara-embed-demo */}
+
+## Démonstration d'intégration d'image
+
+Échange d'image en mode clair/sombre. **Chaque mode utilise une photo unique qui n'est réutilisée sur aucune autre page de la galerie.** Voilà l'élégance!
+
+- Clair : `/images/capybaras/unique-26.jpg`
+- Sombre : `/images/capybaras/unique-33.jpg`
+
+Basculez l'apparence pour comparer.
+
+<img
+  className="block dark:hidden rounded-xl"
+  src="/images/capybaras/unique-26.jpg"
+  alt="Unique capybara photo (unique-26.jpg) — assigned exclusively to this gallery page — light-mode only via className block dark:hidden"
+/>
+
+<img
+  className="hidden dark:block rounded-xl"
+  src="/images/capybaras/unique-33.jpg"
+  alt="Unique dark-mode capybara photo (unique-33.jpg) assigned exclusively to this page — className hidden dark:block"
+/>

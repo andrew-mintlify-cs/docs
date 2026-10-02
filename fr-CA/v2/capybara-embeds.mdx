@@ -1,0 +1,62 @@
+---
+title: "Galerie d’images et d’intégrations Capybara"
+description: "Index des pages qui font la démonstration des images et intégrations Mintlify avec des photos uniques de capybaras."
+---
+
+Ah, mes amis! Cette branche met à l’épreuve les [images et intégrations](https://www.mintlify.com/docs/create/image-embeds) de Mintlify sur **30** pages anglaises — voilà!
+
+**Chaque page liée ci-dessous utilise une photo de capybara différente** (fichiers locaux sous `/images/capybaras/unique-*.jpg`, chacun sous les 2 Mo). Mais oui, les pages en mode clair/sombre utilisent deux photos uniques.
+
+## Techniques employées
+
+| Style # | Technique |
+| --- | --- |
+| 0 | Markdown + chemin local `/images` |
+| 1 | `<Frame>` + Markdown + chemin local `/images` |
+| 2 | HTML `<img>` + largeur `style` en ligne |
+| 3 | HTML `<img>` + `noZoom` |
+| 4 | Image liée (`<a>` + `<img noZoom>`) |
+| 5 | Paire d’images mode clair/sombre (deux photos uniques) |
+| 6 | `<Frame>` + HTML `<img className="rounded-xl">` |
+| 7 | Markdown + actif local unique |
+| 8 | YouTube `<iframe>` dans `<Frame>` + image fixe unique |
+| 9 | Markdown simple + chemin local `/images` |
+
+## Pages avec intégrations
+
+- [`/fr-CA/v1/migration`](/fr-CA/v1/migration) — style **#0** · `unique-01.jpg`
+- [`/fr-CA/v1/overview`](/fr-CA/v1/overview) — style **#1** · `unique-02.jpg`
+- [`/fr-CA/v2/compare/products-menus-dropdowns`](/fr-CA/v2/compare/products-menus-dropdowns) — style **#2** · `unique-03.jpg`
+- [`/fr-CA/v2/dropdowns/api/auth`](/fr-CA/v2/dropdowns/api/auth) — style **#3** · `unique-04.jpg`
+- [`/fr-CA/v2/dropdowns/api/errors`](/fr-CA/v2/dropdowns/api/errors) — style **#4** · `unique-05.jpg`
+- [`/fr-CA/v2/dropdowns/api/orders`](/fr-CA/v2/dropdowns/api/orders) — style **#5** · `unique-06.jpg` + sombre `unique-31.jpg`
+- [`/fr-CA/v2/dropdowns/api/overview`](/fr-CA/v2/dropdowns/api/overview) — style **#6** · `unique-07.jpg`
+- [`/fr-CA/v2/dropdowns/api/payments`](/fr-CA/v2/dropdowns/api/payments) — style **#7** · `unique-08.jpg`
+- [`/fr-CA/v2/dropdowns/compare`](/fr-CA/v2/dropdowns/compare) — style **#8** · `unique-09.jpg`
+- [`/fr-CA/v2/dropdowns/docs/architecture`](/fr-CA/v2/dropdowns/docs/architecture) — style **#9** · `unique-10.jpg`
+- [`/fr-CA/v2/dropdowns/docs/concepts`](/fr-CA/v2/dropdowns/docs/concepts) — style **#0** · `unique-11.jpg`
+- [`/fr-CA/v2/dropdowns/docs/guides-migrate`](/fr-CA/v2/dropdowns/docs/guides-migrate) — style **#1** · `unique-12.jpg`
+- [`/fr-CA/v2/dropdowns/docs/guides-onboarding`](/fr-CA/v2/dropdowns/docs/guides-onboarding) — style **#2** · `unique-13.jpg`
+- [`/fr-CA/v2/dropdowns/docs/start`](/fr-CA/v2/dropdowns/docs/start) — style **#3** · `unique-14.jpg`
+- [`/fr-CA/v2/dropdowns/partners/build`](/fr-CA/v2/dropdowns/partners/build) — style **#4** · `unique-15.jpg`
+- [`/fr-CA/v2/dropdowns/partners/directory`](/fr-CA/v2/dropdowns/partners/directory) — style **#5** · `unique-16.jpg` + sombre `unique-32.jpg`
+- [`/fr-CA/v2/dropdowns/partners/overview`](/fr-CA/v2/dropdowns/partners/overview) — style **#6** · `unique-17.jpg`
+- [`/fr-CA/v2/dropdowns/partners/submit`](/fr-CA/v2/dropdowns/partners/submit) — style **#7** · `unique-18.jpg`
+- [`/fr-CA/v2/menu-analytics/api/overview`](/fr-CA/v2/menu-analytics/api/overview) — style **#8** · `unique-19.jpg`
+- [`/fr-CA/v2/menu-analytics/api/queries`](/fr-CA/v2/menu-analytics/api/queries) — style **#9** · `unique-20.jpg`
+- [`/fr-CA/v2/menu-analytics/dashboards/overview`](/fr-CA/v2/menu-analytics/dashboards/overview) — style **#0** · `unique-21.jpg`
+- [`/fr-CA/v2/menu-analytics/dashboards/share`](/fr-CA/v2/menu-analytics/dashboards/share) — style **#1** · `unique-22.jpg`
+- [`/fr-CA/v2/menu-analytics/guides/events`](/fr-CA/v2/menu-analytics/guides/events) — style **#2** · `unique-23.jpg`
+- [`/fr-CA/v2/menu-analytics/guides/intro`](/fr-CA/v2/menu-analytics/guides/intro) — style **#3** · `unique-24.jpg`
+- [`/fr-CA/v2/menu-core/api/orders`](/fr-CA/v2/menu-core/api/orders) — style **#4** · `unique-25.jpg`
+- [`/fr-CA/v2/menu-core/api/overview`](/fr-CA/v2/menu-core/api/overview) — style **#5** · `unique-26.jpg` + sombre `unique-33.jpg`
+- [`/fr-CA/v2/menu-core/api/users`](/fr-CA/v2/menu-core/api/users) — style **#6** · `unique-27.jpg`
+- [`/fr-CA/v2/menu-core/guides/auth`](/fr-CA/v2/menu-core/guides/auth) — style **#7** · `unique-28.jpg`
+- [`/fr-CA/v2/menu-core/guides/intro`](/fr-CA/v2/menu-core/guides/intro) — style **#8** · `unique-29.jpg`
+- [`/fr-CA/v2/menu-core/guides/webhooks`](/fr-CA/v2/menu-core/guides/webhooks) — style **#9** · `unique-30.jpg`
+
+## Exemple d’actif local (réservé à la galerie)
+
+Ah, voilà un petit trésor! Cet exemple utilise `/images/capybaras/unique-34.jpg`, qui n’est **pas** réutilisé sur les pages liées ci-dessus.
+
+![unique-34.jpg réservé uniquement à cette page index de galerie](/images/capybaras/unique-34.jpg)

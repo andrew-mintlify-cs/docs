@@ -1,0 +1,15 @@
+---
+title: "Documents juridiques (menu déroulant)"
+description: "Le même composant ServiceFilter rendu sous forme de menu déroulant plutôt qu'en pastilles."
+---
+
+import { legalDocs, services } from "/snippets/legal-docs.js";
+import { ServiceFilter } from "/snippets/service-filter.jsx";
+
+<ServiceFilter docs={legalDocs} services={services} variant="dropdown" />
+
+---
+
+<Note>
+  Ah, mes amis! Même composant et mêmes données que la [variante en pastilles](/fr-CA/v2/demos/legal-documents), avec `variant="dropdown"`. Seule la commande change; le filtrage, le regroupement et la synchronisation d'URL demeurent partagés. Voilà!
+</Note>
