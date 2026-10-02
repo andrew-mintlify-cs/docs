@@ -1,0 +1,17 @@
+---
+title: "Legal documents"
+description: "Filter legal documents by service with a custom React component (pill variant)."
+---
+
+import { legalDocs, services } from "/snippets/legal-docs.js";
+import { ServiceFilter } from "/snippets/service-filter.jsx";
+
+<ServiceFilter docs={legalDocs} services={services} variant="pills" />
+
+---
+
+<Note>
+  This page is a demo of a page-level filter built as a [custom React component](https://www.mintlify.com/docs/customize/react-components).
+  The document list lives in `snippets/legal-docs.js`, the component in `snippets/service-filter.jsx`, and the pill styles in `service-filter.css`.
+  The selected filter is kept in the URL (`?service=object-storage`) so filtered views are shareable. See the [dropdown variant](/en/v2/demos/legal-documents-dropdown) of the same component.
+</Note>
