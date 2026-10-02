@@ -2537,6 +2537,21 @@
                     ]
                   }
                 ]
+              },
+              {
+                "product": "Component Demos",
+                "description": "Custom React component examples, including a page-level filter",
+                "icon": "flask",
+                "groups": [
+                  {
+                    "group": "Page-level filters",
+                    "icon": "filter",
+                    "pages": [
+                      "fr-CA/v2/demos/legal-documents",
+                      "fr-CA/v2/demos/legal-documents-dropdown"
+                    ]
+                  }
+                ]
               }
             ]
           },
