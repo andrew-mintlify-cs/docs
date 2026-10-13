@@ -458,6 +458,14 @@
                 "icon": "flask",
                 "groups": [
                   {
+                    "group": "Sidebar tags",
+                    "icon": "tag",
+                    "pages": [
+                      "en/v2/demos/sidebar-tag-new",
+                      "en/v2/demos/sidebar-tag-beta"
+                    ]
+                  },
+                  {
                     "group": "Page-level filters",
                     "icon": "filter",
                     "pages": [
