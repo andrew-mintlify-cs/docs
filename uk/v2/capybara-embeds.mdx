@@ -1,0 +1,62 @@
+---
+title: "Галерея зображень і вбудовувань Capybara"
+description: "Індекс сторінок, які демонструють зображення та вбудовування Mintlify з унікальними фото капібар."
+---
+
+Ця гілка тестує [зображення та вбудовування](https://www.mintlify.com/docs/create/image-embeds) Mintlify на **30** англомовних сторінках.
+
+**Кожна сторінка за посиланням нижче використовує окреме фото капібари** (локальні файли за шляхом `/images/capybaras/unique-*.jpg`, кожен розміром до 2 МБ). Сторінки з перемиканням світла/темна використовують два унікальні фото.
+
+## Використані техніки
+
+| Стиль # | Техніка |
+| --- | --- |
+| 0 | Markdown + локальний шлях `/images` |
+| 1 | `<Frame>` + Markdown + локальний шлях `/images` |
+| 2 | HTML `<img>` + вбудований `style` з шириною |
+| 3 | HTML `<img>` + `noZoom` |
+| 4 | Зображення-посилання (`<a>` + `<img noZoom>`) |
+| 5 | Пара зображень для світлої/темної теми (два унікальні фото) |
+| 6 | `<Frame>` + HTML `<img className="rounded-xl">` |
+| 7 | Markdown + унікальний локальний ресурс |
+| 8 | YouTube `<iframe>` у `<Frame>` + унікальний кадр |
+| 9 | Звичайний Markdown + локальний шлях `/images` |
+
+## Сторінки з вбудовуваннями
+
+- [`/en/v1/migration`](/en/v1/migration) — стиль **#0** · `unique-01.jpg`
+- [`/en/v1/overview`](/en/v1/overview) — стиль **#1** · `unique-02.jpg`
+- [`/en/v2/compare/products-menus-dropdowns`](/en/v2/compare/products-menus-dropdowns) — стиль **#2** · `unique-03.jpg`
+- [`/en/v2/dropdowns/api/auth`](/en/v2/dropdowns/api/auth) — стиль **#3** · `unique-04.jpg`
+- [`/en/v2/dropdowns/api/errors`](/en/v2/dropdowns/api/errors) — стиль **#4** · `unique-05.jpg`
+- [`/en/v2/dropdowns/api/orders`](/en/v2/dropdowns/api/orders) — стиль **#5** · `unique-06.jpg` + темна `unique-31.jpg`
+- [`/en/v2/dropdowns/api/overview`](/en/v2/dropdowns/api/overview) — стиль **#6** · `unique-07.jpg`
+- [`/en/v2/dropdowns/api/payments`](/en/v2/dropdowns/api/payments) — стиль **#7** · `unique-08.jpg`
+- [`/en/v2/dropdowns/compare`](/en/v2/dropdowns/compare) — стиль **#8** · `unique-09.jpg`
+- [`/en/v2/dropdowns/docs/architecture`](/en/v2/dropdowns/docs/architecture) — стиль **#9** · `unique-10.jpg`
+- [`/en/v2/dropdowns/docs/concepts`](/en/v2/dropdowns/docs/concepts) — стиль **#0** · `unique-11.jpg`
+- [`/en/v2/dropdowns/docs/guides-migrate`](/en/v2/dropdowns/docs/guides-migrate) — стиль **#1** · `unique-12.jpg`
+- [`/en/v2/dropdowns/docs/guides-onboarding`](/en/v2/dropdowns/docs/guides-onboarding) — стиль **#2** · `unique-13.jpg`
+- [`/en/v2/dropdowns/docs/start`](/en/v2/dropdowns/docs/start) — стиль **#3** · `unique-14.jpg`
+- [`/en/v2/dropdowns/partners/build`](/en/v2/dropdowns/partners/build) — стиль **#4** · `unique-15.jpg`
+- [`/en/v2/dropdowns/partners/directory`](/en/v2/dropdowns/partners/directory) — стиль **#5** · `unique-16.jpg` + темна `unique-32.jpg`
+- [`/en/v2/dropdowns/partners/overview`](/en/v2/dropdowns/partners/overview) — стиль **#6** · `unique-17.jpg`
+- [`/en/v2/dropdowns/partners/submit`](/en/v2/dropdowns/partners/submit) — стиль **#7** · `unique-18.jpg`
+- [`/en/v2/menu-analytics/api/overview`](/en/v2/menu-analytics/api/overview) — стиль **#8** · `unique-19.jpg`
+- [`/en/v2/menu-analytics/api/queries`](/en/v2/menu-analytics/api/queries) — стиль **#9** · `unique-20.jpg`
+- [`/en/v2/menu-analytics/dashboards/overview`](/en/v2/menu-analytics/dashboards/overview) — стиль **#0** · `unique-21.jpg`
+- [`/en/v2/menu-analytics/dashboards/share`](/en/v2/menu-analytics/dashboards/share) — стиль **#1** · `unique-22.jpg`
+- [`/en/v2/menu-analytics/guides/events`](/en/v2/menu-analytics/guides/events) — стиль **#2** · `unique-23.jpg`
+- [`/en/v2/menu-analytics/guides/intro`](/en/v2/menu-analytics/guides/intro) — стиль **#3** · `unique-24.jpg`
+- [`/en/v2/menu-core/api/orders`](/en/v2/menu-core/api/orders) — стиль **#4** · `unique-25.jpg`
+- [`/en/v2/menu-core/api/overview`](/en/v2/menu-core/api/overview) — стиль **#5** · `unique-26.jpg` + темна `unique-33.jpg`
+- [`/en/v2/menu-core/api/users`](/en/v2/menu-core/api/users) — стиль **#6** · `unique-27.jpg`
+- [`/en/v2/menu-core/guides/auth`](/en/v2/menu-core/guides/auth) — стиль **#7** · `unique-28.jpg`
+- [`/en/v2/menu-core/guides/intro`](/en/v2/menu-core/guides/intro) — стиль **#8** · `unique-29.jpg`
+- [`/en/v2/menu-core/guides/webhooks`](/en/v2/menu-core/guides/webhooks) — стиль **#9** · `unique-30.jpg`
+
+## Приклад локального ресурсу (тільки для галереї)
+
+Цей приклад використовує `/images/capybaras/unique-34.jpg`, який **не** повторно використовується на сторінках за посиланнями вище.
+
+![unique-34.jpg зарезервовано лише для цієї сторінки-індексу галереї](/images/capybaras/unique-34.jpg)

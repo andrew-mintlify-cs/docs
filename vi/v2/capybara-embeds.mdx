@@ -1,0 +1,62 @@
+---
+title: "Thư viện hình ảnh & nhúng Capybara"
+description: "Chỉ mục các trang minh hoạ hình ảnh và nội dung nhúng Mintlify với những bức ảnh capybara độc nhất."
+---
+
+Nhánh này kiểm thử [hình ảnh và nội dung nhúng](https://www.mintlify.com/docs/create/image-embeds) của Mintlify trên **30** trang tiếng Anh.
+
+**Mỗi trang được liên kết bên dưới đều dùng một bức ảnh capybara khác nhau** (các tệp cục bộ tại `/images/capybaras/unique-*.jpg`, mỗi tệp dưới 2MB). Các trang chuyển đổi sáng/tối dùng hai bức ảnh độc nhất.
+
+## Kỹ thuật đã sử dụng
+
+| Kiểu # | Kỹ thuật |
+| --- | --- |
+| 0 | Markdown + đường dẫn cục bộ `/images` |
+| 1 | `<Frame>` + Markdown + đường dẫn cục bộ `/images` |
+| 2 | HTML `<img>` + `style` inline có chiều rộng |
+| 3 | HTML `<img>` + `noZoom` |
+| 4 | Ảnh có liên kết (`<a>` + `<img noZoom>`) |
+| 5 | Cặp ảnh cho chế độ sáng/tối (hai ảnh độc nhất) |
+| 6 | `<Frame>` + HTML `<img className="rounded-xl">` |
+| 7 | Markdown + tài sản cục bộ độc nhất |
+| 8 | YouTube `<iframe>` trong `<Frame>` + ảnh tĩnh độc nhất |
+| 9 | Markdown thuần + đường dẫn cục bộ `/images` |
+
+## Các trang có nội dung nhúng
+
+- [`/en/v1/migration`](/en/v1/migration) — kiểu **#0** · `unique-01.jpg`
+- [`/en/v1/overview`](/en/v1/overview) — kiểu **#1** · `unique-02.jpg`
+- [`/en/v2/compare/products-menus-dropdowns`](/en/v2/compare/products-menus-dropdowns) — kiểu **#2** · `unique-03.jpg`
+- [`/en/v2/dropdowns/api/auth`](/en/v2/dropdowns/api/auth) — kiểu **#3** · `unique-04.jpg`
+- [`/en/v2/dropdowns/api/errors`](/en/v2/dropdowns/api/errors) — kiểu **#4** · `unique-05.jpg`
+- [`/en/v2/dropdowns/api/orders`](/en/v2/dropdowns/api/orders) — kiểu **#5** · `unique-06.jpg` + bản tối `unique-31.jpg`
+- [`/en/v2/dropdowns/api/overview`](/en/v2/dropdowns/api/overview) — kiểu **#6** · `unique-07.jpg`
+- [`/en/v2/dropdowns/api/payments`](/en/v2/dropdowns/api/payments) — kiểu **#7** · `unique-08.jpg`
+- [`/en/v2/dropdowns/compare`](/en/v2/dropdowns/compare) — kiểu **#8** · `unique-09.jpg`
+- [`/en/v2/dropdowns/docs/architecture`](/en/v2/dropdowns/docs/architecture) — kiểu **#9** · `unique-10.jpg`
+- [`/en/v2/dropdowns/docs/concepts`](/en/v2/dropdowns/docs/concepts) — kiểu **#0** · `unique-11.jpg`
+- [`/en/v2/dropdowns/docs/guides-migrate`](/en/v2/dropdowns/docs/guides-migrate) — kiểu **#1** · `unique-12.jpg`
+- [`/en/v2/dropdowns/docs/guides-onboarding`](/en/v2/dropdowns/docs/guides-onboarding) — kiểu **#2** · `unique-13.jpg`
+- [`/en/v2/dropdowns/docs/start`](/en/v2/dropdowns/docs/start) — kiểu **#3** · `unique-14.jpg`
+- [`/en/v2/dropdowns/partners/build`](/en/v2/dropdowns/partners/build) — kiểu **#4** · `unique-15.jpg`
+- [`/en/v2/dropdowns/partners/directory`](/en/v2/dropdowns/partners/directory) — kiểu **#5** · `unique-16.jpg` + bản tối `unique-32.jpg`
+- [`/en/v2/dropdowns/partners/overview`](/en/v2/dropdowns/partners/overview) — kiểu **#6** · `unique-17.jpg`
+- [`/en/v2/dropdowns/partners/submit`](/en/v2/dropdowns/partners/submit) — kiểu **#7** · `unique-18.jpg`
+- [`/en/v2/menu-analytics/api/overview`](/en/v2/menu-analytics/api/overview) — kiểu **#8** · `unique-19.jpg`
+- [`/en/v2/menu-analytics/api/queries`](/en/v2/menu-analytics/api/queries) — kiểu **#9** · `unique-20.jpg`
+- [`/en/v2/menu-analytics/dashboards/overview`](/en/v2/menu-analytics/dashboards/overview) — kiểu **#0** · `unique-21.jpg`
+- [`/en/v2/menu-analytics/dashboards/share`](/en/v2/menu-analytics/dashboards/share) — kiểu **#1** · `unique-22.jpg`
+- [`/en/v2/menu-analytics/guides/events`](/en/v2/menu-analytics/guides/events) — kiểu **#2** · `unique-23.jpg`
+- [`/en/v2/menu-analytics/guides/intro`](/en/v2/menu-analytics/guides/intro) — kiểu **#3** · `unique-24.jpg`
+- [`/en/v2/menu-core/api/orders`](/en/v2/menu-core/api/orders) — kiểu **#4** · `unique-25.jpg`
+- [`/en/v2/menu-core/api/overview`](/en/v2/menu-core/api/overview) — kiểu **#5** · `unique-26.jpg` + bản tối `unique-33.jpg`
+- [`/en/v2/menu-core/api/users`](/en/v2/menu-core/api/users) — kiểu **#6** · `unique-27.jpg`
+- [`/en/v2/menu-core/guides/auth`](/en/v2/menu-core/guides/auth) — kiểu **#7** · `unique-28.jpg`
+- [`/en/v2/menu-core/guides/intro`](/en/v2/menu-core/guides/intro) — kiểu **#8** · `unique-29.jpg`
+- [`/en/v2/menu-core/guides/webhooks`](/en/v2/menu-core/guides/webhooks) — kiểu **#9** · `unique-30.jpg`
+
+## Tài sản cục bộ mẫu (chỉ dùng trong thư viện)
+
+Mẫu này dùng `/images/capybaras/unique-34.jpg`, và **không** được tái sử dụng trên các trang được liên kết ở trên.
+
+![unique-34.jpg được dành riêng cho trang chỉ mục thư viện này](/images/capybaras/unique-34.jpg)

@@ -1,0 +1,29 @@
+---
+title: "Ресурс замовлень"
+description: "Демонстраційна сторінка навігації."
+---
+
+**Група:** Ресурси.
+
+{/* capybara-embed-demo */}
+
+## Демонстрація вбудовування зображення
+
+Заміна зображення для світлого/темного режиму. **Кожен режим використовує унікальне фото, яке не повторюється на інших сторінках галереї.**
+
+- Світлий: `/images/capybaras/unique-06.jpg`
+- Темний: `/images/capybaras/unique-31.jpg`
+
+Перемкніть оформлення, щоб порівняти.
+
+<img
+  className="block dark:hidden rounded-xl"
+  src="/images/capybaras/unique-06.jpg"
+  alt="Unique capybara photo (unique-06.jpg) — assigned exclusively to this gallery page — light-mode only via className block dark:hidden"
+/>
+
+<img
+  className="hidden dark:block rounded-xl"
+  src="/images/capybaras/unique-31.jpg"
+  alt="Unique dark-mode capybara photo (unique-31.jpg) assigned exclusively to this page — className hidden dark:block"
+/>

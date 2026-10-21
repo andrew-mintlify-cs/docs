@@ -1,0 +1,62 @@
+---
+title: "Galerie d'images et d'embeds de capybaras"
+description: "Index des pages qui présentent les images et embeds Mintlify avec des photos uniques de capybaras."
+---
+
+Cette branche teste les [images et embeds](https://www.mintlify.com/docs/create/image-embeds) de Mintlify sur **30** pages en anglais.
+
+**Chaque page liée ci-dessous utilise une photo de capybara différente** (fichiers locaux dans `/images/capybaras/unique-*.jpg`, chacun inférieur à 2 Mo). Les pages avec bascule clair/sombre utilisent deux photos uniques.
+
+## Techniques utilisées
+
+| Style # | Technique |
+| --- | --- |
+| 0 | Markdown + chemin local `/images` |
+| 1 | `<Frame>` + Markdown + chemin local `/images` |
+| 2 | HTML `<img>` + `style` en ligne avec largeur |
+| 3 | HTML `<img>` + `noZoom` |
+| 4 | Image liée (`<a>` + `<img noZoom>`) |
+| 5 | Paire d'images mode clair/sombre (deux photos uniques) |
+| 6 | `<Frame>` + HTML `<img className="rounded-xl">` |
+| 7 | Markdown + ressource locale unique |
+| 8 | `<iframe>` YouTube dans `<Frame>` + miniature unique |
+| 9 | Markdown simple + chemin local `/images` |
+
+## Pages avec embeds
+
+- [`/en/v1/migration`](/en/v1/migration) — style **#0** · `unique-01.jpg`
+- [`/en/v1/overview`](/en/v1/overview) — style **#1** · `unique-02.jpg`
+- [`/en/v2/compare/products-menus-dropdowns`](/en/v2/compare/products-menus-dropdowns) — style **#2** · `unique-03.jpg`
+- [`/en/v2/dropdowns/api/auth`](/en/v2/dropdowns/api/auth) — style **#3** · `unique-04.jpg`
+- [`/en/v2/dropdowns/api/errors`](/en/v2/dropdowns/api/errors) — style **#4** · `unique-05.jpg`
+- [`/en/v2/dropdowns/api/orders`](/en/v2/dropdowns/api/orders) — style **#5** · `unique-06.jpg` + sombre `unique-31.jpg`
+- [`/en/v2/dropdowns/api/overview`](/en/v2/dropdowns/api/overview) — style **#6** · `unique-07.jpg`
+- [`/en/v2/dropdowns/api/payments`](/en/v2/dropdowns/api/payments) — style **#7** · `unique-08.jpg`
+- [`/en/v2/dropdowns/compare`](/en/v2/dropdowns/compare) — style **#8** · `unique-09.jpg`
+- [`/en/v2/dropdowns/docs/architecture`](/en/v2/dropdowns/docs/architecture) — style **#9** · `unique-10.jpg`
+- [`/en/v2/dropdowns/docs/concepts`](/en/v2/dropdowns/docs/concepts) — style **#0** · `unique-11.jpg`
+- [`/en/v2/dropdowns/docs/guides-migrate`](/en/v2/dropdowns/docs/guides-migrate) — style **#1** · `unique-12.jpg`
+- [`/en/v2/dropdowns/docs/guides-onboarding`](/en/v2/dropdowns/docs/guides-onboarding) — style **#2** · `unique-13.jpg`
+- [`/en/v2/dropdowns/docs/start`](/en/v2/dropdowns/docs/start) — style **#3** · `unique-14.jpg`
+- [`/en/v2/dropdowns/partners/build`](/en/v2/dropdowns/partners/build) — style **#4** · `unique-15.jpg`
+- [`/en/v2/dropdowns/partners/directory`](/en/v2/dropdowns/partners/directory) — style **#5** · `unique-16.jpg` + sombre `unique-32.jpg`
+- [`/en/v2/dropdowns/partners/overview`](/en/v2/dropdowns/partners/overview) — style **#6** · `unique-17.jpg`
+- [`/en/v2/dropdowns/partners/submit`](/en/v2/dropdowns/partners/submit) — style **#7** · `unique-18.jpg`
+- [`/en/v2/menu-analytics/api/overview`](/en/v2/menu-analytics/api/overview) — style **#8** · `unique-19.jpg`
+- [`/en/v2/menu-analytics/api/queries`](/en/v2/menu-analytics/api/queries) — style **#9** · `unique-20.jpg`
+- [`/en/v2/menu-analytics/dashboards/overview`](/en/v2/menu-analytics/dashboards/overview) — style **#0** · `unique-21.jpg`
+- [`/en/v2/menu-analytics/dashboards/share`](/en/v2/menu-analytics/dashboards/share) — style **#1** · `unique-22.jpg`
+- [`/en/v2/menu-analytics/guides/events`](/en/v2/menu-analytics/guides/events) — style **#2** · `unique-23.jpg`
+- [`/en/v2/menu-analytics/guides/intro`](/en/v2/menu-analytics/guides/intro) — style **#3** · `unique-24.jpg`
+- [`/en/v2/menu-core/api/orders`](/en/v2/menu-core/api/orders) — style **#4** · `unique-25.jpg`
+- [`/en/v2/menu-core/api/overview`](/en/v2/menu-core/api/overview) — style **#5** · `unique-26.jpg` + sombre `unique-33.jpg`
+- [`/en/v2/menu-core/api/users`](/en/v2/menu-core/api/users) — style **#6** · `unique-27.jpg`
+- [`/en/v2/menu-core/guides/auth`](/en/v2/menu-core/guides/auth) — style **#7** · `unique-28.jpg`
+- [`/en/v2/menu-core/guides/intro`](/en/v2/menu-core/guides/intro) — style **#8** · `unique-29.jpg`
+- [`/en/v2/menu-core/guides/webhooks`](/en/v2/menu-core/guides/webhooks) — style **#9** · `unique-30.jpg`
+
+## Exemple de ressource locale (galerie uniquement)
+
+Cet exemple utilise `/images/capybaras/unique-34.jpg`, qui n'est **pas** réutilisée sur les pages liées ci-dessus.
+
+![unique-34.jpg réservée uniquement pour cette page d'index de galerie](/images/capybaras/unique-34.jpg)

@@ -1,0 +1,29 @@
+---
+title: "Каталог партнерів"
+description: "Демонстраційна сторінка навігації."
+---
+
+**Група:** Партнери.
+
+{/* capybara-embed-demo */}
+
+## Демонстрація вбудовування зображення
+
+Заміна зображення для світлого/темного режиму. **Кожен режим використовує унікальне фото, яке не повторюється на інших сторінках галереї.**
+
+- Світлий: `/images/capybaras/unique-16.jpg`
+- Темний: `/images/capybaras/unique-32.jpg`
+
+Перемкніть оформлення, щоб порівняти.
+
+<img
+  className="block dark:hidden rounded-xl"
+  src="/images/capybaras/unique-16.jpg"
+  alt="Unique capybara photo (unique-16.jpg) — assigned exclusively to this gallery page — light-mode only via className block dark:hidden"
+/>
+
+<img
+  className="hidden dark:block rounded-xl"
+  src="/images/capybaras/unique-32.jpg"
+  alt="Unique dark-mode capybara photo (unique-32.jpg) assigned exclusively to this page — className hidden dark:block"
+/>

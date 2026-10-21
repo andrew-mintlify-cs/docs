@@ -1,0 +1,31 @@
+---
+title: "Core API Menu · Огляд API"
+description: "Демонстраційна сторінка навігації."
+---
+
+Ви перебуваєте в пункті меню продукту **Menu: API reference**.
+
+Той самий продукт (**Core API**), але інший вхід у меню, ніж Guides.
+
+{/* capybara-embed-demo */}
+
+## Демонстрація вбудовування зображення
+
+Заміна зображення для світлого/темного режиму. **Кожен режим використовує унікальне фото, яке не повторюється на інших сторінках галереї.**
+
+- Світлий: `/images/capybaras/unique-26.jpg`
+- Темний: `/images/capybaras/unique-33.jpg`
+
+Перемкніть оформлення, щоб порівняти.
+
+<img
+  className="block dark:hidden rounded-xl"
+  src="/images/capybaras/unique-26.jpg"
+  alt="Unique capybara photo (unique-26.jpg) — assigned exclusively to this gallery page — light-mode only via className block dark:hidden"
+/>
+
+<img
+  className="hidden dark:block rounded-xl"
+  src="/images/capybaras/unique-33.jpg"
+  alt="Unique dark-mode capybara photo (unique-33.jpg) assigned exclusively to this page — className hidden dark:block"
+/>

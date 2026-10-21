@@ -1,0 +1,53 @@
+---
+title: "Products so với Product menus so với Dropdowns"
+description: "Trang minh hoạ điều hướng."
+---
+
+Ba tính năng này đều có thể trông giống như "dropdown," nhưng chúng nằm ở **những vị trí khác nhau** trong giao diện.
+
+## 1. Products (bộ chuyển sản phẩm)
+
+- **Nơi xuất hiện:** bộ chuyển sản phẩm (thường ở phía trên / khu vực logo)
+- **Chuyển đổi giữa:** toàn bộ các site tài liệu sản phẩm nằm trong cùng một triển khai Mintlify
+- **Cách hình dung:** Payments, Identity, Analytics — sản phẩm riêng biệt, cây tài liệu riêng biệt
+
+Trong bản demo này, hãy mở **bộ chuyển sản phẩm** và tìm các mục như **Tabs Product**, **Dropdowns Product**, **Plain Product**, và các mục **Product + Menu**.
+
+## 2. Product menus (`menu` gắn với một sản phẩm)
+
+- **Nơi xuất hiện:** vẫn là **bộ chuyển sản phẩm**
+- **Điều thay đổi:** thay vì đi thẳng vào một sản phẩm, mục sản phẩm đó sẽ mở ra một **menu nhiều cột** (Guides / API / Changelog / …)
+- **Cách hình dung:** một sản phẩm, nhiều lối vào được hiển thị ngay từ bộ chuyển
+
+Hãy thử **Product + Menu: Core API** hoặc **Product + Menu: Analytics** trong bộ chuyển sản phẩm — các mục đó sẽ bung ra thành những mục menu có nhãn.
+
+## 3. Dropdowns (mẫu điều hướng trên sidebar)
+
+- **Nơi xuất hiện:** **phía trên cùng của sidebar bên trái**, bên trong một sản phẩm
+- **Chuyển đổi giữa:** các phần *bên trong* sản phẩm hiện tại (Docs / API Spec / Partners)
+- **Cách hình dung:** giống Tabs, nhưng gọn hơn — các phần đồng cấp ẩn trong một menu sidebar thay vì thanh tab ngang
+
+Hãy mở **Dropdowns Product**, sau đó dùng dropdown trên sidebar. Điều khiển đó **không phải** là bộ chuyển sản phẩm.
+
+## Đối chiếu nhanh
+
+| Tính năng | Vị trí UI | Chuyển đổi giữa | Khoá cấu hình |
+| --- | --- | --- | --- |
+| **Products** | Bộ chuyển sản phẩm | Toàn bộ sản phẩm | `products[]` |
+| **Product menus** | Bộ chuyển sản phẩm (mục được bung ra) | Các lối vào *bên trong* một sản phẩm | `products[].menu[]` |
+| **Dropdowns** | Phía trên cùng của sidebar | Các phần trong sản phẩm hiện tại | `dropdowns[]` |
+
+Nếu hai điều khiển trông giống nhau, hãy kiểm tra **nơi** menu xuất hiện: bộ chuyển sản phẩm hay sidebar.
+
+{/* capybara-embed-demo */}
+
+## Demo nhúng ảnh
+
+HTML `<img>` với JSX `style` inline có chiều rộng, dùng đường dẫn cục bộ độc nhất `/images/capybaras/unique-03.jpg`.
+
+<img
+  src="/images/capybaras/unique-03.jpg"
+  alt="Unique capybara photo (unique-03.jpg) — assigned exclusively to this gallery page embedded with an HTML img tag and inline style width 450px"
+  style={{width: "450px", height: "auto"}}
+  className="rounded-lg"
+/>

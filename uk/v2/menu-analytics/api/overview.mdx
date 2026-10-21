@@ -1,0 +1,28 @@
+---
+title: "Analytics Menu · Огляд API"
+description: "Демонстраційна сторінка навігації."
+---
+
+Пункт меню продукту Analytics **Menu: Query API**.
+
+{/* capybara-embed-demo */}
+
+## Демонстрація вбудовування відео + унікального фото
+
+YouTube iframe, обгорнутий у `<Frame>`, а також **унікальне статичне фото**, щоб кожна сторінка галереї мала окреме зображення капібари.
+
+Відео: [https://youtu.be/8Pj-YEQbojk?si=rmwTnoZ44tpiUfy5](https://youtu.be/8Pj-YEQbojk?si=rmwTnoZ44tpiUfy5)
+
+<Frame>
+  <iframe
+    className="w-full aspect-video rounded-xl"
+    src="https://www.youtube.com/embed/8Pj-YEQbojk"
+    title="YouTube video player showing capybaras"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+</Frame>
+
+Унікальне супровідне фото (`/images/capybaras/unique-19.jpg`):
+
+![Unique capybara photo (unique-19.jpg) — assigned exclusively to this gallery page shown beneath the YouTube embed for uniqueness across gallery pages](/images/capybaras/unique-19.jpg)
